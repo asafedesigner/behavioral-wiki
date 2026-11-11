@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://behavioral-wiki.vercel.app/sitemap.xml
+Sitemap: https://www.behavioralwiki.com.br/sitemap.xml
