@@ -316,6 +316,16 @@ cite{font-style:italic}
 .m-tab th{font-weight:800}
 .m-tab td:last-child{background:var(--mc);color:var(--on-highlight);font-weight:700}
 @media (max-width: 640px){.bcard-grid,.na-tela-grid{grid-template-columns:minmax(0,1fr)}}
+.pfilters{display:grid;gap:var(--space-3);margin-bottom:var(--space-5);padding:var(--space-4) var(--space-5);background:var(--paper-deep);border-radius:var(--radius-md)}
+.pf-row{display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:var(--space-3);align-items:center}
+.pf-row .filter-chips{grid-column:2 / -1}
+.pf-label{font-size:14px;font-weight:700;color:var(--ink-soft)}
+.chip-n{font-weight:600;opacity:.6;margin-left:2px;font-variant-numeric:tabular-nums}
+.select-wrap{position:relative;max-width:420px}
+.select-wrap::after{content:"↓";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-family:var(--hand);font-size:22px;font-weight:700;pointer-events:none;line-height:1}
+.select{appearance:none;-webkit-appearance:none;padding-right:44px;cursor:pointer;font-weight:600}
+.pfilters #pf-count{margin:0}
+@media (max-width: 640px){.pf-row{grid-template-columns:minmax(0,1fr)}.pf-row .filter-chips{grid-column:auto;flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}.pf-row .filter-chips::-webkit-scrollbar{display:none}.pfilters{padding:var(--space-4)}.select-wrap{max-width:none}}
 @media (max-width: 900px){
   .explorer{grid-template-columns:minmax(0,1fr)}
   .form{position:static}
@@ -490,7 +500,18 @@ cite{font-style:italic}
       <div id="mito-result" aria-live="polite"></div>
     </div>
   </section>
-  <div class="filter-chips" id="post-filters" role="group" aria-label="Filtrar por viés" style="margin-bottom:var(--space-4)"></div>
+  <div class="pfilters" id="post-filters">
+    <div class="pf-row" hidden>
+      <span class="pf-label" id="pf-livro-label">Livro</span>
+      <div class="filter-chips" id="post-fontes" role="group" aria-labelledby="pf-livro-label"></div>
+    </div>
+    <div class="pf-row">
+      <label class="pf-label" for="post-vies">Viés</label>
+      <div class="select-wrap"><select id="post-vies" class="input select"></select></div>
+      <button type="button" class="btn ghost" id="pf-clear" hidden>Limpar filtros</button>
+    </div>
+    <p class="caption" id="pf-count" aria-live="polite"></p>
+  </div>
   <p class="caption draft-note">Rascunhos de exemplo para estruturar a seção. Troque pelos seus posts quando quiser.</p>
   <div class="posts" id="posts"></div>
 </main>
@@ -1813,7 +1834,7 @@ form.addEventListener('input', ()=>scheduleResults(250));
 form.addEventListener('submit', e=>e.preventDefault());
 blist.addEventListener('click', e=>{
   const b = e.target.closest('[data-insights]'); if(!b) return;
-  postFilter = b.dataset.insights; location.hash = 'insights';
+  postFilter = b.dataset.insights; postFonte = 'todos'; location.hash = 'insights';
 });
 
 /* ---------- Guia ---------- */
@@ -1977,31 +1998,47 @@ function renderVerbete(id){
 
 /* ---------- Insights ---------- */
 let postFilter = 'todos';
-const pfBox = document.getElementById('post-filters');
+let postFonte = 'todos';
+const FONTES = [['todos','Todos'],['livro','Rápido e devagar'],['whalen','Design for How People Think'],['enviesados','Enviesados'],['sapolsky','Comporte-se']];
+const daFonte = (p,f) => f==='todos' || (f==='livro'&&!!p.livro) || (f==='whalen'&&!!p.whalen) || (f==='enviesados'&&!!p.dutra) || (f==='sapolsky'&&!!p.sapolsky);
 function renderPostFilters(){
+  document.getElementById('post-fontes').innerHTML = FONTES.map(([k,n])=>{
+    const c = POSTS.filter(p=>daFonte(p,k)).length;
+    return '<button type="button" class="chip fchip" data-fonte="'+k+'" aria-pressed="'+(postFonte===k)+'">'+n+' <span class="chip-n">'+c+'</span></button>';
+  }).join('');
+  const naFonte = POSTS.filter(p=>daFonte(p,postFonte));
   const ids = [...new Set(POSTS.map(p=>p.vies))];
-  pfBox.innerHTML = '<button type="button" class="chip fchip" data-pf="todos" aria-pressed="'+(postFilter==='todos')+'">Todos</button>'
-    + '<button type="button" class="chip fchip" data-pf="livro" aria-pressed="'+(postFilter==='livro')+'">Rápido e devagar</button>'
-    + '<button type="button" class="chip fchip" data-pf="whalen" aria-pressed="'+(postFilter==='whalen')+'">Design for How People Think</button>'
-    + '<button type="button" class="chip fchip" data-pf="enviesados" aria-pressed="'+(postFilter==='enviesados')+'">Enviesados</button>'
-    + '<button type="button" class="chip fchip" data-pf="sapolsky" aria-pressed="'+(postFilter==='sapolsky')+'">Comporte-se</button>'
-    + ids.map(id=>'<button type="button" class="chip fchip" data-pf="'+id+'" aria-pressed="'+(postFilter===id)+'">'+byId[id].nome+'</button>').join('');
+  const grupos = Object.entries(CATS).map(([k,c])=>{
+    const vs = ids.map(id=>byId[id]).filter(v=>v.cat===k).sort((a,b)=>a.nome.localeCompare(b.nome,'pt'));
+    if(!vs.length) return '';
+    return '<optgroup label="'+c.nome+'">'+vs.map(v=>{
+      const n = naFonte.filter(p=>p.vies===v.id).length;
+      return '<option value="'+v.id+'"'+(postFilter===v.id?' selected':'')+(n||postFilter===v.id?'':' disabled')+'>'+v.nome+' ('+n+')</option>';
+    }).join('')+'</optgroup>';
+  }).join('');
+  document.getElementById('post-vies').innerHTML = '<option value="todos"'+(postFilter==='todos'?' selected':'')+'>Todos os vieses ('+naFonte.length+')</option>'+grupos;
+  document.getElementById('pf-clear').hidden = postFonte==='todos' && postFilter==='todos';
 }
-pfBox.addEventListener('click', e=>{
-  const b = e.target.closest('[data-pf]'); if(!b) return;
-  postFilter = b.dataset.pf; renderInsights();
+document.getElementById('post-fontes').addEventListener('click', e=>{
+  const b = e.target.closest('[data-fonte]'); if(!b) return;
+  postFonte = b.dataset.fonte; renderInsights();
 });
+document.getElementById('post-vies').addEventListener('change', e=>{ postFilter = e.target.value; renderInsights(); });
+document.getElementById('pf-clear').addEventListener('click', ()=>{ postFonte='todos'; postFilter='todos'; renderInsights(); document.getElementById('post-vies').focus(); });
 function renderInsights(){
   renderPostFilters();
-  const list = POSTS.filter(p=>postFilter==='todos'||(postFilter==='livro'?!!p.livro:postFilter==='whalen'?!!p.whalen:postFilter==='enviesados'?!!p.dutra:postFilter==='sapolsky'?!!p.sapolsky:p.vies===postFilter));
+  const list = POSTS.filter(p=>daFonte(p,postFonte) && (postFilter==='todos'||p.vies===postFilter));
+  const fNome = FONTES.find(f=>f[0]===postFonte)[1];
+  document.getElementById('pf-count').textContent = (list.length===1?'1 insight':list.length+' insights')
+    + (postFonte!=='todos'?' de '+fNome:'') + (postFilter!=='todos'?' sobre '+byId[postFilter].nome.charAt(0).toLowerCase()+byId[postFilter].nome.slice(1):'');
   document.getElementById('posts').innerHTML = list.length ? list.map(p=>{
     const v = byId[p.vies];
     return '<a class="card pcard" href="#post-'+p.id+'"><div class="meta">'+chip(v)+'<span class="caption">'+v.nome+(p.livro?' · Rápido e devagar':'')+(p.whalen?' · Design for How People Think':'')+(p.dutra?' · Enviesados':'')+(p.sapolsky?' · Comporte-se':'')+'</span></div>'
       + '<h2 class="h3">'+p.titulo+'</h2><p>'+p.dek+'</p><span class="caption">'+p.data+' · '+p.min+' min de leitura</span></a>';
-  }).join('') : '<div class="card empty-state dashed" style="grid-column:1/-1"><div class="es-body"><p class="h3">Nenhum post sobre este viés ainda</p><p>Veja todos os insights enquanto este está no caderno.</p><div class="examples"><button type="button" class="btn" data-pf="todos">Ver todos</button></div></div></div>';
+  }).join('') : '<div class="card empty-state dashed" style="grid-column:1/-1"><div class="es-body"><p class="h3">Nenhum insight com esses filtros</p><p>Tente outro livro ou outro viés, ou veja todos.</p><div class="examples"><button type="button" class="btn" data-pf="todos">Ver todos</button></div></div></div>';
 }
 document.getElementById('posts').addEventListener('click', e=>{
-  const b = e.target.closest('[data-pf]'); if(!b) return; postFilter='todos'; renderInsights();
+  const b = e.target.closest('[data-pf]'); if(!b) return; postFilter='todos'; postFonte='todos'; renderInsights();
 });
 
 /* Mito ou verdade? O B desconfia da frase e se surpreende com a resposta. */
