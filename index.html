@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Vieses e heurísticas explicados para produteiros e curiosos: o que é cada viés, como ele ajuda a aumentar, reduzir ou mudar um comportamento, exemplos de tela e testes para rodar no seu produto.">
+<title>Behavioral Wiki: vieses e heurísticas para quem faz produto</title>
+<meta name="description" content="Escolha o comportamento que você quer aumentar, reduzir ou mudar e descubra quais vieses ajudam, com exemplo de tela, teste e cuidado ético.">
 <link rel="canonical" href="https://www.behavioralwiki.com.br/">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#F5F1E8">
@@ -15,24 +16,23 @@
 <meta property="og:site_name" content="Behavioral Wiki">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:title" content="Behavioral Wiki: vieses e heurísticas para quem faz produto">
-<meta property="og:description" content="Vieses e heurísticas explicados para produteiros e curiosos: o que é cada viés, como ele ajuda a aumentar, reduzir ou mudar um comportamento, exemplos de tela e testes para rodar no seu produto.">
+<meta property="og:description" content="Escolha o comportamento que você quer aumentar, reduzir ou mudar e descubra quais vieses ajudam, com exemplo de tela, teste e cuidado ético.">
 <meta property="og:url" content="https://www.behavioralwiki.com.br/">
 <meta property="og:image" content="https://www.behavioralwiki.com.br/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Behavioral Wiki: vieses e heurísticas para quem faz produto">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Behavioral Wiki: vieses e heurísticas para quem faz produto">
-<meta name="twitter:description" content="Vieses e heurísticas explicados para produteiros e curiosos: o que é cada viés, como ele ajuda a aumentar, reduzir ou mudar um comportamento, exemplos de tela e testes para rodar no seu produto.">
+<meta name="twitter:description" content="Escolha o comportamento que você quer aumentar, reduzir ou mudar e descubra quais vieses ajudam, com exemplo de tela, teste e cuidado ético.">
 <meta name="twitter:image" content="https://www.behavioralwiki.com.br/og-image.png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Behavioral Wiki", "url": "https://www.behavioralwiki.com.br/", "description": "Vieses e heurísticas explicados para produteiros e curiosos: o que é cada viés, como ele ajuda a aumentar, reduzir ou mudar um comportamento, exemplos de tela e testes para rodar no seu produto.", "inLanguage": "pt-BR"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Behavioral Wiki", "url": "https://www.behavioralwiki.com.br/", "description": "Escolha o comportamento que você quer aumentar, reduzir ou mudar e descubra quais vieses ajudam, com exemplo de tela, teste e cuidado ético.", "inLanguage": "pt-BR"}</script>
 <style>
 :root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 body{margin:0;font:14px system-ui,sans-serif}
 img{max-width:100%}
 [hidden]{display:none!important}
 </style>
-<title>Behavioral Wiki: vieses e heurísticas para quem faz produto</title>
+
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -153,7 +153,7 @@ legend{padding:0;margin-bottom:var(--space-3);display:flex;gap:var(--space-3);al
 .apply p{font-size:16px}
 .apply strong{font-weight:700}
 .fit{display:flex;flex-wrap:wrap;gap:var(--space-2);align-items:center}
-.fit .tag{font-size:12px;font-weight:700;padding:4px 10px;border-radius:var(--radius-pill);background:var(--paper-deep);color:var(--ink)}
+.fit .tag{font-size:13px;font-weight:700;padding:4px 10px;border-radius:var(--radius-pill);background:var(--paper-deep);color:var(--ink)}
 details.more{border-top:1.5px dashed var(--line);padding-top:var(--space-3)}
 details.more summary{cursor:pointer;font-size:14px;font-weight:700;min-height:36px;display:flex;align-items:center;list-style:none}
 details.more summary::-webkit-details-marker{display:none}
@@ -292,33 +292,34 @@ cite{font-style:italic}
 .copy-row{display:flex;flex-wrap:wrap;gap:var(--space-3);align-items:center}
 .roteiro-fallback{width:100%;min-height:160px;font:inherit;font-size:14px;padding:var(--space-3);border:var(--border-ui) solid var(--line);border-radius:var(--radius-sm);background:var(--surface);color:var(--ink)}
 @media (max-width: 640px){.books .book{grid-template-columns:minmax(0,1fr)}}
-.bcard-grid{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:var(--space-5);align-items:start}
+.bcard-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--space-5)}
 .bcard-main{display:grid;gap:var(--space-4);min-width:0}
 .bpart{display:grid;gap:2px}
 .bpart > .label{font-size:13px;color:var(--ink-soft)}
 .na-tela{display:grid;gap:var(--space-3)}
-.na-tela-grid{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:var(--space-5);align-items:start}
+.na-tela-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--space-5)}
 .mock-wrap{margin:0;display:grid;gap:6px;justify-items:center}
-.mock{width:100%;max-width:230px;background:var(--paper);border:var(--border-ui) solid var(--line);border-radius:22px;padding:14px 14px 16px;display:grid;gap:8px;font-size:12px;line-height:1.35}
+.bcard .mock-wrap,.na-tela .mock-wrap{justify-self:stretch;width:100%}
+.mock{width:100%;max-width:270px;background:var(--paper);border:var(--border-ui) solid var(--line);border-radius:22px;padding:14px 14px 16px;display:grid;gap:8px;font-size:13px;line-height:1.35}
 .mock::before{content:"";width:40px;height:4px;border-radius:4px;background:var(--ink-soft);opacity:.35;justify-self:center}
 .mock p{margin:0}
 .m-t{font-family:var(--display);font-weight:800;font-size:15px;line-height:1.15}
-.m-p{font-size:11.5px;color:var(--ink-soft)}
+.m-p{font-size:12.5px;color:var(--ink-soft)}
 .m-btn{display:block;text-align:center;padding:8px 10px;border-radius:999px;background:var(--primary);color:var(--on-primary);border:1.5px solid var(--primary);font-weight:700;font-size:12px}
 .m-btn2{background:var(--surface);color:var(--ink);border-color:var(--line)}
-.m-link{font-weight:700;font-size:11.5px;text-decoration:underline;text-underline-offset:2px}
-.m-selo{display:block;padding:6px 10px;border-radius:12px;background:var(--mc);color:var(--on-highlight);border:1.5px solid var(--on-highlight);font-weight:700;font-size:11.5px}
+.m-link{font-weight:700;font-size:12.5px;text-decoration:underline;text-underline-offset:2px}
+.m-selo{display:block;padding:6px 10px;border-radius:12px;background:var(--mc);color:var(--on-highlight);border:1.5px solid var(--on-highlight);font-weight:700;font-size:12.5px}
 .m-aviso{padding:8px 10px;border-radius:10px;background:var(--surface);border:1.5px solid var(--line);font-weight:600}
-.m-campo{display:block;padding:7px 12px;border-radius:999px;background:var(--surface);border:1.5px solid var(--line);color:var(--ink-soft);font-size:11.5px}
+.m-campo{display:block;padding:7px 12px;border-radius:999px;background:var(--surface);border:1.5px solid var(--line);color:var(--ink-soft);font-size:12.5px}
 .m-nota{font-family:var(--hand);font-weight:700;font-size:19px;line-height:1;transform:rotate(-3deg);justify-self:start;color:var(--ink)}
 .m-planos{display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr));gap:5px}
-.m-plan{display:grid;gap:2px;align-content:start;padding:7px 4px;border:1.5px solid var(--line);border-radius:9px;background:var(--surface);font-size:11px;text-align:center}
-.m-plan b{font-size:11px}
+.m-plan{display:grid;gap:2px;align-content:start;min-width:0;padding:7px 3px;border:1.5px solid var(--line);border-radius:9px;background:var(--surface);font-size:12px;text-align:center}
+.m-plan b{font-size:12px}
 .m-plan.on{background:var(--mc);color:var(--on-highlight);border:2.5px solid var(--on-highlight)}
 .m-plan.off{opacity:.5}
-.m-plan i{font-style:normal;font-size:8.5px;font-weight:800;text-transform:uppercase;letter-spacing:.03em}
+.m-plan i{font-style:normal;font-size:10.5px;font-weight:800;line-height:1.1;hyphens:auto;-webkit-hyphens:auto;overflow-wrap:anywhere}
 .m-chks,.m-lista{display:grid;gap:6px}
-.m-chk,.m-item{display:flex;gap:7px;align-items:center;font-size:11.5px}
+.m-chk,.m-item{display:flex;gap:7px;align-items:center;font-size:12.5px}
 .m-chk i{width:14px;height:14px;border:1.5px solid var(--line);border-radius:4px;background:var(--surface);flex:none}
 .m-chk.on{font-weight:700}
 .m-chk.on i{background:var(--ink)}
@@ -328,12 +329,12 @@ cite{font-style:italic}
 .m-barra{display:grid;gap:4px}
 .m-barra span{display:block;height:10px;border:1.5px solid var(--line);border-radius:999px;background:var(--surface);overflow:hidden}
 .m-barra i{display:block;height:100%;background:var(--mc)}
-.m-barra small{font-size:10.5px;color:var(--ink-soft)}
+.m-barra small{font-size:11.5px;color:var(--ink-soft)}
 .m-prog{display:flex;gap:4px}
-.m-prog span{flex:1;font-size:9.5px;text-align:center;padding-top:6px;border-top:3px solid var(--paper-deep);color:var(--ink-soft)}
+.m-prog span{flex:1;font-size:11px;text-align:center;padding-top:6px;border-top:3px solid var(--paper-deep);color:var(--ink-soft)}
 .m-prog span.done{border-top-color:var(--ink)}
 .m-prog span.at{border-top-color:var(--mc);color:var(--ink);font-weight:800}
-.m-tab{border-collapse:collapse;font-size:10.5px;width:100%;background:var(--surface);border:1.5px solid var(--line)}
+.m-tab{border-collapse:collapse;font-size:11.5px;width:100%;background:var(--surface);border:1.5px solid var(--line)}
 .m-tab th,.m-tab td{padding:5px;border-bottom:1px solid var(--paper-deep);text-align:left}
 .m-tab th{font-weight:800}
 .m-tab td:last-child{background:var(--mc);color:var(--on-highlight);font-weight:700}
@@ -365,33 +366,33 @@ cite{font-style:italic}
 </style>
 </head>
 <body>
-<noscript><p style="padding:24px;font-family:system-ui,sans-serif">A Behavioral Wiki precisa de JavaScript para mostrar os vieses, os exemplos e os insights.</p></noscript>
+
 
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <filter id="wobble" x="-10%" y="-10%" width="120%" height="120%">
-    <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4"/>
-    <feDisplacementMap in="SourceGraphic" scale="2.6"/>
+    <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4"></feTurbulence>
+    <feDisplacementMap in="SourceGraphic" scale="2.6"></feDisplacementMap>
   </filter>
 </svg>
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#explorar" aria-label="Behavioral Wiki, início">
+    <a class="brand" href="/" aria-label="Behavioral Wiki, início">
       <svg class="logo" viewBox="0 0 360 100" width="172" height="48" aria-hidden="true" focusable="false">
-        <defs><mask id="bwlogo-mask"><rect x="-10" y="-10" width="140" height="130" fill="#fff"/><circle cx="54" cy="30" r="12" fill="#000"/><circle cx="56" cy="70" r="13" fill="#000"/></mask></defs>
-        <g mask="url(#bwlogo-mask)" style="fill:var(--ink)"><rect x="12" y="6" width="22" height="90" rx="4"/><circle cx="52" cy="30" r="24"/><circle cx="54" cy="70" r="26"/><rect x="30" y="6" width="22" height="48"/><rect x="30" y="44" width="24" height="52"/></g>
-        <g style="fill:var(--surface)"><circle cx="54" cy="30" r="12"/><circle cx="56" cy="70" r="13"/></g>
-        <g style="fill:var(--ink)"><circle cx="59.5" cy="26.5" r="6.5"/><circle cx="62" cy="66" r="7"/></g>
-        <path d="M102 80 L196 68" fill="none" stroke-width="20" stroke-linecap="round" style="stroke:var(--highlight)"/>
+        <defs><mask id="bwlogo-mask"><rect x="-10" y="-10" width="140" height="130" fill="#fff"></rect><circle cx="54" cy="30" r="12" fill="#000"></circle><circle cx="56" cy="70" r="13" fill="#000"></circle></mask></defs>
+        <g mask="url(#bwlogo-mask)" style="fill:var(--ink)"><rect x="12" y="6" width="22" height="90" rx="4"></rect><circle cx="52" cy="30" r="24"></circle><circle cx="54" cy="70" r="26"></circle><rect x="30" y="6" width="22" height="48"></rect><rect x="30" y="44" width="24" height="52"></rect></g>
+        <g style="fill:var(--surface)"><circle cx="54" cy="30" r="12"></circle><circle cx="56" cy="70" r="13"></circle></g>
+        <g style="fill:var(--ink)"><circle cx="59.5" cy="26.5" r="6.5"></circle><circle cx="62" cy="66" r="7"></circle></g>
+        <path d="M102 80 L196 68" fill="none" stroke-width="20" stroke-linecap="round" style="stroke:var(--highlight)"></path>
         <text x="104" y="46" font-size="46" font-weight="900" letter-spacing="-2" style="fill:var(--ink);font-family:Inter,system-ui,sans-serif">behavioral</text>
         <text x="106" y="86" font-size="34" font-weight="600" letter-spacing="-0.5" style="fill:var(--on-highlight);font-family:Inter,system-ui,sans-serif">wiki</text>
       </svg>
     </a>
     <nav class="tabs" aria-label="Seções">
-      <a class="tab" href="#explorar" data-tab="explorar">Explorar</a>
-      <a class="tab" href="#guia" data-tab="guia">Guia</a>
-      <a class="tab" href="#insights" data-tab="insights">Insights</a>
+      <a class="tab" href="/" data-tab="explorar" aria-current="page">Explorar</a>
+      <a class="tab" href="/guia/" data-tab="guia">Guia</a>
+      <a class="tab" href="/insights/" data-tab="insights">Insights</a>
     </nav>
   </div>
 </header>
@@ -404,7 +405,7 @@ cite{font-style:italic}
   </div>
 
   <div class="explorer">
-    <form class="form card" id="explore-form" novalidate>
+    <form class="form card" id="explore-form" novalidate="">
       <div class="form-title">
         <h2 class="h3">Seu comportamento</h2>
         <span class="hand" aria-hidden="true">comece aqui ↓</span>
@@ -413,16 +414,16 @@ cite{font-style:italic}
       <fieldset>
         <legend><span class="stepnum">1</span><span class="legend-text">O que você quer fazer?</span></legend>
         <div class="dirs">
-          <label class="dir"><input type="radio" name="dir" id="dir-aumentar" value="aumentar" checked><span><svg class="dir-ico" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M5 31 Q13 30 18 21 T33 8"/><path d="M25 7 L33 8 L32 16"/></svg><span class="dir-txt"><strong>Aumentar</strong><small>Mais gente fazendo algo</small></span></span></label>
-          <label class="dir"><input type="radio" name="dir" id="dir-reduzir" value="reduzir"><span><svg class="dir-ico" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M5 9 Q13 10 18 19 T33 32"/><path d="M25 33 L33 32 L32 24"/></svg><span class="dir-txt"><strong>Reduzir</strong><small>Menos gente fazendo algo</small></span></span></label>
-          <label class="dir"><input type="radio" name="dir" id="dir-mudar" value="mudar"><span><svg class="dir-ico" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M7 14 H31"/><path d="M25 8 L31 14 L25 20"/><path d="M33 27 H9"/><path d="M15 21 L9 27 L15 33"/></svg><span class="dir-txt"><strong>Mudar</strong><small>Trocar um jeito de fazer por outro</small></span></span></label>
+          <label class="dir"><input type="radio" name="dir" id="dir-aumentar" value="aumentar" checked=""><span><svg class="dir-ico" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M5 31 Q13 30 18 21 T33 8"></path><path d="M25 7 L33 8 L32 16"></path></svg><span class="dir-txt"><strong>Aumentar</strong><small>Mais gente fazendo algo</small></span></span></label>
+          <label class="dir"><input type="radio" name="dir" id="dir-reduzir" value="reduzir"><span><svg class="dir-ico" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M5 9 Q13 10 18 19 T33 32"></path><path d="M25 33 L33 32 L32 24"></path></svg><span class="dir-txt"><strong>Reduzir</strong><small>Menos gente fazendo algo</small></span></span></label>
+          <label class="dir"><input type="radio" name="dir" id="dir-mudar" value="mudar"><span><svg class="dir-ico" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M7 14 H31"></path><path d="M25 8 L31 14 L25 20"></path><path d="M33 27 H9"></path><path d="M15 21 L9 27 L15 33"></path></svg><span class="dir-txt"><strong>Mudar</strong><small>Trocar um jeito de fazer por outro</small></span></span></label>
         </div>
       </fieldset>
 
       <fieldset>
         <legend><span class="stepnum">2</span><span class="legend-text">O que trava hoje?</span></legend>
         <p class="hint">Opcional. Marque o que você já ouviu de quem usa. Isso muda a ordem dos vieses.</p>
-        <div class="barriers" id="barriers"></div>
+        <div class="barriers" id="barriers"><label class="toggle"><input type="checkbox" id="bar-motivacao" value="motivacao"><span>Não veem valor</span></label><label class="toggle"><input type="checkbox" id="bar-esforco" value="esforco"><span>Dá trabalho demais</span></label><label class="toggle"><input type="checkbox" id="bar-esquecimento" value="esquecimento"><span>Esquecem ou deixam pra depois</span></label><label class="toggle"><input type="checkbox" id="bar-incerteza" value="incerteza" checked=""><span>Têm medo de errar</span></label><label class="toggle"><input type="checkbox" id="bar-opcoes" value="opcoes"><span>Opções demais</span></label><label class="toggle"><input type="checkbox" id="bar-habito" value="habito"><span>Já fazem do jeito antigo</span></label></div>
       </fieldset>
 
     </form>
@@ -431,17 +432,17 @@ cite{font-style:italic}
       <div class="results-head">
         <h2 class="h2" id="results-title">Vieses que podem ajudar</h2>
         <div class="status" aria-live="polite">
-          <button type="button" class="face-btn" id="ex-face" aria-label="Fazer o B piscar"></button>
-          <div class="status-text"><p class="status-title" id="ex-title"></p><p class="caption" id="results-sub"></p></div>
+          <button type="button" class="face-btn" id="ex-face" aria-label="Fazer o B piscar" data-mood="curioso" data-size="64" data-track="1" data-label="Resultado pronto"><svg class="simbolo" viewBox="0 0 100 100" width="64" height="64" role="img" aria-label="Resultado pronto" focusable="false" data-track="1" data-mood="curioso"><defs><mask id="bwsym1"><rect x="-10" y="-10" width="140" height="130" fill="#fff"></rect><circle cx="54" cy="30" r="12" fill="#000"></circle><circle cx="56" cy="70" r="13" fill="#000"></circle></mask></defs><g mask="url(#bwsym1)" style="fill:var(--ink)"><rect x="12" y="6" width="22" height="90" rx="4"></rect><circle cx="52" cy="30" r="24"></circle><circle cx="54" cy="70" r="26"></circle><rect x="30" y="6" width="22" height="48"></rect><rect x="30" y="44" width="24" height="52"></rect></g><g style="fill:var(--surface)"><circle cx="54" cy="30" r="12"></circle><circle cx="56" cy="70" r="13"></circle></g><g style="fill:var(--ink)"><circle class="pa" cx="59.5" cy="26.5" r="6.5"></circle><circle class="pb" cx="62" cy="66" r="7"></circle></g></svg></button>
+          <div class="status-text"><p class="status-title" id="ex-title">6 vieses que ajudam a aumentar um comportamento</p><p class="caption" id="results-sub">Ordenados pelo que trava hoje.</p></div>
         </div>
       </div>
-      <div class="blist" id="blist"></div>
+      <div class="blist reveal" id="blist"><article class="card bcard" style="--i:0"><div class="bcard-grid"><div class="bcard-main"><div class="bcard-head"><svg class="doodle" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><g transform="translate(4 4)" fill="none" stroke="var(--cat-decisao)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><circle cx="50" cy="18" r="7"></circle><path d="M50 25V82"></path><path d="M36 38H64"></path><path d="M22 60Q26 84 50 84Q74 84 78 60"></path><path d="M15 67L22 58L30 65"></path><path d="M70 65L78 58L85 67"></path></g><g filter="url(#wobble)" fill="none" stroke="var(--ink)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="50" cy="18" r="7"></circle><path d="M50 25V82"></path><path d="M36 38H64"></path><path d="M22 60Q26 84 50 84Q74 84 78 60"></path><path d="M15 67L22 58L30 65"></path><path d="M70 65L78 58L85 67"></path></g></svg><div class="bcard-title"><h3 class="h3">Ancoragem</h3><span class="chip cat cat-decisao">Decisão</span></div></div><div class="bpart"><span class="label">O que é</span><p>O primeiro número que você vê vira a régua de todos os outros.</p></div><div class="bpart apply"><span class="label">Como ajuda a aumentar</span><p>Mostrar primeiro uma referência alta e real faz o que você quer vender parecer acessível.</p></div><div class="bpart"><span class="label">Exemplo</span><p>Na página de planos, o Empresa (R$ 299) aparece primeiro. Depois dele, o Pro por R$ 99 parece acessível.</p></div><figure class="mock-wrap"><div class="mock" style="--mc:var(--cat-decisao)" aria-hidden="true"><p class="m-t">Escolha seu plano</p><div class="m-planos" style="--n:3"><span class="m-plan"><b>Empresa</b>R$ 299</span><span class="m-plan on"><b>Pro</b>R$ 99</span><span class="m-plan"><b>Básico</b>R$ 39</span></div><span class="m-nota">↑ o primeiro preço vira régua</span><span class="m-btn">Assinar o Pro</span></div><figcaption class="caption">Ilustração com dados fictícios</figcaption></figure><div class="fit"><span class="caption">Combina com:</span><span class="tag">Têm medo de errar</span></div></div></div><details class="more"><summary>Como testar e com que cuidado</summary><div class="more-body"><h4>Teste no seu produto</h4><p>Teste a ordem dos planos: começando pelo mais completo e pelo mais simples. Meça conversão e plano médio escolhido.</p><h4>Cuidado</h4><p>Âncora inventada, como um preço “de” que nunca existiu, é enganação. Use referências reais e acompanhe reembolsos.</p><p class="caption">Fonte: Tversky &amp; Kahneman, 1974</p></div></details><div class="bcard-foot"><a class="btn" href="/vieses/ancoragem/">Ler o verbete</a><button type="button" class="btn ghost" data-insights="ancoragem">2 insights sobre isso →</button></div></article><article class="card bcard" style="--i:1"><div class="bcard-grid"><div class="bcard-main"><div class="bcard-head"><svg class="doodle" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><g transform="translate(4 4)" fill="none" stroke="var(--cat-decisao)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="20" width="22" height="22" rx="4"></rect><rect x="39" y="20" width="22" height="22" rx="4"></rect><rect x="68" y="20" width="22" height="22" rx="4"></rect><rect x="10" y="54" width="22" height="22" rx="4"></rect><rect x="39" y="54" width="22" height="22" rx="4"></rect><rect x="68" y="54" width="22" height="22" rx="4"></rect></g><g filter="url(#wobble)" fill="none" stroke="var(--ink)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="20" width="22" height="22" rx="4"></rect><rect x="39" y="20" width="22" height="22" rx="4"></rect><rect x="68" y="20" width="22" height="22" rx="4"></rect><rect x="10" y="54" width="22" height="22" rx="4"></rect><rect x="39" y="54" width="22" height="22" rx="4"></rect><rect x="68" y="54" width="22" height="22" rx="4"></rect></g></svg><div class="bcard-title"><h3 class="h3">Sobrecarga de escolha</h3><span class="chip cat cat-decisao">Decisão</span></div></div><div class="bpart"><span class="label">O que é</span><p>Opções demais travam a decisão.</p></div><div class="bpart apply"><span class="label">Como ajuda a aumentar</span><p>Menos opções destravam a decisão, e mais gente chega ao fim.</p></div><div class="bpart"><span class="label">Exemplo</span><p>Em vez de 12 planos, a tela mostra 3 e recomenda um. Os outros ficam em “ver todos”.</p></div><figure class="mock-wrap"><div class="mock" style="--mc:var(--cat-decisao)" aria-hidden="true"><p class="m-t">Planos</p><div class="m-planos" style="--n:3"><span class="m-plan"><b>Solo</b>R$ 19</span><span class="m-plan on"><i>indicado</i><b>Time</b>R$ 49</span><span class="m-plan"><b>Empresa</b>R$ 99</span></div><span class="m-nota">↑ 3 de 12 planos</span><span class="m-link">Ver todos os 12 planos →</span></div><figcaption class="caption">Ilustração com dados fictícios</figcaption></figure><div class="fit"><span class="caption">Combina com:</span><span class="tag">Têm medo de errar</span></div></div></div><details class="more"><summary>Como testar e com que cuidado</summary><div class="more-body"><h4>Teste no seu produto</h4><p>Mostre menos opções, ou destaque uma recomendada, e meça tempo até decidir e conversão.</p><h4>Cuidado</h4><p>Cortar opções não pode esconder a que a pessoa precisa. Mantenha um “ver todas”.</p><p class="caption">Fonte: Iyengar &amp; Lepper, 2000</p></div></details><div class="bcard-foot"><a class="btn" href="/vieses/sobrecarga/">Ler o verbete</a><button type="button" class="btn ghost" data-insights="sobrecarga">1 insight sobre isso →</button></div></article><article class="card bcard" style="--i:2"><div class="bcard-grid"><div class="bcard-main"><div class="bcard-head"><svg class="doodle" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><g transform="translate(4 4)" fill="none" stroke="var(--cat-social)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="38" r="9"></circle><circle cx="48" cy="38" r="9"></circle><circle cx="76" cy="38" r="9"></circle><path d="M12 70H86"></path><path d="M75 60L88 70L75 80"></path></g><g filter="url(#wobble)" fill="none" stroke="var(--ink)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="38" r="9"></circle><circle cx="48" cy="38" r="9"></circle><circle cx="76" cy="38" r="9"></circle><path d="M12 70H86"></path><path d="M75 60L88 70L75 80"></path></g></svg><div class="bcard-title"><h3 class="h3">Prova social</h3><span class="chip cat cat-social">Social</span></div></div><div class="bpart"><span class="label">O que é</span><p>Na dúvida, a gente faz o que os outros fazem.</p></div><div class="bpart apply"><span class="label">Como ajuda a aumentar</span><p>Mostrar que pessoas parecidas já fazem tira a dúvida de quem está em cima do muro.</p></div><div class="bpart"><span class="label">Exemplo</span><p>Na escolha do plano, a tela mostra quantos times do mesmo tamanho escolhem o anual.</p></div><figure class="mock-wrap"><div class="mock" style="--mc:var(--cat-social)" aria-hidden="true"><span class="m-selo">7 em cada 10 times como o seu escolhem o anual</span><span class="m-nota">↑ gente parecida</span><div class="m-planos" style="--n:2"><span class="m-plan"><b>Mensal</b>R$ 49</span><span class="m-plan on"><b>Anual</b>R$ 39/mês</span></div><span class="m-btn">Escolher anual</span></div><figcaption class="caption">Ilustração com dados fictícios</figcaption></figure><div class="fit"><span class="caption">Combina com:</span><span class="tag">Têm medo de errar</span></div></div></div><details class="more"><summary>Como testar e com que cuidado</summary><div class="more-body"><h4>Teste no seu produto</h4><p>Troque a mensagem atual por uma que diz o que pessoas parecidas fazem, com número real. Meça a ação.</p><h4>Cuidado</h4><p>Use só números reais. Cuidado também com frases como “muita gente não faz X”: elas ensinam que não fazer é normal.</p><p class="caption">Fonte: Goldstein, Cialdini &amp; Griskevicius, 2008</p></div></details><div class="bcard-foot"><a class="btn" href="/vieses/prova-social/">Ler o verbete</a><button type="button" class="btn ghost" data-insights="prova-social">1 insight sobre isso →</button></div></article><article class="card bcard" style="--i:3"><div class="bcard-grid"><div class="bcard-main"><div class="bcard-head"><svg class="doodle" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><g transform="translate(4 4)" fill="none" stroke="var(--cat-social)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="50" cy="20" rx="22" ry="7"></ellipse><circle cx="50" cy="52" r="17"></circle><path d="M24 92Q50 66 76 92"></path></g><g filter="url(#wobble)" fill="none" stroke="var(--ink)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="50" cy="20" rx="22" ry="7"></ellipse><circle cx="50" cy="52" r="17"></circle><path d="M24 92Q50 66 76 92"></path></g></svg><div class="bcard-title"><h3 class="h3">Efeito halo</h3><span class="chip cat cat-social">Social</span></div></div><div class="bpart"><span class="label">O que é</span><p>Uma qualidade boa contamina o julgamento das outras.</p></div><div class="bpart apply"><span class="label">Como ajuda a aumentar</span><p>Uma primeira impressão caprichada contamina o julgamento do resto e aumenta a confiança para agir.</p></div><div class="bpart"><span class="label">Exemplo</span><p>A tela de pagamento tem acabamento cuidadoso, e isso aumenta a confiança no produto inteiro.</p></div><figure class="mock-wrap"><div class="mock" style="--mc:var(--cat-social)" aria-hidden="true"><p class="m-t">Pagamento seguro</p><span class="m-campo">Número do cartão</span><p class="m-p">Seus dados ficam criptografados.</p><span class="m-nota">↑ capricho gera confiança</span><span class="m-btn">Pagar</span></div><figcaption class="caption">Ilustração com dados fictícios</figcaption></figure><div class="fit"><span class="caption">Combina com:</span><span class="tag">Têm medo de errar</span></div></div></div><details class="more"><summary>Como testar e com que cuidado</summary><div class="more-body"><h4>Teste no seu produto</h4><p>Compare confiança percebida (uma pergunta rápida) e conversão entre a tela atual e uma mais caprichada.</p><h4>Cuidado</h4><p>Se o produto não entrega, o acabamento caprichado só aumenta a decepção.</p><p class="caption">Fonte: Thorndike, 1920</p></div></details><div class="bcard-foot"><a class="btn" href="/vieses/halo/">Ler o verbete</a></div></article><article class="card bcard" style="--i:4"><div class="bcard-grid"><div class="bcard-main"><div class="bcard-head"><svg class="doodle" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><g transform="translate(4 4)" fill="none" stroke="var(--cat-social)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><path d="M14 36H76"></path><path d="M66 26L78 36L66 46"></path><path d="M86 66H24"></path><path d="M34 56L22 66L34 76"></path></g><g filter="url(#wobble)" fill="none" stroke="var(--ink)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 36H76"></path><path d="M66 26L78 36L66 46"></path><path d="M86 66H24"></path><path d="M34 56L22 66L34 76"></path></g></svg><div class="bcard-title"><h3 class="h3">Reciprocidade</h3><span class="chip cat cat-social">Social</span></div></div><div class="bpart"><span class="label">O que é</span><p>Quando a gente recebe algo, quer devolver.</p></div><div class="bpart apply"><span class="label">Como ajuda a aumentar</span><p>Entregar algo útil antes de pedir deixa a pessoa com vontade de retribuir.</p></div><div class="bpart"><span class="label">Exemplo</span><p>Antes de pedir o cadastro, a ferramenta já entrega o resultado da análise.</p></div><figure class="mock-wrap"><div class="mock" style="--mc:var(--cat-social)" aria-hidden="true"><p class="m-aviso">Sua análise está pronta: 3 melhorias encontradas.</p><div class="m-lista"><span class="m-item todo">Título longo demais</span><span class="m-item todo">Imagem sem descrição</span></div><span class="m-nota">↑ primeiro dá, depois pede</span><span class="m-btn">Criar conta para salvar</span></div><figcaption class="caption">Ilustração com dados fictícios</figcaption></figure><div class="fit"><span class="caption">Combina com:</span><span class="tag">Têm medo de errar</span></div></div></div><details class="more"><summary>Como testar e com que cuidado</summary><div class="more-body"><h4>Teste no seu produto</h4><p>Entregue algo útil antes de pedir, como mostrar um resultado antes do cadastro. Meça a taxa de cadastro.</p><h4>Cuidado</h4><p>Presente com intenção escondida quebra a confiança. Dê algo útil de verdade.</p><p class="caption">Fonte: Cialdini, 1984</p></div></details><div class="bcard-foot"><a class="btn" href="/vieses/reciprocidade/">Ler o verbete</a></div></article><article class="card bcard" style="--i:5"><div class="bcard-grid"><div class="bcard-main"><div class="bcard-head"><svg class="doodle" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><g transform="translate(4 4)" fill="none" stroke="var(--cat-percepcao)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><path d="M14 34V14H34"></path><path d="M66 14H86V34"></path><path d="M86 66V86H66"></path><path d="M34 86H14V66"></path><circle cx="50" cy="50" r="11"></circle></g><g filter="url(#wobble)" fill="none" stroke="var(--ink)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 34V14H34"></path><path d="M66 14H86V34"></path><path d="M86 66V86H66"></path><path d="M34 86H14V66"></path><circle cx="50" cy="50" r="11"></circle></g></svg><div class="bcard-title"><h3 class="h3">Efeito de enquadramento</h3><span class="chip cat cat-percepcao">Percepção</span></div></div><div class="bpart"><span class="label">O que é</span><p>O mesmo fato muda de peso conforme a moldura.</p></div><div class="bpart apply"><span class="label">Como ajuda a aumentar</span><p>Apresentar pelo ganho e em unidades pequenas faz a mesma oferta parecer melhor.</p></div><div class="bpart"><span class="label">Exemplo</span><p>O mesmo plano é apresentado por dia, com o benefício antes do preço.</p></div><figure class="mock-wrap"><div class="mock" style="--mc:var(--cat-percepcao)" aria-hidden="true"><p class="m-t">Proteção completa</p><p class="m-aviso">Menos de R$ 1 por dia</p><p class="m-p">R$ 29 por mês. Cancele quando quiser.</p><span class="m-nota">↑ mesma coisa, outra moldura</span><span class="m-btn">Proteger agora</span></div><figcaption class="caption">Ilustração com dados fictícios</figcaption></figure><div class="fit"><span class="caption">Combina com:</span><span class="tag">Têm medo de errar</span></div></div></div><details class="more"><summary>Como testar e com que cuidado</summary><div class="more-body"><h4>Teste no seu produto</h4><p>Escreva a mesma informação em duas molduras e meça a escolha.</p><h4>Cuidado</h4><p>Moldura que esconde informação vira engano. O fato precisa estar inteiro.</p><p class="caption">Fonte: Tversky &amp; Kahneman, 1981</p></div></details><div class="bcard-foot"><a class="btn" href="/vieses/enquadramento/">Ler o verbete</a></div></article><aside class="card team" aria-label="Antes de testar"><p class="label">Antes de testar</p><p class="h3">Vieses que enganam quem mede</p><ul class="team-list"><li><a href="/vieses/pequenos-numeros/">Lei dos pequenos números</a><span>Antes de rodar um teste, calcule a amostra necessária. Não pare no primeiro resultado bonito.</span></li><li><a href="/vieses/regressao/">Regressão à média</a><span>Compare a métrica com um grupo de controle, não com o mês anterior.</span></li><li><a href="/vieses/retrospectiva/">Viés de retrospectiva</a><span>Antes de cada teste, registre a hipótese e a previsão. Depois, compare com o que aconteceu.</span></li><li><a href="/vieses/planejamento/">Falácia do planejamento</a><span>Antes de estimar, busque a taxa-base: quanto levaram e quanto renderam entregas parecidas. Comece dela e ajuste. Depois faça um pré-mortem.</span></li></ul><p class="caption">Do livro Rápido e devagar, de Daniel Kahneman.</p></aside></div>
     </section>
   </div>
 </main>
 
 <!-- GUIA -->
-<main id="view-guia" class="wrap" hidden>
+<main id="view-guia" class="wrap" hidden="">
   <div class="view-head">
     <h1 class="display-l">Guia de <mark>vieses</mark></h1>
     <p class="body-l">Cada verbete começa por uma pergunta do dia a dia e termina com um teste que dá para rodar no seu produto.</p>
@@ -456,60 +457,60 @@ cite{font-style:italic}
     </div>
   <div class="books" id="books" tabindex="0" aria-label="Livros. Role para o lado para ver mais.">
     <section class="card book" aria-labelledby="book-title">
-      <div class="book-art cat-percepcao" id="book-art"></div>
+      <div class="book-art cat-percepcao" id="book-art"><svg class="doodle" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><g transform="translate(4 4)" fill="none" stroke="var(--surface)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><path d="M54 8L28 54H48L40 92L74 40H54L64 8Z"></path></g><g filter="url(#wobble)" fill="none" stroke="var(--on-highlight)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M54 8L28 54H48L40 92L74 40H54L64 8Z"></path></g></svg></div>
       <div class="book-body">
         <p class="caption">Daniel Kahneman</p>
         <h2 class="h3" id="book-title">Rápido e devagar</h2>
         <p>A mente tem um sistema rápido e automático e outro lento e preguiçoso. Quase todo viés nasce do encontro dos dois, inclusive os que enganam o seu time na hora de medir.</p>
-        <div class="bcard-foot"><a class="btn primary" href="#vies-dois-sistemas">Os dois sistemas</a><button type="button" class="btn" id="book-go">Ver os conceitos</button></div>
+        <div class="bcard-foot"><a class="btn primary" href="/vieses/dois-sistemas/">Os dois sistemas</a><button type="button" class="btn" id="book-go">Ver os conceitos</button></div>
       </div>
     </section>
     <section class="card book" aria-labelledby="book-title-2">
-      <div class="book-art cat-memoria" id="book-art-2"></div>
+      <div class="book-art cat-memoria" id="book-art-2"><svg class="doodle" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><g transform="translate(4 4)" fill="none" stroke="var(--surface)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><circle cx="50" cy="50" r="9"></circle><circle cx="50" cy="16" r="7"></circle><circle cx="80" cy="33" r="7"></circle><circle cx="80" cy="67" r="7"></circle><circle cx="50" cy="84" r="7"></circle><circle cx="20" cy="67" r="7"></circle><circle cx="20" cy="33" r="7"></circle></g><g filter="url(#wobble)" fill="none" stroke="var(--on-highlight)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="50" cy="50" r="9"></circle><circle cx="50" cy="16" r="7"></circle><circle cx="80" cy="33" r="7"></circle><circle cx="80" cy="67" r="7"></circle><circle cx="50" cy="84" r="7"></circle><circle cx="20" cy="67" r="7"></circle><circle cx="20" cy="33" r="7"></circle></g></svg></div>
       <div class="book-body">
         <p class="caption">John Whalen</p>
         <h2 class="h3" id="book-title-2">Design for How People Think</h2>
-        <p>A experiência acontece na cabeça de quem usa, não na tela. Whalen divide essa cabeça em seis processos e mostra como pesquisar cada um. Trouxemos o modelo, um roteiro de entrevista e os conceitos.</p>
-        <div class="bcard-foot"><a class="btn primary" href="#vies-seis-mentes">As seis mentes</a><button type="button" class="btn" id="book-go-2">Ver os conceitos</button></div>
+        <p>Para Whalen, a experiência acontece na cabeça de quem usa. Ele divide essa cabeça em seis processos e mostra como pesquisar cada um. Daqui vieram o modelo das seis mentes e um roteiro de entrevista.</p>
+        <div class="bcard-foot"><a class="btn primary" href="/vieses/seis-mentes/">As seis mentes</a><button type="button" class="btn" id="book-go-2">Ver os conceitos</button></div>
       </div>
     </section>
     <section class="card book" aria-labelledby="book-title-3">
-      <div class="book-art cat-decisao" id="book-art-3"></div>
+      <div class="book-art cat-decisao" id="book-art-3"><svg class="doodle" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><g transform="translate(4 4)" fill="none" stroke="var(--surface)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="28" width="62" height="42" rx="6"></rect><path d="M8 42H70"></path><path d="M78 36Q86 49 78 62"></path><path d="M87 29Q99 49 87 69"></path></g><g filter="url(#wobble)" fill="none" stroke="var(--on-highlight)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="28" width="62" height="42" rx="6"></rect><path d="M8 42H70"></path><path d="M78 36Q86 49 78 62"></path><path d="M87 29Q99 49 87 69"></path></g></svg></div>
       <div class="book-body">
         <p class="caption">Rian Dutra</p>
         <h2 class="h3" id="book-title-3">Enviesados</h2>
         <p>Vieses explicados com exemplos de produtos que a gente usa todo dia: do preço riscado à ofensiva do app de idiomas. Inclui custo afundado, status quo e o efeito cashless.</p>
-        <div class="bcard-foot"><a class="btn primary" href="#vies-custo-afundado">Custo afundado</a><button type="button" class="btn" id="book-go-3">Ver os conceitos</button></div>
+        <div class="bcard-foot"><a class="btn primary" href="/vieses/custo-afundado/">Custo afundado</a><button type="button" class="btn" id="book-go-3">Ver os conceitos</button></div>
       </div>
     </section>
     <section class="card book" aria-labelledby="book-title-4">
-      <div class="book-art cat-social" id="book-art-4"></div>
+      <div class="book-art cat-social" id="book-art-4"><svg class="doodle" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><g transform="translate(4 4)" fill="none" stroke="var(--surface)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><path d="M50 12Q74 12 76 38Q76 52 62 62V72H38V62Q24 52 24 38Q26 12 50 12Z"></path><path d="M40 80H60"></path><path d="M42 88H58"></path><path d="M8 30L16 34"></path><path d="M92 30L84 34"></path></g><g filter="url(#wobble)" fill="none" stroke="var(--on-highlight)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M50 12Q74 12 76 38Q76 52 62 62V72H38V62Q24 52 24 38Q26 12 50 12Z"></path><path d="M40 80H60"></path><path d="M42 88H58"></path><path d="M8 30L16 34"></path><path d="M92 30L84 34"></path></g></svg></div>
       <div class="book-body">
         <p class="caption">Robert Sapolsky</p>
         <h2 class="h3" id="book-title-4">Comporte-se</h2>
-        <p>A biologia por trás do que a gente faz: dopamina, estresse, grupos e status. Daqui vêm a força do talvez, a antecipação da recompensa e por que esperar sem saber estressa tanto.</p>
-        <div class="bcard-foot"><a class="btn primary" href="#vies-recompensa-incerta">A força do talvez</a><button type="button" class="btn" id="book-go-4">Ver os conceitos</button></div>
+        <p>A biologia por trás do que a gente faz: dopamina, estresse, grupos e status. Daqui vêm a força do talvez e a explicação de por que esperar sem saber estressa tanto.</p>
+        <div class="bcard-foot"><a class="btn primary" href="/vieses/recompensa-incerta/">A força do talvez</a><button type="button" class="btn" id="book-go-4">Ver os conceitos</button></div>
       </div>
     </section>
   </div>
     <div class="books-dots" id="books-dots" aria-hidden="true"></div>
   </section>
   <div class="filters">
-    <div class="filter-chips" id="cat-filters" role="group" aria-label="Filtrar por categoria"></div>
+    <div class="filter-chips" id="cat-filters" role="group" aria-label="Filtrar por categoria"><button type="button" class="chip fchip" data-cat="todos" aria-pressed="true">Todos</button><button type="button" class="chip fchip" data-cat="memoria" aria-pressed="false">Memória</button><button type="button" class="chip fchip" data-cat="social" aria-pressed="false">Social</button><button type="button" class="chip fchip" data-cat="percepcao" aria-pressed="false">Percepção</button><button type="button" class="chip fchip" data-cat="decisao" aria-pressed="false">Decisão</button><button type="button" class="chip fchip" data-cat="livro" aria-pressed="false">Rápido e devagar</button><button type="button" class="chip fchip" data-cat="whalen" aria-pressed="false">Design for How People Think</button><button type="button" class="chip fchip" data-cat="enviesados" aria-pressed="false">Enviesados</button><button type="button" class="chip fchip" data-cat="sapolsky" aria-pressed="false">Comporte-se</button><button type="button" class="chip fchip" data-cat="time" aria-pressed="false">Para o seu time</button></div>
     <label class="search" for="busca" style="display:block">
       <span class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Buscar viés</span>
       <input class="input" id="busca" type="search" placeholder="Buscar viés" autocomplete="off">
     </label>
   </div>
-  <div class="guia-status" aria-live="polite"><span id="guia-face" hidden></span><p class="caption" id="guia-count"></p></div>
+  <div class="guia-status" aria-live="polite"><span id="guia-face" hidden=""></span><p class="caption" id="guia-count"></p></div>
   <div class="grid" id="guia-grid"></div>
 </main>
 
 <!-- VERBETE -->
-<main id="view-verbete" class="wrap" hidden></main>
+<main id="view-verbete" class="wrap" hidden=""></main>
 
 <!-- INSIGHTS -->
-<main id="view-insights" class="wrap" hidden>
+<main id="view-insights" class="wrap" hidden="">
   <div class="view-head">
     <h1 class="display-l"><mark>Insights</mark> por viés</h1>
     <p class="body-l">Histórias curtas de estudos e telas, organizadas pelo viés que explicam. Cada uma termina com um teste para o seu produto.</p>
@@ -524,35 +525,55 @@ cite{font-style:italic}
     </div>
   </section>
   <div class="pfilters" id="post-filters">
-    <div class="pf-row" hidden>
+    <div class="pf-row" hidden="">
       <span class="pf-label" id="pf-livro-label">Livro</span>
       <div class="filter-chips" id="post-fontes" role="group" aria-labelledby="pf-livro-label"></div>
     </div>
     <div class="pf-row">
       <label class="pf-label" for="post-vies">Viés</label>
       <div class="select-wrap"><select id="post-vies" class="input select"></select></div>
-      <button type="button" class="btn ghost" id="pf-clear" hidden>Limpar filtros</button>
+      <button type="button" class="btn ghost" id="pf-clear" hidden="">Limpar filtros</button>
     </div>
     <p class="caption" id="pf-count" aria-live="polite"></p>
   </div>
-  <p class="caption draft-note">Rascunhos de exemplo para estruturar a seção. Troque pelos seus posts quando quiser.</p>
   <div class="posts" id="posts"></div>
 </main>
 
 <!-- 404 -->
-<main id="view-404" class="wrap" hidden>
+<main id="view-404" class="wrap" hidden="">
   <div class="notfound">
     <button type="button" class="face-btn" id="nf-face" aria-label="Fazer o B piscar"></button>
     <h1 class="display-l">Essa página saiu do caderno</h1>
     <p class="body-l">O link pode estar errado ou o verbete mudou de nome. Volte para o guia ou explore um comportamento.</p>
-    <div class="bcard-foot"><a class="btn primary" href="#guia">Ver o guia</a><a class="btn" href="#explorar">Explorar um comportamento</a></div>
+    <div class="bcard-foot"><a class="btn primary" href="/guia/">Ver o guia</a><a class="btn" href="/">Explorar um comportamento</a></div>
   </div>
 </main>
 
 <!-- POST -->
-<main id="view-post" class="wrap" hidden></main>
+<main id="view-post" class="wrap" hidden=""></main>
 
+<script>window.BW_SITE=1</script>
 <script>
+/* ---------- Links: hash no artifact, caminhos reais no site ---------- */
+const SITE = !!window.BW_SITE;
+function L(h){
+  if(!SITE) return '#'+h;
+  if(h==='explorar') return '/';
+  if(h==='guia') return '/guia/';
+  if(h==='insights') return '/insights/';
+  if(h.startsWith('vies-')) return '/vieses/'+h.slice(5)+'/';
+  if(h.startsWith('post-')) return '/insights/'+h.slice(5)+'/';
+  return '/';
+}
+function routeFromPath(){
+  const parts = location.pathname.replace(/^\/+|\/+$/g,'').split('/').filter(Boolean);
+  if(!parts.length) return 'explorar';
+  if(parts[0]==='guia' && parts.length===1) return 'guia';
+  if(parts[0]==='vieses' && parts[1]) return 'vies-'+parts[1];
+  if(parts[0]==='insights') return parts[1] ? 'post-'+parts[1] : 'insights';
+  return '404';
+}
+
 const CATS = {
   memoria:{nome:"Memória"}, social:{nome:"Social"}, percepcao:{nome:"Percepção"}, decisao:{nome:"Decisão"}
 };
@@ -605,8 +626,8 @@ const VIESES = [
   {id:"ancoragem", nome:"Ancoragem", cat:"decisao", doodle:"ancora",
    pergunta:"Por que R$ 99 parece barato depois de ver R$ 299?",
    resumo:"O primeiro número que você vê vira a régua de todos os outros.",
-   exemplo:"A etiqueta “de R$ 299 por R$ 199” faz R$ 199 parecer desconto. Mesmo que ninguém nunca tenha pago 299.",
-   tela:"Ordem dos planos na página de preços, valor sugerido em doações, o primeiro preço de uma lista.",
+   exemplo:"A etiqueta “de R$ 299 por R$ 199” faz R$ 199 parecer desconto, mesmo que ninguém nunca tenha pago R$ 299.",
+   tela:"Ordem dos planos na página de preços, valor sugerido em doações e o primeiro preço de uma lista.",
    teste:"Teste a ordem dos planos: começando pelo mais completo e pelo mais simples. Meça conversão e plano médio escolhido.",
    cuidado:"Âncora inventada, como um preço “de” que nunca existiu, é enganação. Use referências reais e acompanhe reembolsos.",
    fonte:"Tversky & Kahneman, 1974", dirs:["aumentar","mudar"], barreiras:["motivacao","incerteza"],
@@ -614,8 +635,8 @@ const VIESES = [
   {id:"chamariz", nome:"Efeito chamariz", cat:"decisao", doodle:"chamariz",
    pergunta:"Por que o plano do meio parece uma pechincha?",
    resumo:"Uma opção que ninguém quer faz a outra parecer ótima.",
-   exemplo:"Pipoca pequena R$ 12, média R$ 20, grande R$ 22. A média existe para vender a grande.",
-   tela:"Tabelas de planos com três colunas, pacotes por quantidade, combos.",
+   exemplo:"Uma revista vendia a assinatura só impressa pelo mesmo preço da impressa com digital. Quase ninguém ficava com a impressa, e o combo vendia muito mais do que quando era oferecido só ao lado da digital.",
+   tela:"Tabelas de planos com três colunas, pacotes por quantidade e combos.",
    teste:"Tire ou acrescente a terceira opção da tabela e compare como as escolhas se distribuem entre os planos.",
    cuidado:"A opção chamariz precisa ser real e entregável. Meça arrependimento e downgrade no mês seguinte.",
    fonte:"Huber, Payne & Puto, 1982", dirs:["mudar","aumentar"], barreiras:["opcoes","incerteza"],
@@ -624,7 +645,7 @@ const VIESES = [
    pergunta:"Por que perder R$ 50 dói mais do que ganhar R$ 50 alegra?",
    resumo:"Perder pesa mais do que ganhar a mesma coisa.",
    exemplo:"Você mantém a assinatura que nem usa porque cancelar parece perder algo.",
-   tela:"Avisos de teste grátis acabando, “seu histórico será apagado”, carrinho com itens salvos.",
+   tela:"Avisos de teste grátis acabando, “seu histórico será apagado” e carrinho com itens salvos.",
    teste:"Escreva a mesma mensagem como ganho e como perda. Meça clique e reclamação nas duas.",
    cuidado:"Nunca use perda para prender quem quer sair. Cancelamento claro e curto é regra.",
    fonte:"Kahneman & Tversky, 1979", dirs:["aumentar","reduzir"], barreiras:["motivacao","esquecimento"],
@@ -634,7 +655,7 @@ const VIESES = [
    pergunta:"Por que quase ninguém muda a configuração de fábrica?",
    resumo:"A gente fica com o que já vem marcado.",
    exemplo:"Países onde você precisa pedir para sair da lista de doadores de órgãos têm muito mais doadores do que países onde você precisa entrar.",
-   tela:"Checkboxes pré-marcados, plano selecionado por padrão, configurações iniciais.",
+   tela:"Checkboxes pré-marcados, plano selecionado por padrão e configurações iniciais.",
    teste:"Mude o padrão de uma opção e meça adesão e quantas pessoas desfazem depois.",
    cuidado:"O padrão tem que ser o melhor para quem usa. Nunca pré-marque cobrança ou compartilhamento de dados.",
    fonte:"Johnson & Goldstein, 2003", dirs:["aumentar","reduzir","mudar"], barreiras:["esforco","opcoes","habito"],
@@ -644,7 +665,7 @@ const VIESES = [
    pergunta:"Por que uma vitrine cheia faz você sair sem comprar?",
    resumo:"Opções demais travam a decisão.",
    exemplo:"Numa banca com 24 geleias, mais gente prova. Numa banca com 6, mais gente compra.",
-   tela:"Catálogos sem filtro, onboarding cheio de escolhas, menus enormes.",
+   tela:"Catálogos sem filtro, onboarding cheio de escolhas e menus enormes.",
    teste:"Mostre menos opções, ou destaque uma recomendada, e meça tempo até decidir e conversão.",
    cuidado:"Cortar opções não pode esconder a que a pessoa precisa. Mantenha um “ver todas”.",
    fonte:"Iyengar & Lepper, 2000", dirs:["aumentar","mudar"], barreiras:["opcoes","incerteza"],
@@ -653,7 +674,7 @@ const VIESES = [
    pergunta:"Por que a academia sempre fica pra segunda-feira?",
    resumo:"O agora vale muito mais do que o depois.",
    exemplo:"Você prefere R$ 100 hoje a R$ 110 daqui a uma semana. Mas, entre a semana 52 e a 53, espera tranquilo.",
-   tela:"Recompensas que só aparecem no fim, benefícios de longo prazo, metas de poupança.",
+   tela:"Recompensas que só aparecem no fim, benefícios de longo prazo e metas de poupança.",
    teste:"Dê um benefício pequeno logo no primeiro uso e meça quantas pessoas voltam na semana seguinte.",
    cuidado:"Recompensa imediata não pode virar caça-níquel. Evite ciclos de recompensa sem fim.",
    fonte:"Laibson, 1997", dirs:["aumentar","reduzir"], barreiras:["motivacao","esquecimento"],
@@ -663,7 +684,7 @@ const VIESES = [
    pergunta:"Por que o app que abre em um toque ganha do que pede senha?",
    resumo:"Cada passo a mais faz alguém desistir.",
    exemplo:"Você desiste da compra porque o site pediu cadastro antes do carrinho.",
-   tela:"Número de passos e campos, logins, confirmações extras.",
+   tela:"Cada campo, login e confirmação a mais que o fluxo pede.",
    teste:"Para aumentar, tire um passo. Para reduzir, acrescente uma confirmação. Meça nos dois casos.",
    cuidado:"Atrito para dificultar cancelamento é dark pattern. Use atrito só para proteger quem usa.",
    fonte:"Zipf, 1949", dirs:["aumentar","reduzir","mudar"], barreiras:["esforco","habito"],
@@ -673,9 +694,9 @@ const VIESES = [
    pergunta:"Por que a fila maior parece o restaurante melhor?",
    resumo:"Na dúvida, a gente faz o que os outros fazem.",
    exemplo:"Em hotéis, o cartão “a maioria dos hóspedes reutiliza a toalha” funcionou melhor que o apelo ambiental.",
-   tela:"Contadores de uso, depoimentos, selo “mais escolhido”, avaliações.",
+   tela:"Contadores de uso, depoimentos, selo “mais escolhido” e avaliações.",
    teste:"Troque a mensagem atual por uma que diz o que pessoas parecidas fazem, com número real. Meça a ação.",
-   cuidado:"Só números reais. E atenção: dizer que “muita gente não faz X” ensina que não fazer é normal.",
+   cuidado:"Use só números reais. Cuidado também com frases como “muita gente não faz X”: elas ensinam que não fazer é normal.",
    fonte:"Goldstein, Cialdini & Griskevicius, 2008", dirs:["aumentar","mudar","reduzir"], barreiras:["incerteza","motivacao"],
    aplicar:{_:"Mostre quantas pessoas parecidas com quem usa já escolheram {acao}, com o número real.",
             reduzir:"Mostre que a maioria das pessoas parecidas não costuma {acao}. Nunca diga que muita gente faz."}},
@@ -683,16 +704,16 @@ const VIESES = [
    pergunta:"Por que um app bonito parece mais confiável?",
    resumo:"Uma qualidade boa contamina o julgamento das outras.",
    exemplo:"Pessoas atraentes costumam ser julgadas mais competentes, sem nenhuma prova disso.",
-   tela:"Primeira impressão da landing page, acabamento de telas de pagamento, marcas de parceiros.",
+   tela:"Primeira impressão da landing page, acabamento de telas de pagamento e marcas de parceiros.",
    teste:"Compare confiança percebida (uma pergunta rápida) e conversão entre a tela atual e uma mais caprichada.",
-   cuidado:"Acabamento não substitui substância. Se o produto não entrega, o halo vira decepção.",
+   cuidado:"Se o produto não entrega, o acabamento caprichado só aumenta a decepção.",
    fonte:"Thorndike, 1920", dirs:["aumentar"], barreiras:["incerteza"],
    aplicar:{_:"Capriche na tela onde a pessoa começa a {acao}. É ela que define a impressão do resto."}},
   {id:"reciprocidade", nome:"Reciprocidade", cat:"social", doodle:"troca",
    pergunta:"Por que a amostra grátis faz você comprar?",
    resumo:"Quando a gente recebe algo, quer devolver.",
    exemplo:"Depois de provar o queijo de graça no mercado, fica difícil sair sem levar nada.",
-   tela:"Conteúdo gratuito antes do cadastro, teste sem cartão, ajuda antes de qualquer pedido.",
+   tela:"Conteúdo gratuito antes do cadastro, teste sem cartão e ajuda antes de qualquer pedido.",
    teste:"Entregue algo útil antes de pedir, como mostrar um resultado antes do cadastro. Meça a taxa de cadastro.",
    cuidado:"Presente com intenção escondida quebra a confiança. Dê algo útil de verdade.",
    fonte:"Cialdini, 1984", dirs:["aumentar"], barreiras:["motivacao","incerteza"],
@@ -701,7 +722,7 @@ const VIESES = [
    pergunta:"Por que quem diz “sim” uma vez tende a dizer de novo?",
    resumo:"A gente quer agir de acordo com o que já disse ou fez.",
    exemplo:"Quem topa colar um adesivo pequeno na janela aceita depois uma placa grande no jardim.",
-   tela:"Onboarding em passos pequenos, metas que a pessoa define, preferências declaradas no perfil.",
+   tela:"Onboarding em passos pequenos, metas que a pessoa define e preferências declaradas no perfil.",
    teste:"Peça um primeiro passo pequeno e opcional e compare a conclusão do fluxo completo.",
    cuidado:"Escalar pedidos até prender a pessoa é manipulação. Cada passo precisa valer por si.",
    fonte:"Freedman & Fraser, 1966", dirs:["aumentar","mudar"], barreiras:["esforco","habito"],
@@ -710,7 +731,7 @@ const VIESES = [
    pergunta:"Por que a série que parou no meio não sai da sua cabeça?",
    resumo:"Tarefas inacabadas ficam mais na memória do que as concluídas.",
    exemplo:"O garçom lembra cada pedido em aberto e esquece assim que a conta fecha.",
-   tela:"Barras de perfil incompleto, checklists de onboarding, rascunhos salvos.",
+   tela:"Barras de perfil incompleto, checklists de onboarding e rascunhos salvos.",
    teste:"Mostre o que falta concluir quando a pessoa volta ao app e meça a taxa de conclusão.",
    cuidado:"Não invente pendências para puxar a pessoa de volta. Notificação falsa queima confiança.",
    fonte:"Zeigarnik, 1927", dirs:["aumentar"], barreiras:["esquecimento","esforco"],
@@ -719,7 +740,7 @@ const VIESES = [
    pergunta:"Por que avião parece mais perigoso que carro?",
    resumo:"O que vem fácil à memória parece mais provável.",
    exemplo:"Depois de ver notícias de assalto, você acha que o bairro ficou mais perigoso.",
-   tela:"Histórias de clientes, exemplos vívidos, alertas de segurança.",
+   tela:"Histórias de clientes, exemplos vívidos e alertas de segurança.",
    teste:"Troque um dado abstrato por um caso concreto e meça clique e compreensão.",
    cuidado:"Exemplo vívido distorce risco. Não use caso raro para assustar.",
    fonte:"Tversky & Kahneman, 1973", dirs:["aumentar","reduzir","mudar"], barreiras:["motivacao","esquecimento"],
@@ -729,7 +750,7 @@ const VIESES = [
    pergunta:"Por que um final ruim estraga uma viagem boa?",
    resumo:"A gente lembra do momento mais intenso e do final, não da média.",
    exemplo:"Pessoas preferiram repetir uma experiência desconfortável mais longa quando o final era menos ruim.",
-   tela:"Tela de confirmação, fim do onboarding, último passo do checkout.",
+   tela:"Tela de confirmação, fim do onboarding e último passo do checkout.",
    teste:"Melhore só a última tela de um fluxo e meça satisfação e retorno.",
    cuidado:"Um final bonito não apaga um processo ruim. Corrija o meio também.",
    fonte:"Kahneman et al., 1993", dirs:["aumentar","mudar"], barreiras:["motivacao","habito"],
@@ -738,7 +759,7 @@ const VIESES = [
    pergunta:"Por que “90% de chance de sucesso” soa melhor que “10% de chance de falha”?",
    resumo:"O mesmo fato muda de peso conforme a moldura.",
    exemplo:"Carne “75% magra” parece mais saudável que carne “com 25% de gordura”.",
-   tela:"Texto de preço (por dia ou por mês), mensagens de risco, rótulos de botão.",
+   tela:"Texto de preço (por dia ou por mês), mensagens de risco e rótulos de botão.",
    teste:"Escreva a mesma informação em duas molduras e meça a escolha.",
    cuidado:"Moldura que esconde informação vira engano. O fato precisa estar inteiro.",
    fonte:"Tversky & Kahneman, 1981", dirs:["aumentar","reduzir","mudar"], barreiras:["motivacao","incerteza"],
@@ -750,14 +771,14 @@ const VIESES = [
    exemplo:"Quem já acha o produto caro só repara nos preços altos.",
    tela:"Comparativos, avaliações, resultados personalizados e a sua própria pesquisa com usuários.",
    teste:"Antes do próximo teste, liste o que provaria que a sua hipótese está errada.",
-   cuidado:"Reforçar crença errada para converter é desonesto. Use o viés para corrigir, não para confirmar.",
+   cuidado:"Reforçar crença errada para converter é desonesto. Use o viés para corrigir a crença errada.",
    fonte:"Wason, 1960", dirs:["mudar"], barreiras:["habito","incerteza"],
    aplicar:{_:"Ligue {acao} a algo em que a pessoa já acredita sobre si, em vez de pedir que ela mude de ideia."}},
   {id:"progresso-dotado", nome:"Progresso dotado", cat:"percepcao", doodle:"barra",
    pergunta:"Por que um cartão fidelidade que já vem carimbado é completado mais?",
    resumo:"Começar com algum avanço faz a gente querer terminar.",
    exemplo:"Cartões de 10 selos com 2 já carimbados foram completados mais que cartões de 8 selos vazios.",
-   tela:"Barras de progresso, checklists de configuração, níveis de perfil.",
+   tela:"Barras de progresso e checklists de configuração.",
    teste:"Comece a barra pelo que a pessoa já fez, como o cadastro, e meça quantas concluem.",
    cuidado:"O avanço dado precisa ser real. Barra que anda sozinha engana.",
    fonte:"Nunes & Drèze, 2006", dirs:["aumentar"], barreiras:["esforco","motivacao"],
@@ -766,7 +787,7 @@ const VIESES = [
    pergunta:"Por que o que é fácil de ler parece mais verdadeiro?",
    resumo:"O que é fácil de processar parece melhor e mais certo.",
    exemplo:"Ações de empresas com nomes fáceis de pronunciar foram melhor logo depois de entrar na bolsa.",
-   tela:"Microcopy, formulários, nomes de planos, instruções.",
+   tela:"Microcopy, formulários, nomes de planos e instruções.",
    teste:"Simplifique o texto de uma tela-chave e meça tempo de tarefa e erros.",
    cuidado:"Fácil não pode esconder o que importa. Termos e custos ficam legíveis também.",
    fonte:"Alter & Oppenheimer, 2006", dirs:["aumentar","reduzir","mudar"], barreiras:["esforco","incerteza"],
@@ -815,7 +836,7 @@ VIESES.push(
    pergunta:"Por que a gente decide com tanta certeza a partir de tão pouca informação?",
    resumo:"A mente monta uma história com o que está na frente e não pergunta o que falta.",
    exemplo:"Uma boa apresentação de um único consultor basta para uma diretoria fechar um negócio grande, sem perguntar o que o relatório deixou de fora.",
-   tela:"cards de produto, resumos de plano e na primeira dobra da página.",
+   tela:"cards de produto, resumos de plano e primeira dobra da página.",
    teste:"Liste o que a pessoa precisa saber para decidir e confira se está visível na tela da decisão. Teste trazer o item que falta.",
    cuidado:"Mostrar só o lado bom funciona até a fatura chegar. O que pesa na decisão não pode ficar escondido.",
    fonte:"Kahneman, 2011", dirs:["aumentar","reduzir","mudar"], barreiras:["incerteza","motivacao"],
@@ -834,18 +855,18 @@ VIESES.push(
    pergunta:"Por que quem gosta de algo acha que o risco é pequeno?",
    resumo:"Se a gente gosta, enxerga mais benefício e menos risco. Se não gosta, o contrário.",
    exemplo:"Quem simpatiza com uma tecnologia tende a achar que ela traz muitos benefícios e poucos riscos, mesmo sem nenhum dado novo.",
-   tela:"primeiras telas, no tom de voz, nas imagens do produto e nas mensagens de erro.",
+   tela:"primeiras telas, tom de voz, imagens do produto e mensagens de erro.",
    teste:"Mude só o tom e o visual de uma tela e meça percepção de risco com uma pergunta curta, antes e depois.",
    cuidado:"Simpatia não pode encobrir risco real. Avisos importantes ficam claros mesmo numa tela agradável.",
    fonte:"Slovic et al., 2002; Kahneman, 2011", dirs:["aumentar","mudar"], barreiras:["incerteza","motivacao"],
    aplicar:{_:"Faça a pessoa gostar do primeiro contato com {acao}: tom simpático e resultado visível. Ela julga o resto pelo que sentiu ali."}},
   {id:"mera-exposicao", nome:"Efeito de mera exposição", cat:"memoria", doodle:"repeticao", livro:"cap. 5",
    pergunta:"Por que a música do anúncio acaba ficando boa?",
-   resumo:"Quanto mais a gente vê algo, mais gosta. Mesmo sem perceber que viu.",
+   resumo:"Quanto mais a gente vê algo, mais gosta, mesmo sem perceber que viu.",
    exemplo:"Palavras inventadas publicadas mais vezes num jornal universitário foram julgadas mais positivas pelos leitores do que as que apareceram poucas vezes.",
    tela:"ícones, nomes de funcionalidades, e-mails e elementos que se repetem.",
    teste:"Use o mesmo nome e o mesmo ícone de uma funcionalidade em todos os pontos de contato. Meça reconhecimento e uso.",
-   cuidado:"Repetir não é insistir. Exposição demais vira irritação e descadastro.",
+   cuidado:"Exposição demais vira irritação e descadastro. Mantenha o nome e o visual iguais e controle quantas vezes a mensagem chega.",
    fonte:"Zajonc, 1968; Kahneman, 2011", dirs:["aumentar","mudar"], barreiras:["habito","incerteza"],
    aplicar:{_:"Mostre {acao} com o mesmo nome e o mesmo visual em vários momentos antes de pedir que a pessoa faça."}},
   {id:"dotacao", nome:"Efeito dotação", cat:"decisao", doodle:"caneca", livro:"cap. 27",
@@ -862,7 +883,7 @@ VIESES.push(
    pergunta:"Por que ir de 95% para 100% vale mais que ir de 60% para 65%?",
    resumo:"A gente paga caro para tirar o último pedacinho de risco.",
    exemplo:"Muita gente aceita receber menos para ter garantia, em vez de arriscar um valor maior com 95% de chance.",
-   tela:"garantias, reembolso, seguros e no “cancele quando quiser”.",
+   tela:"garantias, políticas de reembolso, seguros e promessas de “cancele quando quiser”.",
    teste:"Teste uma garantia clara e sem letra miúda no momento da decisão. Meça conversão e pedidos de reembolso.",
    cuidado:"Garantia precisa ser cumprida sem atrito. Promessa de certeza quebrada destrói a confiança.",
    fonte:"Kahneman & Tversky, 1979; Kahneman, 2011", dirs:["aumentar","mudar"], barreiras:["incerteza"],
@@ -889,7 +910,7 @@ VIESES.push(
             reduzir:"Some o custo de {acao} num pote só, por mês, para que ele apareça inteiro."}},
   {id:"avaliacao-conjunta", nome:"Avaliação conjunta e isolada", cat:"decisao", doodle:"balanca", livro:"cap. 33",
    pergunta:"Por que um dicionário com o dobro de verbetes perde quando está sozinho?",
-   resumo:"Um número sem comparação não diz nada. Ao lado de outro, pode decidir tudo.",
+   resumo:"Sozinho, um número diz pouco. Ao lado de outro, ele passa a pesar na decisão.",
    exemplo:"Vistos sozinhos, um dicionário como novo com 10 mil verbetes vale mais que um de capa rasgada com 20 mil. Lado a lado, a preferência vira.",
    tela:"tabelas comparativas, páginas de um plano só e especificações técnicas.",
    teste:"Mostre o mesmo produto sozinho e ao lado de uma alternativa. Veja qual atributo passa a pesar.",
@@ -916,7 +937,7 @@ VIESES.push(
    aplicar:{_:"Ao testar {acao}, defina antes o tamanho da amostra e a duração."}},
   {id:"regressao", nome:"Regressão à média", cat:"percepcao", doodle:"media", livro:"cap. 17", publico:"time",
    pergunta:"Por que a bronca parece funcionar melhor que o elogio?",
-   resumo:"Depois de um resultado extremo, o próximo tende a ser mais normal. Por acaso.",
+   resumo:"Depois de um resultado extremo, o próximo tende a ser mais normal, só por acaso.",
    exemplo:"Instrutores de voo achavam que elogiar piorava o cadete e dar bronca melhorava. Era só o voo seguinte voltando para a média.",
    tela:"painéis de métricas, análises de campanha e ações tomadas depois de um mês ruim.",
    teste:"Compare a métrica com um grupo de controle, não com o mês anterior.",
@@ -929,16 +950,16 @@ VIESES.push(
    exemplo:"Uma equipe estimou dois anos para escrever um livro didático. Projetos parecidos levavam de 7 a 10 anos. O livro saiu oito anos depois.",
    tela:"roadmaps, estimativas de sprint e previsões de impacto.",
    teste:"Antes de estimar, busque a taxa-base: quanto levaram e quanto renderam entregas parecidas. Comece dela e ajuste. Depois faça um pré-mortem.",
-   cuidado:"Olhar de fora não é pessimismo. É começar pelo que já aconteceu.",
+   cuidado:"Comece pelo que aconteceu com projetos parecidos e só depois ajuste para o seu caso.",
    fonte:"Kahneman & Tversky, 1979; Kahneman, 2011", dirs:["aumentar","reduzir","mudar"], barreiras:[],
    aplicar:{_:"Antes de prometer o impacto de mexer em {acao}, olhe quanto mudanças parecidas renderam."}},
   {id:"retrospectiva", nome:"Viés de retrospectiva", cat:"memoria", doodle:"retrovisor", livro:"cap. 19", publico:"time",
    pergunta:"Por que, depois de pronto, tudo parece óbvio?",
    resumo:"Sabendo o resultado, achamos que dava para prever e julgamos a decisão pelo resultado.",
-   exemplo:"Quando uma aposta dá certo, a decisão parece brilhante. Quando dá errado, parece tola. Mesmo sendo a mesma decisão, com a mesma informação.",
+   exemplo:"Quando uma aposta dá certo, a decisão parece brilhante; quando dá errado, parece tola, mesmo tendo sido tomada com a mesma informação.",
    tela:"post-mortems, retrospectivas e leituras de experimento.",
    teste:"Antes de cada teste, registre a hipótese e a previsão. Depois, compare com o que aconteceu.",
-   cuidado:"Julgue a decisão pela informação que havia na hora, não pelo resultado.",
+   cuidado:"Na revisão, anote o que se sabia quando a decisão foi tomada e julgue a partir disso.",
    fonte:"Fischhoff, 1975; Kahneman, 2011", dirs:["aumentar","reduzir","mudar"], barreiras:[],
    aplicar:{_:"Registre agora o que você espera que aconteça com {acao}. Sem isso, qualquer resultado parece óbvio depois."}}
 );
@@ -963,9 +984,9 @@ VIESES.push(
    pergunta:"Se a experiência não acontece na tela, onde ela acontece?",
    resumo:"Uma experiência é feita de seis processos: atenção, orientação, memória, linguagem, decisão e emoção.",
    exemplo:"Comprando uma cadeira online, a pessoa procura fotos e palavras (atenção), tenta entender onde está no site (orientação), espera busca e carrinho (memória), tropeça em “poltrona lounge” (linguagem), pensa em frete e preço (decisão) e imagina o que os amigos vão achar (emoção).",
-   tela:"entrevistas contextuais, testes de usabilidade e na hora de organizar o que você ouviu de quem usa.",
+   tela:"entrevistas contextuais, testes de usabilidade e na síntese do que você ouviu de quem usa.",
    teste:"Na próxima pesquisa, separe cada observação em uma das seis mentes. A mente com mais problemas é onde mexer primeiro.",
-   cuidado:"O modelo simplifica o cérebro de propósito. Use para organizar a pesquisa, não como diagnóstico de ninguém.",
+   cuidado:"O modelo simplifica o cérebro de propósito. Use para organizar a pesquisa e nunca como diagnóstico de alguém.",
    fonte:"Whalen, 2019", dirs:["aumentar","reduzir","mudar"], barreiras:[],
    aplicar:{_:"Antes de mexer em {acao}, observe pessoas fazendo isso e anote o que acontece em cada uma das seis mentes."}},
   {id:"destaque-visual", nome:"Destaque visual", cat:"percepcao", doodle:"destaque", whalen:"caps. 2 e 9",
@@ -974,7 +995,7 @@ VIESES.push(
    exemplo:"Um item com forma, cor, tamanho ou contraste diferente dos vizinhos é achado na hora, não importa quantos outros existam na tela.",
    tela:"botões principais, alertas, rótulos de preço e qualquer tela com muitos elementos parecidos.",
    teste:"Borre a tela e tire a cor, como quem aperta os olhos. O que ainda chama atenção é para onde o olhar vai primeiro. Confira se é o que importa.",
-   cuidado:"Se tudo se destaca, nada se destaca. E destacar a opção cara para esconder a barata é manipulação.",
+   cuidado:"Com três botões coloridos, nenhum chama o olhar. E destacar a opção cara para esconder a barata é manipulação.",
    fonte:"Whalen, 2019", dirs:["aumentar","mudar"], barreiras:["esforco","opcoes"],
    aplicar:{_:"Faça o caminho para {acao} ser o único elemento diferente na tela: uma forma, cor ou contraste que nada mais usa."}},
   {id:"cegueira-anuncio", nome:"Cegueira para anúncios", cat:"percepcao", doodle:"cegueira", whalen:"cap. 2",
@@ -997,7 +1018,7 @@ VIESES.push(
    aplicar:{_:"Mostre em que passo a pessoa está no caminho até {acao} e deixe um jeito de voltar que funcione sempre igual."}},
   {id:"modelos-mentais", nome:"Modelos mentais", cat:"memoria", doodle:"esquema", whalen:"caps. 4 e 12",
    pergunta:"Você sabe desenhar a letra g minúscula sem olhar?",
-   resumo:"A memória guarda o resumo, não os detalhes. E usa esse resumo para prever como as coisas funcionam.",
+   resumo:"A memória guarda o resumo das coisas e usa esse resumo para prever como elas funcionam.",
    exemplo:"A primeira vez que alguém desce de um carro de aplicativo sem pagar ao motorista parece estranho. O modelo mental de táxi ainda manda na expectativa.",
    tela:"fluxos de compra, cadastros, ícones, nomes de etapas e qualquer coisa que imite algo do mundo real.",
    teste:"Pergunte antes do teste: com o que isso se parece? O que você espera que aconteça? As respostas mostram o modelo que a tela precisa respeitar ou corrigir.",
@@ -1007,11 +1028,11 @@ VIESES.push(
             mudar:"Mostre que {acao} funciona como algo que a pessoa já conhece, e avise com clareza o único ponto que muda."}},
   {id:"linguagem", nome:"Linguagem de quem usa", cat:"percepcao", doodle:"baloes", whalen:"caps. 5 e 10",
    pergunta:"Você sabe o que é um PLUP?",
-   resumo:"As palavras da equipe não são as palavras de quem usa. Errar o vocabulário custa confiança.",
+   resumo:"A equipe e quem usa chamam as coisas por nomes diferentes, e cada palavra estranha custa um pouco de confiança.",
    exemplo:"Um corretor de seguros fala em PLUP, uma apólice de responsabilidade guarda-chuva. Para quem nunca ouviu, parece seguro contra chuva.",
    tela:"menus, nomes de planos, mensagens de erro, formulários e campos com siglas.",
    teste:"Grave e transcreva entrevistas. Conte as palavras que as pessoas usam para a tarefa e compare com as da tela.",
-   cuidado:"Simplificar não é infantilizar. Ajuste o nível ao de quem usa, para cima ou para baixo.",
+   cuidado:"Ajuste o vocabulário ao de quem usa, para cima ou para baixo, sem infantilizar.",
    fonte:"Whalen, 2019", dirs:["aumentar","mudar"], barreiras:["incerteza","motivacao"],
    aplicar:{_:"Descreva {acao} com as palavras que as pessoas usam ao falar disso, não com o nome interno da funcionalidade."}},
   {id:"subobjetivos", nome:"Mapa de subobjetivos", cat:"decisao", doodle:"trilha", whalen:"caps. 6 e 13",
@@ -1025,7 +1046,7 @@ VIESES.push(
    aplicar:{_:"Liste as perguntas que a pessoa precisa responder antes de {acao} e responda cada uma na ordem em que ela aparece."}},
   {id:"satisficing", nome:"Bom o suficiente", cat:"decisao", doodle:"medidor", whalen:"cap. 7",
    pergunta:"Por que a gente aceita a primeira opção razoável quando está cansado?",
-   resumo:"Com a cabeça cheia, a gente não busca a melhor escolha. Fica com a primeira que parece boa o bastante.",
+   resumo:"Com a cabeça cheia, a gente fica com a primeira opção que parece boa o bastante, em vez de buscar a melhor.",
    exemplo:"Fazer 17 menos 9 é fácil. Fazer a mesma conta segurando oito letras na memória leva aos mesmos erros de quem tem pavor de matemática.",
    tela:"checkouts com muitas opções, contratações com pressa, telas usadas no celular e com distração em volta.",
    teste:"Teste o fluxo com a pessoa fazendo outra coisa ao mesmo tempo, como no mundo real. Veja onde ela passa a escolher no automático.",
@@ -1035,9 +1056,9 @@ VIESES.push(
             reduzir:"Na hora em que a pessoa costuma {acao}, tire distrações e dê tempo para decidir com calma."}},
   {id:"medos-profundos", nome:"Objetivos e medos profundos", cat:"social", doodle:"nuvem", whalen:"caps. 7, 14 e 16",
    pergunta:"O que comprar um cartão de crédito tem a ver com os planos de vida de alguém?",
-   resumo:"Por trás de cada tarefa há um objetivo maior e um medo. É o medo que mais afasta da lógica.",
+   resumo:"Por trás de cada tarefa há um objetivo maior e um medo, e é o medo que mais afasta a pessoa da lógica.",
    exemplo:"Numa pesquisa sobre cartões de crédito, perguntas que começavam no que havia na carteira terminavam nos planos e medos de vida das pessoas. Ali estava o que o produto realmente precisava atender.",
-   tela:"onboarding, mensagens de valor, momentos de risco como pagar, cancelar ou contratar.",
+   tela:"onboarding, mensagens de valor, momentos de risco como pagar e cancelar ou contratar.",
    teste:"Faça entrevistas que vão do raso ao profundo: o que você usa hoje, o que gosta de fazer, quais são seus planos, o que mais te preocupa.",
    cuidado:"Usar o medo para pressionar uma decisão é manipulação. Use para tirar o medo do caminho.",
    fonte:"Whalen, 2019", dirs:["aumentar","mudar"], barreiras:["incerteza","motivacao"],
@@ -1057,11 +1078,11 @@ const MENTES = [
 const POSTS = [
   {id:"geleias", vies:"sobrecarga", data:"6 nov 2026", min:4,
    titulo:"A banca de geleias que vendia menos", destaque:"menos",
-   dek:"Mais opções atraem mais gente. E fazem menos gente decidir.",
+   dek:"Mais sabores na banca atraíram mais gente e fizeram menos gente comprar.",
    corpo:["Num supermercado da Califórnia, pesquisadoras montaram uma banca de degustação de geleias. Em alguns dias ela tinha 24 sabores. Em outros, 6.",
      "A banca grande atraiu mais gente para provar. Mas, entre quem parou, cerca de 30% compraram quando havia 6 sabores. Com 24, foram 3%.",
-     "A explicação mais aceita é simples. Escolher entre muitas coisas parecidas cansa. Quando cansa, a saída mais fácil é não escolher.",
-     "Vale um alerta. Estudos posteriores acharam esse efeito em algumas situações e não em outras. Ele aparece mais quando as opções são parecidas e quem escolhe não sabe bem o que quer."],
+     "A explicação mais aceita: escolher entre muitas coisas parecidas cansa, e quando cansa, a saída mais fácil é não escolher.",
+     "Estudos posteriores acharam esse efeito em algumas situações e não em outras. Ele aparece mais quando as opções são parecidas e quem escolhe não sabe bem o que quer."],
    teste:"Pegue a tela com mais opções do seu produto. Teste uma versão com uma recomendação no topo e o resto recolhido. Meça tempo até decidir e conversão.",
    fonte:"Iyengar & Lepper, 2000; Scheibehenne, Greifeneder & Todd, 2010"},
   {id:"cartao-carimbado", vies:"progresso-dotado", data:"30 out 2026", min:3,
@@ -1070,16 +1091,16 @@ const POSTS = [
    corpo:["Um lava-rápido distribuiu dois tipos de cartão fidelidade. Um tinha 8 espaços vazios. O outro tinha 10 espaços, com 2 já carimbados.",
      "Nos dois casos faltavam 8 lavagens. Mesmo assim, 34% de quem recebeu o cartão de 10 completou, contra 19% do cartão de 8.",
      "Quem sente que já começou quer terminar. E acelera conforme chega perto do fim.",
-     "Em produto, isso aparece em checklists de configuração. Contar o cadastro como primeiro passo concluído é progresso real, não truque."],
+     "Num checklist de configuração, contar o cadastro como primeiro passo concluído é progresso real, porque a pessoa de fato já fez isso."],
    teste:"Comece a barra de progresso do onboarding pelo que a pessoa já fez. Meça quantas pessoas completam a configuração.",
    fonte:"Nunes & Drèze, 2006"},
   {id:"padrao-doacao", vies:"efeito-padrao", data:"23 out 2026", min:4,
    titulo:"Quem escolhe o padrão escolhe por todo mundo", destaque:"padrão",
-   dek:"Dois países vizinhos tiveram respostas opostas para o mesmo pedido. A diferença era a caixinha marcada.",
+   dek:"Dois países vizinhos tiveram respostas opostas para o mesmo pedido por causa de uma caixinha marcada.",
    corpo:["Na Alemanha, para ser doador de órgãos você precisa se cadastrar. Na Áustria, você já é doador, a não ser que peça para sair.",
-     "No levantamento do estudo, cerca de 12% dos alemães eram doadores. Na Áustria, 99,98%. Países vizinhos, culturas parecidas.",
+     "No levantamento do estudo, cerca de 12% dos alemães eram doadores. Na Áustria, vizinha e de cultura parecida, 99,98%.",
      "Mudar o padrão dá trabalho, exige uma decisão e pode parecer contrariar uma recomendação. Então a maioria fica onde está.",
-     "Em produto, todo campo pré-preenchido é uma decisão sua tomada no lugar de quem usa. Por isso o padrão precisa ser o melhor para essa pessoa."],
+     "Todo campo pré-preenchido é uma decisão sua tomada no lugar de quem usa. Por isso o padrão precisa ser o melhor para essa pessoa."],
    teste:"Liste os padrões da sua tela de configurações. Para cada um, pergunte se é o melhor para quem usa. Teste mudar um e meça quantos desfazem.",
    fonte:"Johnson & Goldstein, 2003"},
   {id:"toalha", vies:"prova-social", data:"16 out 2026", min:3,
@@ -1127,7 +1148,7 @@ POSTS.unshift(
    corpo:["Um bastão e uma bola custam 1,10 dólar juntos. O bastão custa 1 dólar a mais que a bola. Quanto custa a bola?",
      "Quase todo mundo pensa em 10 centavos. Mas aí o total daria 1,20. A bola custa 5 centavos, e a resposta errada vem à cabeça até de quem acerta.",
      "Kahneman usa o problema para apresentar os dois jeitos de pensar. O Sistema 1 responde rápido e sem esforço. O Sistema 2 confere, mas só quando é chamado, e prefere não ser.",
-     "Em produto, quase toda decisão acontece no Sistema 1. Uma tela que exige conta, comparação ou memória está pedindo o Sistema 2. Muitas vezes, ele não vem."],
+     "Quase toda decisão numa tela acontece no Sistema 1. Uma tela que exige conta, comparação ou memória está pedindo o Sistema 2, que muitas vezes não aparece."],
    teste:"Encontre a tela do seu fluxo que obriga a pessoa a fazer conta ou comparar números. Faça a conta por ela e meça erro e conclusão.",
    fonte:"Frederick, 2005; Kahneman, Rápido e devagar, cap. 3"},
   {id:"limite-12-latas", vies:"ancoragem", data:"8 nov 2026", min:3, livro:"cap. 11",
@@ -1145,7 +1166,7 @@ POSTS.unshift(
    corpo:["Num estudo, uma doença descrita como fatal para 1.286 pessoas em cada 10 mil foi julgada mais perigosa do que outra descrita como fatal para 24,14% da população.",
      "A primeira tem metade do risco da segunda. Mesmo assim, assustou mais.",
      "Kahneman chama isso de negligência com o denominador. A gente imagina os 1.286 casos e não pensa nos 10 mil.",
-     "Em produto, isso decide como você escreve taxas de sucesso, riscos e prova social. “3 em cada 4 times” é sentido. “75%” é calculado."],
+     "Isso pesa na hora de escrever taxas de sucesso, riscos e prova social: “3 em cada 4 times” a pessoa imagina, “75%” ela precisa calcular."],
    teste:"Escreva o mesmo dado em frequência e em porcentagem. Meça a compreensão com uma pergunta curta e veja qual formato leva à decisão certa.",
    fonte:"Yamagishi, 1997; Kahneman, Rápido e devagar, cap. 30"},
   {id:"caneca", vies:"dotacao", data:"5 nov 2026", min:3, livro:"cap. 27",
@@ -1154,42 +1175,42 @@ POSTS.unshift(
    corpo:["Num experimento, metade dos participantes recebeu uma caneca da universidade. A outra metade podia comprar uma.",
      "Quem ganhou pedia, em média, cerca do dobro para vender do que quem não ganhou aceitava pagar. As trocas foram menos da metade do que a teoria econômica previa.",
      "Abrir mão de algo que já é nosso dói como perda. Comprar a mesma coisa é só um ganho, e ganhos pesam menos.",
-     "Em produto, isso explica por que testes grátis, personalização e conteúdo salvo funcionam. Quando a pessoa já montou algo, aquilo passa a ser dela."],
+     "Isso explica por que testes grátis, personalização e conteúdo salvo funcionam: quando a pessoa já montou algo, aquilo passa a ser dela."],
    teste:"Deixe a pessoa criar ou configurar algo dela antes de pedir o pagamento. Meça conversão e cancelamento no fim do teste.",
    fonte:"Kahneman, Knetsch & Thaler, 1990; Kahneman, Rápido e devagar, cap. 27"},
   {id:"livro-dois-anos", vies:"planejamento", data:"4 nov 2026", min:4, livro:"cap. 23",
    titulo:"O livro que levaria dois anos", destaque:"dois anos",
-   dek:"A equipe sabia como projetos parecidos terminavam. Mesmo assim, seguiu o próprio plano.",
+   dek:"A equipe sabia como projetos parecidos terminavam e, mesmo assim, seguiu o próprio plano.",
    corpo:["Kahneman montou uma equipe para escrever um livro didático. Depois de um ano de trabalho, cada um estimou o prazo para terminar. A média ficou em torno de dois anos.",
      "Então ele perguntou ao especialista do grupo como tinham ido projetos parecidos. Cerca de 40% nunca terminaram, e os que terminaram levaram de 7 a 10 anos.",
      "A equipe seguiu em frente mesmo assim. O livro ficou pronto oito anos depois e nunca chegou a ser usado.",
-     "A lição é começar pela visão de fora: quanto levaram e quanto renderam projetos parecidos. Só depois ajustar para o seu caso."],
+     "Por isso, comece pela visão de fora: quanto levaram e quanto renderam projetos parecidos. Só depois ajustar para o seu caso."],
    teste:"Na próxima estimativa de roadmap, escreva primeiro a taxa-base de entregas parecidas. Depois faça um pré-mortem: imagine que deu errado e liste por quê.",
    fonte:"Kahneman, Rápido e devagar, cap. 23"},
   {id:"dicionarios", vies:"avaliacao-conjunta", data:"3 nov 2026", min:3, livro:"cap. 33",
    titulo:"Os dicionários de capa rasgada", destaque:"capa rasgada",
-   dek:"Um número que não pesa nada sozinho decide tudo na comparação.",
+   dek:"O número de verbetes quase não pesava sozinho e passou a decidir com os dois dicionários lado a lado.",
    corpo:["Dois dicionários usados: um como novo, com 10 mil verbetes. Outro com a capa rasgada, com 20 mil.",
      "Avaliados separadamente, o dicionário como novo recebeu valor mais alto. Lado a lado, a preferência virou para o de 20 mil.",
-     "Sozinho, “10 mil verbetes” não diz se é muito ou pouco. A capa rasgada diz. Na comparação, o número ganha sentido.",
+     "Sozinho, “10 mil verbetes” não diz se é muito ou pouco, mas a capa rasgada qualquer um avalia. Na comparação, o número ganha sentido.",
      "Em produto, uma página de plano isolada é julgada pelo que é fácil de avaliar: visual, preço, um detalhe. Numa tabela, os atributos técnicos passam a pesar."],
    teste:"Mostre o plano sozinho e numa tabela ao lado de outro. Veja qual atributo passa a decidir e escreva os números para que façam sentido sozinhos.",
    fonte:"Hsee, 1996; Kahneman, Rápido e devagar, cap. 33"},
   {id:"elogio-bronca", vies:"regressao", data:"2 nov 2026", min:3, livro:"cap. 17",
    titulo:"Elogio piora, bronca melhora?", destaque:"bronca",
-   dek:"Instrutores de voo tinham certeza. Era só estatística.",
+   dek:"Instrutores de voo tinham certeza de que a bronca funcionava, mas o que viam era regressão à média.",
    corpo:["Um instrutor da Força Aérea de Israel contou a Kahneman que, quando elogiava um ótimo voo, o cadete ia pior no seguinte. Quando dava bronca num voo ruim, o próximo melhorava.",
-     "A observação era verdadeira. A explicação, não. Um voo excepcional tende a ser seguido de um mais normal, e um muito ruim também.",
+     "Os instrutores observaram certo e explicaram errado: um voo excepcional tende a ser seguido de um mais normal, e um muito ruim também.",
      "Isso é regressão à média. O elogio e a bronca não causavam a mudança. O acaso fazia o trabalho.",
-     "Em produto, acontece depois de todo mês ruim. Você muda algo, a métrica melhora e a mudança leva o crédito. Ela podia melhorar sozinha."],
+     "No produto, isso acontece depois de todo mês ruim: você muda algo, a métrica melhora e a mudança leva o crédito, quando ela podia ter melhorado sozinha."],
    teste:"Quando agir sobre uma métrica que despencou, mantenha um grupo de controle. Compare os dois grupos, não o antes e o depois.",
    fonte:"Kahneman, Rápido e devagar, cap. 17"}
 );
 
 POSTS.unshift(
   {id:"sacola-carrinho", vies:"linguagem", data:"9 nov 2026", min:3, whalen:"caps. 9 e 10",
-   titulo:"Não achou o carrinho. Era a sacola.", destaque:"sacola",
-   dek:"A mesma queixa pode ser um problema de olhar ou de palavra. A correção é outra.",
+   titulo:"O carrinho que se chamava sacola", destaque:"sacola",
+   dek:"A mesma queixa pode vir de um problema de olhar ou de vocabulário, e cada um pede uma correção diferente.",
    corpo:["Num teste de loja online, uma pessoa reclamou que não achava o carrinho. Depois de um tempo, descobriu que o carrinho se chamava “sacola”.",
      "Ela olhava direto para o ícone e não reconhecia o que via, porque esperava outra palavra. O problema era de linguagem, não de atenção.",
      "Whalen sugere separar cada observação da pesquisa pela mente que ela afeta. “Não achei o botão” pode ser atenção (ninguém olhou para lá) ou linguagem (olhou e não entendeu).",
@@ -1207,7 +1228,7 @@ POSTS.unshift(
    fonte:"Müller & Wehner, 1988; Whalen, Design for How People Think, caps. 3 e 11"},
   {id:"letra-g", vies:"modelos-mentais", data:"6 nov 2026", min:3, whalen:"cap. 4",
    titulo:"Você não sabe desenhar a letra g", destaque:"letra g",
-   dek:"Você já viu milhões delas. A memória guardou o resumo, não o desenho.",
+   dek:"Você já viu milhões delas, mas a memória guardou só um resumo da forma.",
    corpo:["Um estudo pediu que leitores experientes escolhessem a forma certa do g minúsculo entre algumas opções. Muitos erraram uma letra que veem todos os dias.",
      "A memória descarta detalhes em menos de um segundo e guarda o conceito. Num desenho de uma cena de beco, as pessoas completam latas de lixo e cercas que estavam cortadas pela borda da foto.",
      "Esse resumo vira expectativa. Ele diz como uma loja online deveria funcionar, o que vem depois do pagamento e até o que “happy hour” significa, que pode ser coisas bem diferentes para duas pessoas.",
@@ -1216,16 +1237,16 @@ POSTS.unshift(
    fonte:"Wong et al., 2018; Intraub & Richardson, 1989; Whalen, Design for How People Think, cap. 4"},
   {id:"coluna-direita", vies:"cegueira-anuncio", data:"5 nov 2026", min:3, whalen:"cap. 2",
    titulo:"A ajuda que ninguém viu", destaque:"ninguém viu",
-   dek:"A informação estava na tela. Só estava no lugar dos anúncios.",
+   dek:"A informação estava na tela, mas no lugar onde costumam ficar os anúncios.",
    corpo:["Uma equipe colocou explicações úteis numa coluna à direita de um formulário. No teste com rastreamento do olhar, quase ninguém olhou para lá.",
      "A gente aprendeu que o lado direito costuma ter anúncio, e passou a ignorar aquela região no automático.",
      "Whalen lembra que o resultado mais interessante de um rastreamento do olhar é o que ninguém olha. Se a pessoa não viu, para ela a informação não existe.",
-     "Também só enxergamos com nitidez uma área pequena, mais ou menos do tamanho de dois polegares com o braço esticado. Perto não basta: a ajuda precisa estar onde o olhar já está."],
+     "Também só enxergamos com nitidez uma área pequena, mais ou menos do tamanho de dois polegares com o braço esticado. Por isso a ajuda precisa ficar exatamente onde o olhar já está."],
    teste:"Mova a ajuda de uma tela-chave para colado ao campo ou botão a que ela se refere. Meça erros e pedidos de suporte.",
    fonte:"Whalen, Design for How People Think, cap. 2"},
   {id:"oito-letras", vies:"satisficing", data:"3 nov 2026", min:3, whalen:"cap. 7",
    titulo:"17 menos 9, segurando oito letras", destaque:"oito letras",
-   dek:"Com a cabeça ocupada, até a conta fácil sai errada. E a escolha também.",
+   dek:"Com a cabeça ocupada, até a conta fácil sai errada, e as escolhas pioram junto.",
    corpo:["Fazer 17 menos 9 é fácil. Tente agora guardar a sequência A-K-G-M-T-L-S-H na cabeça enquanto faz a mesma conta.",
      "Com a memória ocupada, as pessoas cometem os mesmos erros de quem tem pavor de números. A preocupação ocupa o espaço que o raciocínio usaria.",
      "Herbert Simon chamou de satisficing: em vez de buscar a melhor opção, a gente fica com a primeira que parece boa o bastante. É assim que se decide no metrô lotado, com criança no colo.",
@@ -1238,7 +1259,7 @@ POSTS.unshift(
    corpo:["Tire dois cantos opostos de um tabuleiro de xadrez. Sobram 62 casas. Dá para cobrir tudo com 31 dominós, cada um ocupando uma casa clara e uma escura?",
      "Quase todo mundo começa a encaixar peças. Não dá: os dois cantos tirados têm a mesma cor, então sobram mais casas de uma cor do que da outra.",
      "Quem conhece o problema nem tenta. O especialista define o problema de outro jeito antes de agir.",
-     "Em produto, quem usa costuma ver o problema como o novato. Ver só o preço da casa, por exemplo, sem crédito, vistoria e documentação. O design ajuda a revelar as etapas reais, uma por vez."],
+     "Quem usa costuma ver o problema como o novato: olha só o preço da casa e esquece crédito, vistoria e documentação. O design ajuda revelando as etapas reais, uma por vez."],
    teste:"Peça para alguém descrever, antes de começar, quais etapas acha que vai enfrentar. Compare com as etapas reais e ataque a primeira surpresa.",
    fonte:"Kaplan & Simon, 1990; Whalen, Design for How People Think, cap. 6"},
   {id:"atrair-melhorar-despertar", vies:"medos-profundos", data:"31 out 2026", min:4, whalen:"caps. 7, 14 e 16",
@@ -1292,7 +1313,7 @@ VIESES.push(
   {id:"status-quo", nome:"Viés do status quo", cat:"decisao", doodle:"volta", enviesados:true,
    pergunta:"Por que você continua no mesmo banco há dez anos?",
    resumo:"Sem um incômodo forte, a gente prefere deixar como está. Qualquer mudança parece perda.",
-   exemplo:"O estado atual vira a referência. Opção pré-marcada e caminho padrão mantêm o uso. Para tirar alguém dali, o benefício da troca precisa ser óbvio e o esforço, baixo.",
+   exemplo:"Quando a doação de órgãos vem marcada por padrão, quase todo mundo vira doador. Quando é preciso se inscrever, poucos se inscrevem.",
    tela:"migrações para versões novas, troca de plano, portabilidade e configurações iniciais.",
    teste:"Na tela de migração, mostre o ganho em uma frase e leve os dados da pessoa automaticamente. Meça quantos trocam e quantos voltam.",
    cuidado:"Usar a inércia para manter alguém num plano pior ou mais caro é exploração. Facilite a troca quando ela for melhor para a pessoa.",
@@ -1304,7 +1325,7 @@ VIESES.push(
 POSTS.unshift(
   {id:"pasta-offline", vies:"aversao-perda", data:"9 nov 2026", min:3, dutra:true,
    titulo:"A pasta offline que segura a assinatura", destaque:"pasta offline",
-   dek:"Ninguém assina pelo que vai ganhar. Assina para não perder o que já montou.",
+   dek:"O medo de perder o que já montou segura mais assinaturas do que a promessa de algo novo.",
    corpo:["Num teste grátis de app de música, a pessoa monta playlists e baixa músicas para ouvir sem internet. Quando o teste acaba, cancelar apaga a pasta offline.",
      "Perder pesa cerca do dobro de ganhar o equivalente. Por isso a ameaça de perder a pasta convence mais do que a promessa de músicas novas.",
      "O mesmo raciocínio aparece no rastreio de pedido, que tira o medo de a compra não chegar, e no seguro de carro, que vende mostrando o que se perde sem ele.",
@@ -1314,7 +1335,7 @@ POSTS.unshift(
   {id:"um-clique", vies:"efeito-cashless", data:"8 nov 2026", min:3, dutra:true,
    titulo:"Pagar com um clique dói menos", destaque:"dói menos",
    dek:"Quanto menos o dinheiro aparece, mais fácil é gastar.",
-   corpo:["Entregar notas na mão dói. Encostar o cartão dói menos. Confirmar com um toque, menos ainda.",
+   corpo:["Entregar notas na mão dói mais do que encostar o cartão, e confirmar com um toque dói menos ainda.",
      "Num estudo clássico, pessoas que pagariam com cartão ofereceram valores bem mais altos por ingressos de jogos de basquete do que as que pagariam em dinheiro vivo.",
      "Rian Dutra chama isso de efeito cashless. Parques com pulseira de pagamento e compras em um clique encurtam o momento em que a pessoa sente o gasto, e a compra sobe.",
      "O mesmo efeito pode ser usado ao contrário. Num app de finanças, mostrar o dinheiro de forma visível ajuda quem quer gastar menos."],
@@ -1322,11 +1343,11 @@ POSTS.unshift(
    fonte:"Prelec & Simester, 2001; Dutra, Enviesados"},
   {id:"ofensiva", vies:"custo-afundado", data:"7 nov 2026", min:3, dutra:true,
    titulo:"A ofensiva que ninguém quer perder", destaque:"ofensiva",
-   dek:"Quanto mais você já investiu, mais difícil é parar. Mesmo quando parar faz sentido.",
+   dek:"Quanto mais você já investiu, mais difícil é parar, mesmo quando parar faz sentido.",
    corpo:["Quem já comprou agulhas e linha e fez as primeiras peças de tricô tende a continuar. Largar parece jogar fora o que já foi gasto.",
      "Num estudo, quem pagou o preço cheio por uma temporada de teatro foi a mais peças do que quem ganhou desconto no mesmo pacote.",
      "Apps usam isso com sequências diárias, metas e níveis. A ofensiva de um app de idiomas faz abandonar um dia parecer desperdiçar semanas.",
-     "Funciona, mas tem limite ético. O que segura a pessoa precisa ser valor de verdade, não só o medo de perder o que já investiu."],
+     "Há um limite ético: o que segura a pessoa precisa ser valor de verdade, e o medo de perder o que já investiu não conta como valor."],
    teste:"Mostre o progresso acumulado no momento em que a pessoa costuma abandonar. Meça retenção e satisfação, não só retenção.",
    fonte:"Arkes & Blumer, 1985; Dutra, Enviesados"}
 );
@@ -1379,7 +1400,7 @@ VIESES.push(
    aplicar:{_:"Não repita a mesma recompensa toda vez que a pessoa {acao}. Varie o reconhecimento e ligue a algo com significado."}},
   {id:"previsibilidade", nome:"Previsibilidade e controle", cat:"percepcao", doodle:"ampulheta", sapolsky:"caps. 2, 4 e 9",
    pergunta:"Por que esperar o resultado do exame é pior que receber a notícia?",
-   resumo:"O que mais estressa não é o problema, é não saber quando vem e não poder fazer nada.",
+   resumo:"Não saber quando algo vai acontecer, e não poder fazer nada, estressa mais do que o próprio problema.",
    exemplo:"Num estudo, pessoas esperavam um choque sem saber quando viria. Muitas preferiram um choque mais forte na hora a ficar esperando.",
    tela:"carregamentos, prazos de entrega, filas de atendimento, aprovações e processos que a pessoa não controla.",
    teste:"Troque um carregamento sem informação por estimativa de tempo e etapas. Meça abandono e contatos no suporte.",
@@ -1393,7 +1414,7 @@ VIESES.push(
    exemplo:"Num experimento clássico, pessoas separadas por terem estimado mais ou menos pontinhos numa imagem passaram a favorecer quem era do mesmo grupo ao dividir recursos.",
    tela:"comunidades, times dentro do produto, nomes para quem usa, selos de pertencimento e desafios em grupo.",
    teste:"Dê um nome e um objetivo comum a um grupo de quem usa, como a turma de um curso. Meça participação e ajuda entre membros.",
-   cuidado:"Criar um nós contra um eles para engajar alimenta exclusão. Foque no objetivo comum, não no rival.",
+   cuidado:"Criar um nós contra um eles para engajar alimenta exclusão. Prefira um objetivo que o grupo persiga junto.",
    fonte:"Tajfel, 1970; Sapolsky, Comporte-se", dirs:["aumentar","mudar"], barreiras:["motivacao","incerteza"],
    aplicar:{_:"Faça {acao} ser algo que o grupo da pessoa faz junto, com nome e objetivo em comum."}},
   {id:"olhos-observam", nome:"Olhos que observam", cat:"social", doodle:"olhos", sapolsky:"cap. 3",
@@ -1412,7 +1433,7 @@ VIESES.push(
    exemplo:"Ser capitão do time de futebol da empresa no fim de semana pode pesar mais para alguém do que um cargo baixo no trabalho durante a semana.",
    tela:"rankings, níveis, conquistas, perfis públicos e programas de fidelidade.",
    teste:"Troque um ranking geral por rankings menores, por habilidade ou por grupo. Meça quantas pessoas se sentem bem posicionadas e continuam.",
-   cuidado:"Ranking geral humilha a maioria. E status ambíguo ou instável gera ansiedade, não motivação.",
+   cuidado:"Ranking geral humilha a maioria. E status ambíguo ou instável deixa as pessoas ansiosas, sem motivar ninguém.",
    fonte:"Sapolsky, Comporte-se", dirs:["aumentar"], barreiras:["motivacao"],
    aplicar:{_:"Crie um ranking em que quem {acao} possa se destacar, por habilidade ou por grupo, em vez de um ranking geral."}},
   {id:"pares", nome:"Influência dos pares", cat:"social", doodle:"trio", sapolsky:"cap. 6",
@@ -1427,7 +1448,7 @@ VIESES.push(
             reduzir:"Tire a plateia do momento em que jovens costumam {acao}: menos exibição pública, mais decisão em privado."}},
   {id:"um-rosto", nome:"Um rosto de cada vez", cat:"social", doodle:"rosto", sapolsky:"cap. 14", aka:"vítima identificável",
    pergunta:"Por que a história de uma criança comove mais que a estatística de milhares?",
-   resumo:"A gente se mobiliza por uma pessoa com rosto e nome, não por um número grande.",
+   resumo:"Uma pessoa com nome e rosto mobiliza mais do que milhares de anônimos.",
    exemplo:"As pessoas doam mais quando pensam em uma pessoa necessitada do que num grupo. Com a mente sobrecarregada, ajudam menos estranhos, mas continuam ajudando a família.",
    tela:"páginas de doação, impacto social, relatórios de resultado e campanhas.",
    teste:"Compare a página de doação com o total de beneficiados e com a história de uma pessoa. Meça doações e valor médio.",
@@ -1449,7 +1470,7 @@ VIESES.push(
 POSTS.unshift(
   {id:"luz-uva", vies:"antecipacao", data:"9 nov 2026", min:3, sapolsky:"cap. 2",
    titulo:"A luz que valia mais que o prêmio", destaque:"luz",
-   dek:"Depois de aprender o caminho, o cérebro comemora o aviso, não a recompensa.",
+   dek:"Depois de aprender o caminho, o cérebro passa a comemorar o aviso de que a recompensa vem.",
    corpo:["Num experimento, um macaco aprende que, quando uma luz acende, apertar a alavanca dez vezes dá uma uva-passa.",
      "Depois de aprendido, a dopamina sobe mais quando a luz acende do que quando a uva chega. O prazer mudou de lugar: foi para a antecipação.",
      "Sapolsky resume que a dopamina é mais sobre expectativa do que sobre prêmio. Ela diz que você sabe como as coisas funcionam e que vai ser bom.",
@@ -1458,7 +1479,7 @@ POSTS.unshift(
    fonte:"Schultz, 1998; Sapolsky, Comporte-se, cap. 2"},
   {id:"cinquenta-por-cento", vies:"recompensa-incerta", data:"8 nov 2026", min:3, sapolsky:"cap. 2",
    titulo:"O prêmio que vinha metade das vezes", destaque:"metade das vezes",
-   dek:"A incerteza libera mais dopamina que a certeza. Os cassinos sabem disso.",
+   dek:"Em macacos, a recompensa incerta liberou mais dopamina que a garantida, e os cassinos exploram isso.",
    corpo:["Quando o prêmio vinha sempre, a dopamina subia um pouco na espera. Quando passou a vir só metade das vezes, a dopamina na espera ficou bem maior.",
      "Com chance de 25% ou de 75%, o pico era menor que com 50%. O máximo de dopamina estava no ponto de maior dúvida.",
      "Sapolsky lembra que Las Vegas aplica isso há décadas: luz o tempo todo, nenhum relógio, bebida barata e a sensação de que hoje é o seu dia.",
@@ -1471,7 +1492,7 @@ POSTS.unshift(
    corpo:["Num estudo, as pessoas sabiam que iam levar um choque, mas não sabiam quando. A espera ativava a amígdala, a região do medo.",
      "Muitas preferiram receber um choque mais forte imediatamente a continuar esperando.",
      "Para Sapolsky, falta de previsibilidade e de controle está entre as maiores fontes de estresse, ao lado de não ter válvula de escape nem apoio.",
-     "Em produto, a espera sem informação é um pequeno choque adiado: o carregamento sem fim, a entrega sem rastreio, o chamado sem prazo."],
+     "A espera sem informação funciona como um pequeno choque adiado: o carregamento sem fim, a entrega sem rastreio, o chamado sem prazo."],
    teste:"Escolha a espera mais longa do seu produto e mostre etapas e tempo estimado. Meça abandono e contatos com o suporte.",
    fonte:"Berns et al., 2006; Sapolsky, Comporte-se, cap. 2"},
   {id:"olhos-cafe", vies:"olhos-observam", data:"6 nov 2026", min:3, sapolsky:"cap. 3",
@@ -1480,12 +1501,12 @@ POSTS.unshift(
    corpo:["Numa copa de escritório, o café era pago por confiança, numa caixinha. Pesquisadores alternaram a imagem na parede: às vezes olhos, às vezes flores.",
      "Nas semanas com olhos, a contribuição foi bem maior. Em outros estudos, imagens de olhos reduziram lixo no chão e aumentaram a generosidade em jogos.",
      "Sapolsky usa o exemplo para mostrar quanto sinais quase imperceptíveis mudam o comportamento.",
-     "Vale o cuidado: estudos posteriores nem sempre repetiram o efeito. Em produto, o que costuma funcionar é a presença real de uma pessoa, não uma imagem."],
+     "Estudos posteriores nem sempre repetiram o efeito, então uma foto de olhos na tela não garante nada. O que costuma pesar é saber que há uma pessoa de verdade do outro lado."],
    teste:"Mostre o rosto e o nome de quem vai ler uma avaliação ou um pedido. Meça a qualidade das respostas e os casos de fraude.",
    fonte:"Bateson, Nettle & Roberts, 2006; Sapolsky, Comporte-se, cap. 3"},
   {id:"amigos-no-carro", vies:"pares", data:"5 nov 2026", min:3, sapolsky:"cap. 6",
    titulo:"Dois amigos no banco de trás", destaque:"Dois amigos",
-   dek:"Sozinhos, adolescentes arriscam como adultos. Com plateia, não.",
+   dek:"Sozinhos, adolescentes arriscam tanto quanto adultos. Com amigos olhando, arriscam bem mais.",
    corpo:["Num jogo de direção, adolescentes e adultos tomavam riscos na mesma proporção quando estavam sozinhos.",
      "Com dois amigos incentivando, os adultos continuaram iguais. Os adolescentes arriscaram três vezes mais.",
      "O raciocínio sobre risco dos adolescentes é parecido com o dos adultos. O que muda é o peso da aceitação dos amigos, numa fase em que o córtex frontal ainda está amadurecendo.",
@@ -1498,12 +1519,12 @@ POSTS.unshift(
    corpo:["Num experimento clássico, pessoas viam uma imagem com muitos pontinhos e estimavam quantos eram. Depois eram separadas entre quem estimou a mais e quem estimou a menos.",
      "O critério não significava nada. Mesmo assim, na hora de dividir recursos, cada um favoreceu os do próprio grupo, sem nem conhecê-los.",
      "Sapolsky mostra que o cérebro separa nós e eles em milissegundos. Não dá para eliminar isso, mas dá para escolher quem é o nós.",
-     "Em produto, um nome de turma, um objetivo comum ou um time cria pertencimento rápido. O cuidado é não construir esse nós contra alguém."],
+     "Um nome de turma, um objetivo comum ou um time já criam pertencimento. O cuidado é não construir esse nós contra alguém."],
    teste:"Dê nome e objetivo comum a um grupo de quem usa. Meça participação, ajuda entre membros e permanência.",
    fonte:"Tajfel, 1970; Sapolsky, Comporte-se, cap. 11"},
   {id:"capitao-domingo", vies:"multiplas-hierarquias", data:"3 nov 2026", min:3, sapolsky:"cap. 12",
    titulo:"O capitão do time de domingo", destaque:"capitão",
-   dek:"Todo mundo é bom em alguma hierarquia. E é nela que a gente presta atenção.",
+   dek:"Todo mundo ocupa um lugar melhor em alguma hierarquia, e é nela que a gente presta atenção.",
    corpo:["Sapolsky observa que, diferente de outros primatas, os humanos participam de várias hierarquias ao mesmo tempo.",
      "E a gente tende a valorizar mais aquela em que está no topo. O capitão do futebol do fim de semana dá mais peso ao time do que ao cargo baixo na empresa.",
      "Ele também mostra que status ambíguo ou instável é dos estados mais estressantes. A gente lê posições sociais num piscar de olhos.",
@@ -1595,7 +1616,7 @@ const APLICADO = {
     ex:"Na página de planos, o Empresa (R$ 299) aparece primeiro. Depois dele, o Pro por R$ 99 parece acessível.",
     mock:[{t:"Escolha seu plano"},{planos:[{n:"Empresa",p:"R$ 299"},{n:"Pro",p:"R$ 99",on:1},{n:"Básico",p:"R$ 39"}]},{nota:"o primeiro preço vira régua"},{btn:"Assinar o Pro"}]},
   "chamariz":{como:{aumentar:"Uma opção parecida e pior ao lado faz a opção certa parecer óbvia, e mais gente escolhe.", mudar:"Colocar uma alternativa sem graça ao lado do jeito novo empurra a troca para ele."},
-    ex:"Três tamanhos: o médio custa quase o mesmo que o grande. Ele existe para o grande parecer a escolha óbvia.",
+    ex:"Na pipoca do cinema, o médio custa R$ 20 e o grande, R$ 22. Quase todo mundo leva o grande.",
     mock:[{t:"Qual tamanho?"},{planos:[{n:"Pequeno",p:"R$ 12"},{n:"Médio",p:"R$ 20",off:1},{n:"Grande",p:"R$ 22",on:1,tag:"melhor valor"}]},{nota:"o médio só existe pra isso"},{btn:"Levar o grande"}]},
   "aversao-perda":{como:{aumentar:"Mostrar o que a pessoa deixa de ter se não agir pesa mais do que prometer um ganho do mesmo tamanho.", reduzir:"Mostrar o que se perde ao fazer algo faz a pessoa pensar duas vezes antes."},
     ex:"Perto do fim do teste, o aviso mostra o que a pessoa deixa de ter: os projetos e o histórico que ela já criou.",
@@ -1605,18 +1626,18 @@ const APLICADO = {
     mock:[{t:"Ajustes iniciais"},{chk:[{l:"Backup automático",on:1},{l:"Novidades por e-mail",on:0}]},{nota:"já vem marcado"},{p:"Dá para mudar depois em Ajustes."},{btn:"Continuar"}]},
   "sobrecarga":{como:{aumentar:"Menos opções destravam a decisão, e mais gente chega ao fim.", mudar:"Mostrar só o jeito novo e uma alternativa evita que a pessoa volte ao conhecido por cansaço."},
     ex:"Em vez de 12 planos, a tela mostra 3 e recomenda um. Os outros ficam em “ver todos”.",
-    mock:[{t:"Planos"},{planos:[{n:"Solo",p:"R$ 19"},{n:"Time",p:"R$ 49",on:1,tag:"recomendado"},{n:"Empresa",p:"R$ 99"}]},{nota:"três, não doze"},{link:"Ver todos os 12 planos"}]},
+    mock:[{t:"Planos"},{planos:[{n:"Solo",p:"R$ 19"},{n:"Time",p:"R$ 49",on:1,tag:"indicado"},{n:"Empresa",p:"R$ 99"}]},{nota:"3 de 12 planos"},{link:"Ver todos os 12 planos"}]},
   "desconto-hiperbolico":{como:{aumentar:"Dar algo concreto agora vence a preguiça de um benefício que só chega no futuro.", reduzir:"Mostrar o custo agora, e não no fim do mês, faz a pessoa sentir o peso na hora."},
     ex:"No primeiro treino concluído, o app já entrega uma conquista. O benefício de longo prazo vira algo de agora.",
     mock:[{t:"Treino concluído!"},{selo:"Primeira conquista desbloqueada"},{nota:"recompensa agora"},{barra:{pct:14,l:"1 de 7 dias da semana"}}]},
-  "menor-esforco":{como:{aumentar:"Cada passo a menos faz mais gente chegar ao fim.", reduzir:"Um passo a mais, como uma confirmação, faz menos gente agir no impulso.", mudar:"Deixar o jeito novo mais curto que o antigo faz a troca acontecer sozinha."},
+  "menor-esforco":{como:{aumentar:"Tirar campos e etapas do caminho leva mais gente até o fim.", reduzir:"Um passo a mais, como uma confirmação, faz menos gente agir no impulso.", mudar:"Deixar o jeito novo mais curto que o antigo faz a troca acontecer sozinha."},
     ex:"O checkout pede só e-mail e cartão. O endereço vem do CEP e o cadastro completo fica para depois.",
     mock:[{t:"Pagamento"},{campo:"E-mail"},{campo:"CEP: endereço preenchido"},{nota:"menos campos"},{btn:"Pagar"}]},
   "prova-social":{como:{aumentar:"Mostrar que pessoas parecidas já fazem tira a dúvida de quem está em cima do muro.", reduzir:"Mostrar que a maioria não faz o comportamento indesejado torna ele menos normal.", mudar:"Mostrar quantas pessoas já trocaram faz o jeito novo parecer o caminho natural."},
     ex:"Na escolha do plano, a tela mostra quantos times do mesmo tamanho escolhem o anual.",
     mock:[{selo:"7 em cada 10 times como o seu escolhem o anual"},{nota:"gente parecida"},{planos:[{n:"Mensal",p:"R$ 49"},{n:"Anual",p:"R$ 39/mês",on:1}]},{btn:"Escolher anual"}]},
   "halo":{como:{aumentar:"Uma primeira impressão caprichada contamina o julgamento do resto e aumenta a confiança para agir."},
-    ex:"A tela de pagamento é limpa e caprichada. A confiança que ela passa contamina o resto do produto.",
+    ex:"A tela de pagamento tem acabamento cuidadoso, e isso aumenta a confiança no produto inteiro.",
     mock:[{t:"Pagamento seguro"},{campo:"Número do cartão"},{p:"Seus dados ficam criptografados."},{nota:"capricho gera confiança"},{btn:"Pagar"}]},
   "reciprocidade":{como:{aumentar:"Entregar algo útil antes de pedir deixa a pessoa com vontade de retribuir."},
     ex:"Antes de pedir o cadastro, a ferramenta já entrega o resultado da análise.",
@@ -1639,7 +1660,7 @@ const APLICADO = {
   "confirmacao":{como:{mudar:"Apresentar a mudança como coerente com o que a pessoa já acredita sobre si evita a resistência."},
     ex:"Para quem se considera organizado, o app apresenta a troca como o próximo passo de quem já é assim.",
     mock:[{t:"Você já planeja tudo"},{p:"Planejar as contas no app é o próximo passo de quem é organizado."},{nota:"conversa com o que ela acredita"},{btn:"Começar"}]},
-  "progresso-dotado":{como:{aumentar:"Começar com algum avanço dado faz a pessoa querer chegar ao fim."},
+  "progresso-dotado":{como:{aumentar:"Contar como feito o que a pessoa já fez dá a sensação de que falta pouco."},
     ex:"A barra de configuração já começa com o cadastro contado como primeiro passo.",
     mock:[{t:"Configure sua conta"},{barra:{pct:25,l:"1 de 4 passos concluídos"}},{nota:"já começa andando"},{lista:[{l:"Criar conta",ok:1},{l:"Foto de perfil",ok:0}]}]},
   "fluencia":{como:{aumentar:"O que é fácil de ler parece mais fácil de fazer, e mais gente faz.", reduzir:"Deixar a alternativa mais clara que o comportamento indesejado puxa as pessoas para ela.", mudar:"Explicar o jeito novo em frases curtas reduz o medo da troca."},
@@ -1654,35 +1675,35 @@ const APLICADO = {
   "substituicao":{como:{aumentar:"Responder na tela a pergunta fácil que a pessoa usa para decidir acelera o sim.", mudar:"Trocar “devo mudar?” por uma pergunta simples e respondível facilita a troca."},
     ex:"A pergunta difícil, “vale a pena?”, vira uma fácil de responder na própria tela: “quanto eu economizo?”.",
     mock:[{t:"Vale a pena para o seu time?"},{campo:"Pessoas no time: 8"},{nota:"pergunta fácil no lugar"},{btn:"Ver quanto economizo"}]},
-  "afeto":{como:{aumentar:"Quando a pessoa gosta do primeiro contato, enxerga mais benefício e menos risco.", mudar:"Um primeiro contato agradável com o jeito novo diminui a sensação de risco da troca."},
+  "afeto":{como:{aumentar:"Um primeiro contato agradável faz a pessoa confiar mais e hesitar menos para agir.", mudar:"Um primeiro contato agradável com o jeito novo diminui a sensação de risco da troca."},
     ex:"A primeira tela tem tom simpático e mostra um resultado bonito logo de cara.",
     mock:[{t:"Oi! Vamos montar seu primeiro álbum?"},{p:"Escolha 3 fotos e a gente cuida do resto."},{nota:"gostou, confia"},{btn:"Escolher fotos"}]},
   "mera-exposicao":{como:{aumentar:"Ver o mesmo nome e visual várias vezes gera familiaridade, e familiaridade gera adesão.", mudar:"Repetir o jeito novo em vários pontos de contato faz ele deixar de parecer estranho."},
     ex:"A mesma funcionalidade aparece com o mesmo nome no app, no e-mail e na notificação.",
     mock:[{t:"Onde aparece"},{lista:[{l:"App: Resumo da semana"},{l:"E-mail: Resumo da semana"},{l:"Aviso: Resumo da semana"}]},{nota:"sempre o mesmo nome"}]},
   "dotacao":{como:{aumentar:"Quando a pessoa já criou algo, aquilo passa a ser dela e ela quer manter.", reduzir:"Lembrar o que já é da pessoa faz ela hesitar antes de abrir mão."},
-    ex:"No teste grátis, a pessoa monta o próprio painel. Na hora de assinar, ele já é dela.",
-    mock:[{t:"Seu painel"},{selo:"3 gráficos que você criou"},{nota:"já é dela"},{btn:"Assinar para manter"}]},
+    ex:"No teste grátis, a pessoa monta três gráficos com os dados da empresa antes de ver o preço.",
+    mock:[{t:"Seu painel"},{selo:"3 gráficos que você criou"},{nota:"montado por ela"},{btn:"Assinar para manter"}]},
   "certeza":{como:{aumentar:"Tirar o último pedaço de risco vale mais do que reduzir vários riscos pela metade.", mudar:"Uma garantia de volta ao jeito antigo torna a troca segura."},
-    ex:"Uma garantia simples, sem letra miúda, tira o último risco da compra.",
+    ex:"Na página do fone, “30 dias para devolver, sem perguntas” aparece ao lado do botão de compra.",
     mock:[{t:"Fone sem fio"},{selo:"30 dias para devolver, sem perguntas"},{nota:"risco zero pesa muito"},{btn:"Comprar"}]},
   "denominador":{como:{aumentar:"Falar em casos (“3 em cada 4”) faz o benefício parecer mais real que a porcentagem.", reduzir:"Mostrar o risco em casos concretos faz ele ser sentido.", mudar:"Contar quantas pessoas já trocaram, em casos, torna a mudança mais palpável."},
-    ex:"O benefício aparece em casos concretos, não em porcentagem.",
+    ex:"O curso mostra “3 em cada 4 alunos terminam no prazo” em vez de “75%”.",
     mock:[{t:"Curso de inglês"},{aviso:"3 em cada 4 alunos terminam no prazo"},{nota:"dá pra imaginar"},{btn:"Começar"}]},
   "contabilidade-mental":{como:{aumentar:"Encaixar o gasto num pote que a pessoa já separou faz ele doer menos.", reduzir:"Somar o gasto num pote só, por mês, faz ele aparecer inteiro."},
     ex:"O valor do pedido é mostrado como parte de um saldo que a pessoa já tem.",
     mock:[{t:"Finalizar pedido"},{aviso:"Você tem R$ 50 de cashback"},{p:"Este pedido sai do seu saldo."},{nota:"dinheiro de outro pote"},{btn:"Usar saldo"}]},
   "avaliacao-conjunta":{como:{aumentar:"Ao lado de uma referência, os números ganham sentido e a vantagem fica clara.", mudar:"Comparar o jeito novo com o atual, lado a lado, mostra o que se ganha com a troca."},
-    ex:"O plano novo aparece ao lado do atual, e os números passam a fazer sentido.",
-    mock:[{t:"Seu plano e o Pro"},{compara:{cols:["","Atual","Pro"],rows:[["Espaço","10 GB","100 GB"],["Pessoas","1","5"]]}},{nota:"lado a lado faz sentido"},{btn:"Mudar para o Pro"}]},
+    ex:"Na tela de upgrade, o Pro aparece ao lado do plano atual: 10 GB contra 100 GB.",
+    mock:[{t:"Seu plano e o Pro"},{compara:{cols:["","Atual","Pro"],rows:[["Espaço","10 GB","100 GB"],["Pessoas","1","5"]]}},{nota:"agora 100 GB pesa"},{btn:"Mudar para o Pro"}]},
   "ilusao-foco":{como:{aumentar:"Pôr o holofote num único benefício faz ele pesar mais na decisão.", mudar:"Focar no benefício que a pessoa mais sente torna a troca mais atraente."},
-    ex:"Na hora de decidir, a tela destaca um só benefício: o que a pessoa mais sente no dia a dia.",
+    ex:"Para vender o débito automático, a tela fala só do tempo livre no fim de semana.",
     mock:[{t:"Seu fim de semana de volta"},{p:"As contas se pagam sozinhas."},{nota:"um benefício só"},{btn:"Ativar débito automático"}]},
   "destaque-visual":{como:{aumentar:"Quando a ação é o único elemento diferente na tela, o olhar vai direto para ela.", mudar:"Destacar o caminho novo e apagar o antigo guia o olhar para a troca."},
-    ex:"A ação principal é a única com cor e forma diferentes na tela.",
+    ex:"Na edição de foto, só o botão Salvar tem cor. Cancelar e Pré-visualizar ficam em contorno.",
     mock:[{t:"Editar foto"},{btn2:"Cancelar"},{btn:"Salvar"},{btn2:"Pré-visualizar"},{nota:"só um se destaca"}]},
-  "cegueira-anuncio":{como:{aumentar:"Ajuda colada ao campo é lida. Numa coluna lateral, é ignorada como anúncio.", mudar:"Explicar o jeito novo onde a pessoa já está olhando evita que o aviso seja ignorado."},
-    ex:"A explicação fica colada ao campo, não numa coluna lateral que parece anúncio.",
+  "cegueira-anuncio":{como:{aumentar:"A ajuda colada ao campo é lida; numa coluna lateral, passa por anúncio e ninguém olha.", mudar:"Explicar o jeito novo onde a pessoa já está olhando evita que o aviso seja ignorado."},
+    ex:"No formulário da nota fiscal, a frase “usamos só para emitir a nota” fica logo abaixo do campo de CPF.",
     mock:[{t:"Dados para a nota"},{campo:"CPF"},{p:"Usamos só para emitir a nota fiscal."},{nota:"ajuda junto do campo"},{btn:"Continuar"}]},
   "orientacao":{como:{aumentar:"Saber onde está e como voltar dá segurança para seguir até o fim.", mudar:"Mostrar o caminho do jeito novo passo a passo evita que a pessoa se perca e desista."},
     ex:"O fluxo mostra em que passo a pessoa está e tem um voltar que sempre funciona igual.",
@@ -1691,7 +1712,7 @@ const APLICADO = {
     ex:"O checkout segue o modelo de loja que todo mundo conhece: carrinho, entrega e pagamento.",
     mock:[{prog:{at:0,labels:["Carrinho","Entrega","Pagamento"]}},{t:"Carrinho (2 itens)"},{nota:"igual a toda loja"},{btn:"Ir para entrega"}]},
   "linguagem":{como:{aumentar:"Usar as palavras de quem usa faz a pessoa reconhecer o que procura e confiar.", mudar:"Nomear o jeito novo com palavras conhecidas reduz o estranhamento."},
-    ex:"O menu troca o nome interno pela palavra que as pessoas usam ao falar da tarefa.",
+    ex:"O menu troca “Conciliação” por “Conferir pagamentos”.",
     mock:[{t:"Menu"},{compara:{cols:["Antes","Depois"],rows:[["Conciliação","Conferir pagamentos"],["Webhooks","Avisos automáticos"]]}},{nota:"fala como eles"}]},
   "subobjetivos":{como:{aumentar:"Mostrar as etapas reais antes de começar evita a desistência por surpresa.", mudar:"Revelar as etapas da troca uma por vez torna a mudança administrável."},
     ex:"Antes de contratar, a tela lista as perguntas que a pessoa vai precisar responder.",
@@ -1710,7 +1731,7 @@ Object.assign(APLICADO, {
     mock:[{t:"Fone sem fio"},{p:"R$ 249 · cartão final 4417"},{nota:"a dor de pagar encolhe"},{btn:"Comprar com 1 toque"}]},
   "custo-afundado":{como:{aumentar:"Mostrar o que a pessoa já construiu faz parar parecer desperdício, e ela continua.", mudar:"Levar junto o que a pessoa já construiu faz a troca não parecer jogar fora o investimento."},
     ex:"O app de idiomas mostra a sequência de dias e a meta quase cumprida antes de a pessoa pensar em parar.",
-    mock:[{t:"Ofensiva de 23 dias"},{barra:{pct:77,l:"23 de 30 dias da meta"}},{nota:"parar parece desperdício"},{btn:"Fazer a lição de hoje"}]},
+    mock:[{t:"Ofensiva de 23 dias"},{barra:{pct:77,l:"23 de 30 dias da meta"}},{nota:"23 dias em jogo"},{btn:"Fazer a lição de hoje"}]},
   "status-quo":{como:{aumentar:"Deixar o caminho atual como padrão mantém o uso sem nenhum esforço.", mudar:"Para tirar alguém do estado atual, o benefício da troca precisa ser óbvio e o esforço, quase zero."},
     ex:"Na migração para o app novo, a tela mostra o ganho em uma frase e leva os dados da pessoa sozinha.",
     mock:[{t:"Conheça o app novo"},{lista:[{l:"Seus dados vêm junto",ok:1},{l:"Volte quando quiser",ok:1}]},{nota:"ganho claro, esforço baixo"},{btn:"Trocar agora"}]}
@@ -1726,7 +1747,7 @@ Object.assign(APLICADO, {
     mock:[{t:"Você leu tudo de hoje"},{selo:"Volta amanhã às 7h com 5 textos novos"},{nota:"fim claro, sem talvez"},{btn2:"Fechar"}]},
   "habituacao":{como:{aumentar:"Variar o reconhecimento evita que a recompensa vire o mínimo esperado e perca efeito.", mudar:"Ligar a troca a algo com significado dura mais do que um prêmio que logo vira rotina."},
     ex:"Em vez de repetir o mesmo confete a cada tarefa, o app reconhece marcos diferentes de jeitos diferentes.",
-    mock:[{t:"Marco atingido"},{selo:"100 dias cuidando das suas plantas"},{p:"Sua samambaia está com você desde março."},{nota:"significado, não confete"}]},
+    mock:[{t:"Marco atingido"},{selo:"100 dias cuidando das suas plantas"},{p:"Sua samambaia está com você desde março."},{nota:"um marco que diz algo"}]},
   "previsibilidade":{como:{aumentar:"Saber quanto falta e o que vem depois tira a ansiedade que faz desistir no meio.", reduzir:"Dar previsão e controle tira o motivo de quem age por ansiedade, como quem liga no suporte toda hora.", mudar:"Mostrar exatamente o que acontece na troca reduz o medo do desconhecido."},
     ex:"A análise de crédito mostra as etapas e o tempo estimado, e avisa antes se o prazo mudar.",
     mock:[{t:"Analisando seu pedido"},{barra:{pct:60,l:"Etapa 3 de 5 · cerca de 2 horas"}},{nota:"saber quando acalma"},{p:"Avisamos se o prazo mudar."}]},
@@ -1742,9 +1763,9 @@ Object.assign(APLICADO, {
   "pares":{como:{aumentar:"Para jovens, ver amigos fazendo junto é o motor mais forte, desde que seja algo que faz bem.", reduzir:"Tirar a plateia do momento de risco faz o jovem decidir com mais calma."},
     ex:"No app de estudos para adolescentes, os amigos aparecem estudando junto, nunca em desafios de gasto ou risco.",
     mock:[{t:"Estudando agora"},{lista:[{l:"Bia: revisando química"},{l:"Léo: lista de exercícios"}]},{nota:"amigos puxando pro bem"},{btn:"Estudar junto"}]},
-  "um-rosto":{como:{aumentar:"Uma pessoa com rosto e nome mobiliza mais do que um número grande."},
+  "um-rosto":{como:{aumentar:"Mostrar quem é ajudado, com nome, leva mais gente a doar do que mostrar o total de beneficiados."},
     ex:"A página de doação conta a história de uma pessoa ajudada, antes de mostrar o total.",
-    mock:[{t:"Ajude a Joana a voltar a estudar"},{p:"Com R$ 50, ela compra o material do semestre."},{nota:"uma pessoa, não um número"},{btn:"Doar R$ 50"}]},
+    mock:[{t:"Ajude a Joana a voltar a estudar"},{p:"Com R$ 50, ela compra o material do semestre."},{nota:"a Joana, com nome"},{btn:"Doar R$ 50"}]},
   "automatizacao":{como:{aumentar:"Manter o fluxo sempre igual faz ele virar automático e parar de cansar.", mudar:"Ancorar o jeito novo no mesmo momento do antigo ajuda o hábito a trocar de lugar."},
     ex:"O lembrete de registrar gastos chega sempre no mesmo horário e abre direto no mesmo campo.",
     mock:[{t:"21h · Gastos de hoje"},{campo:"R$ 0,00"},{nota:"mesmo lugar, mesma hora"},{btn:"Registrar"}]}
@@ -1793,7 +1814,7 @@ function currentDir(){ return form.querySelector('input[name="dir"]:checked').va
 function timeBlock(){
   const ids = ['pequenos-numeros','regressao','retrospectiva','planejamento'];
   return '<aside class="card team" aria-label="Antes de testar"><p class="label">Antes de testar</p><p class="h3">Vieses que enganam quem mede</p>'
-    + '<ul class="team-list">'+ids.map(id=>{ const v=byId[id]; return '<li><a href="#vies-'+id+'">'+v.nome+'</a><span>'+v.teste+'</span></li>'; }).join('')+'</ul>'
+    + '<ul class="team-list">'+ids.map(id=>{ const v=byId[id]; return '<li><a href="'+L('vies-'+id)+'">'+v.nome+'</a><span>'+v.teste+'</span></li>'; }).join('')+'</ul>'
     + '<p class="caption">Do livro Rápido e devagar, de Daniel Kahneman.</p></aside>';
 }
 
@@ -1841,13 +1862,14 @@ function renderResults(){
       +   '<div class="bpart"><span class="label">O que é</span><p>'+v.resumo+'</p></div>'
       +   '<div class="bpart apply"><span class="label">Como ajuda a '+DIR_LABEL[dir]+'</span><p>'+a.como[dir]+'</p></div>'
       +   '<div class="bpart"><span class="label">Exemplo</span><p>'+a.ex+'</p></div>'
+      +   mockFigure(v)
       +   fit
-      + '</div>'+mockFigure(v)+'</div>'
+      + '</div></div>'
       + '<details class="more"><summary>Como testar e com que cuidado</summary><div class="more-body">'
       +   '<h4>Teste no seu produto</h4><p>'+v.teste+'</p>'
       +   '<h4>Cuidado</h4><p>'+v.cuidado+'</p>'
       +   '<p class="caption">Fonte: '+v.fonte+'</p></div></details>'
-      + '<div class="bcard-foot"><a class="btn" href="#vies-'+v.id+'">Ler o verbete</a>'
+      + '<div class="bcard-foot"><a class="btn" href="'+L('vies-'+v.id)+'">Ler o verbete</a>'
       + (n ? '<button type="button" class="btn ghost" data-insights="'+v.id+'">'+n+(n>1?' insights':' insight')+' sobre isso →</button>' : '')
       + '</div></article>';
   }).join('') + timeBlock();
@@ -1857,7 +1879,9 @@ form.addEventListener('input', ()=>scheduleResults(250));
 form.addEventListener('submit', e=>e.preventDefault());
 blist.addEventListener('click', e=>{
   const b = e.target.closest('[data-insights]'); if(!b) return;
-  postFilter = b.dataset.insights; postFonte = 'todos'; location.hash = 'insights';
+  postFilter = b.dataset.insights; postFonte = 'todos';
+  if(SITE){ location.href = '/insights/?vies='+encodeURIComponent(postFilter); return; }
+  location.hash = 'insights';
 });
 
 /* ---------- Guia ---------- */
@@ -1957,7 +1981,7 @@ function renderGuia(){
     return;
   }
   guiaGrid.innerHTML = list.map(v=>
-    '<a class="card gcard" href="#vies-'+v.id+'"><div class="gcard-art cat-'+v.cat+'">'+doodle(v.doodle,v.cat,true)+'</div>'
+    '<a class="card gcard" href="'+L('vies-'+v.id)+'"><div class="gcard-art cat-'+v.cat+'">'+doodle(v.doodle,v.cat,true)+'</div>'
     + '<div class="gcard-body"><span class="caption">'+CATS[v.cat].nome+(v.publico==='time'?' · para o seu time':'')+'</span><h2 class="h3">'+v.nome+'</h2><p>'+v.resumo+'</p></div></a>'
   ).join('');
 }
@@ -1970,7 +1994,7 @@ function mentesBlock(){
   return '<section class="mentes-sec"><h2 class="h2">Roteiro das seis mentes</h2>'
     + '<p class="body-l">Observe a pessoa fazendo a tarefa onde ela costuma fazer e pergunte enquanto acontece. Depois, separe cada achado pela mente que ele afeta.</p>'
     + '<div class="mentes">'+MENTES.map((m,i)=>'<div class="card mente"><p class="label">'+(i+1)+'. '+m.nome+'</p><ul>'+m.perguntas.map(q=>'<li>'+q+'</li>').join('')+'</ul>'
-    + '<p class="caption">Na wiki: '+m.vieses.filter(id=>byId[id]).map(id=>'<a href="#vies-'+id+'">'+byId[id].nome+'</a>').join(', ')+'</p></div>').join('')+'</div>'
+    + '<p class="caption">Na wiki: '+m.vieses.filter(id=>byId[id]).map(id=>'<a href="'+L('vies-'+id)+'">'+byId[id].nome+'</a>').join(', ')+'</p></div>').join('')+'</div>'
     + '<div class="copy-row"><button type="button" class="btn" id="copy-roteiro">Copiar roteiro</button><span class="caption" id="copy-status" aria-live="polite"></span></div>'
     + '<textarea id="roteiro-fallback" class="roteiro-fallback" readonly hidden aria-label="Roteiro para copiar"></textarea></section>';
 }
@@ -1988,16 +2012,12 @@ function renderVerbete(id){
   if(!v) return false;
   const ps = postsDe(v.id);
   el.innerHTML =
-    '<a class="btn ghost back" href="#guia">← Guia de vieses</a>'
+    '<a class="btn ghost back" href="'+L('guia')+'">← Guia de vieses</a>'
     + '<div class="entry-hero"><div class="intro">'
     +   '<p class="question">'+v.pergunta+'</p>'
     +   '<h1 class="display-xl" lang="pt-BR">'+v.nome+'</h1>'
     +   '<p class="lede"><mark>'+v.resumo+'</mark></p>'
     +   '<div class="fit">'+chip(v)+(v.publico==='time'?'<span class="chip">Para o seu time</span>':'')+'</div>'
-    +   (v.livro ? '<p class="caption">No livro <cite>Rápido e devagar</cite>, '+v.livro+'</p>' : '')
-    +   (v.whalen ? '<p class="caption">No livro <cite>Design for How People Think</cite>, '+v.whalen+'</p>' : '')
-    +   (v.enviesados ? '<p class="caption">No livro <cite>Enviesados</cite>, de Rian Dutra</p>' : '')
-    +   (v.sapolsky ? '<p class="caption">No livro <cite>Comporte-se</cite>, de Robert Sapolsky, '+v.sapolsky+'</p>' : '')
     + '</div><div class="panel cat-'+v.cat+'">'+doodle(v.doodle,v.cat,true)+'</div></div>'
     + '<div class="entry-body"><div class="prose">'
     +   '<section><h2 class="h2">No dia a dia</h2><p class="body-l">'+v.exemplo+'</p></section>'
@@ -2011,9 +2031,9 @@ function renderVerbete(id){
     +     '<p class="caption">Fonte: '+v.fonte+'</p></section>'
     + '</div><aside class="side" aria-label="Relacionados">'
     +   '<h2 class="h3">Insights sobre '+lower1(v.nome)+'</h2>'
-    +   (ps.length ? ps.map(p=>'<a class="card mini-post" href="#post-'+p.id+'"><span class="caption">'+p.data+' · '+p.min+' min</span><span class="label" style="font-size:16px">'+p.titulo+'</span></a>').join('')
+    +   (ps.length ? ps.map(p=>'<a class="card mini-post" href="'+L('post-'+p.id)+'"><span class="caption">'+p.data+' · '+p.min+' min</span><span class="label" style="font-size:16px">'+p.titulo+'</span></a>').join('')
                    : '<div class="card mini-empty"><p class="label">Ainda no caderno</p><p class="caption">O primeiro post sobre este viés está sendo escrito.</p></div>')
-    +   '<a class="btn primary" href="#explorar">Explorar um comportamento</a>'
+    +   '<a class="btn primary" href="'+L('explorar')+'">Explorar um comportamento</a>'
     + '</aside></div>';
   setFace(document.getElementById('callout-face'), 'piscando', {size:64});
   return true;
@@ -2056,7 +2076,7 @@ function renderInsights(){
     + (postFonte!=='todos'?' de '+fNome:'') + (postFilter!=='todos'?' sobre '+byId[postFilter].nome.charAt(0).toLowerCase()+byId[postFilter].nome.slice(1):'');
   document.getElementById('posts').innerHTML = list.length ? list.map(p=>{
     const v = byId[p.vies];
-    return '<a class="card pcard" href="#post-'+p.id+'"><div class="meta">'+chip(v)+'<span class="caption">'+v.nome+(p.livro?' · Rápido e devagar':'')+(p.whalen?' · Design for How People Think':'')+(p.dutra?' · Enviesados':'')+(p.sapolsky?' · Comporte-se':'')+'</span></div>'
+    return '<a class="card pcard" href="'+L('post-'+p.id)+'"><div class="meta">'+chip(v)+'<span class="caption">'+v.nome+(p.livro?' · Rápido e devagar':'')+(p.whalen?' · Design for How People Think':'')+(p.dutra?' · Enviesados':'')+(p.sapolsky?' · Comporte-se':'')+'</span></div>'
       + '<h2 class="h3">'+p.titulo+'</h2><p>'+p.dek+'</p><span class="caption">'+p.data+' · '+p.min+' min de leitura</span></a>';
   }).join('') : '<div class="card empty-state dashed" style="grid-column:1/-1"><div class="es-body"><p class="h3">Nenhum insight com esses filtros</p><p>Tente outro livro ou outro viés, ou veja todos.</p><div class="examples"><button type="button" class="btn" data-pf="todos">Ver todos</button></div></div></div>';
 }
@@ -2120,14 +2140,14 @@ function renderPost(id){
   const corpo = p.corpo.map((c,i)=> i===1
     ? '<aside class="card bw-callout" aria-label="O dado que surpreende"><button type="button" class="face-btn" id="post-face" aria-label="Fazer o B piscar"></button><div class="callout-text"><p class="label">O dado que surpreende</p><p class="body-l">'+c+'</p></div></aside>'
     : '<p class="body-l">'+c+'</p>').join('');
-  el.innerHTML = '<a class="btn ghost back" href="#insights">← Insights</a><article class="article">'
+  el.innerHTML = '<a class="btn ghost back" href="'+L('insights')+'">← Insights</a><article class="article">'
     + '<header class="article-head"><div class="fit">'+chip(v)+'<span class="caption">'+v.nome+(p.livro?' · Rápido e devagar, '+p.livro:'')+(p.whalen?' · Design for How People Think, '+p.whalen:'')+(p.dutra?' · Enviesados':'')+(p.sapolsky?' · Comporte-se, '+p.sapolsky:'')+' · '+p.data+' · '+p.min+' min</span></div>'
     + '<h1 class="display-l">'+t+'</h1><p class="lede">'+p.dek+'</p></header>'
     + '<div class="article-body">'+corpo+'</div>'
     + '<section class="card callout"><h2 class="h2">Teste no seu produto</h2><p class="body-l">'+p.teste+'</p>'
     + '<div class="ethic"><p class="label">Cuidado</p><p>Meça também o efeito colateral: cancelamento, reembolso e reclamação. Se eles sobem, o ganho não é real.</p></div>'
     + '<p class="caption">Fonte: '+p.fonte+'</p></section>'
-    + '<div class="bcard-foot"><a class="btn primary" href="#vies-'+v.id+'">Ler o verbete: '+v.nome+'</a></div>'
+    + '<div class="bcard-foot"><a class="btn primary" href="'+L('vies-'+v.id)+'">Ler o verbete: '+v.nome+'</a></div>'
     + '</article>';
   setFace(document.getElementById('post-face'), 'surpreso', {size:64});
   return true;
@@ -2137,7 +2157,7 @@ function renderPost(id){
 const VIEWS = ['explorar','guia','verbete','insights','post','404'];
 let first = true;
 function route(){
-  const h = location.hash.replace('#','') || 'explorar';
+  const h = SITE ? routeFromPath() : (location.hash.replace('#','') || 'explorar');
   let view = 'explorar', tab = 'explorar';
   if(h==='explorar'){ }
   else if(h==='guia'){ view='guia'; tab='guia'; renderGuia(); }
@@ -2151,9 +2171,20 @@ function route(){
   if(!first) window.scrollTo({top:0});
   first = false;
 }
-window.addEventListener('hashchange', route);
+if(SITE){
+  /* links antigos com # levam para a página nova */
+  const old = location.hash.replace('#','');
+  if(old && /^(guia|insights|explorar|vies-[a-z0-9-]+|post-[a-z0-9-]+)$/.test(old)){ location.replace(L(old)); }
+  const q = new URLSearchParams(location.search).get('vies');
+  if(q && typeof VIESES!=='undefined' && VIESES.some(v=>v.id===q)){ postFilter = q; postFonte = 'todos'; }
+} else {
+  window.addEventListener('hashchange', route);
+}
 renderResults(); route();
 </script>
+
+
+
 
 </body>
 </html>
