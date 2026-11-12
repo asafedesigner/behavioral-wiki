@@ -401,14 +401,14 @@ cite{font-style:italic}
 <!-- EXPLORAR -->
 <main id="view-explorar" class="wrap" hidden="">
   <div class="view-head">
-    <h1 class="display-l">Em qual <mark>comportamento</mark> você está trabalhando?</h1>
+    <div class="display-l">Em qual <mark>comportamento</mark> você está trabalhando?</div>
     <p class="body-l">Pode ser fazer mais gente agir, menos gente agir ou trocar um jeito de fazer por outro. A gente mostra quais vieses ajudam, como aplicar na sua tela e como testar sem enganar ninguém.</p>
   </div>
 
   <div class="explorer">
     <form class="form card" id="explore-form" novalidate="">
       <div class="form-title">
-        <h2 class="h3">Seu comportamento</h2>
+        <div class="h3">Seu comportamento</div>
         <span class="hand" aria-hidden="true">comece aqui ↓</span>
       </div>
 
@@ -431,13 +431,13 @@ cite{font-style:italic}
 
     <section class="results" aria-labelledby="results-title">
       <div class="results-head">
-        <h2 class="h2" id="results-title">Vieses que podem ajudar</h2>
+        <div class="h2" id="results-title">Vieses que podem ajudar</div>
         <div class="status" aria-live="polite">
-          <button type="button" class="face-btn" id="ex-face" aria-label="Fazer o B piscar" data-mood="curioso" data-size="64" data-track="1" data-label="Resultado pronto"><svg class="simbolo" viewBox="0 0 100 100" width="64" height="64" role="img" aria-label="Resultado pronto" focusable="false" data-track="1" data-mood="curioso"><defs><mask id="bwsym1"><rect x="-10" y="-10" width="140" height="130" fill="#fff"></rect><circle cx="54" cy="30" r="12" fill="#000"></circle><circle cx="56" cy="70" r="13" fill="#000"></circle></mask></defs><g mask="url(#bwsym1)" style="fill:var(--ink)"><rect x="12" y="6" width="22" height="90" rx="4"></rect><circle cx="52" cy="30" r="24"></circle><circle cx="54" cy="70" r="26"></circle><rect x="30" y="6" width="22" height="48"></rect><rect x="30" y="44" width="24" height="52"></rect></g><g style="fill:var(--surface)"><circle cx="54" cy="30" r="12"></circle><circle cx="56" cy="70" r="13"></circle></g><g style="fill:var(--ink)"><circle class="pa" cx="59.5" cy="26.5" r="6.5"></circle><circle class="pb" cx="62" cy="66" r="7"></circle></g></svg></button>
-          <div class="status-text"><p class="status-title" id="ex-title">6 vieses que ajudam a aumentar um comportamento</p><p class="caption" id="results-sub">Ordenados pelo que trava hoje.</p></div>
+          <button type="button" class="face-btn" id="ex-face" aria-label="Fazer o B piscar"></button>
+          <div class="status-text"><p class="status-title" id="ex-title"></p><p class="caption" id="results-sub"></p></div>
         </div>
       </div>
-      <div class="blist reveal" id="blist"></div>
+      <div class="blist" id="blist"></div>
     </section>
   </div>
 </main>
@@ -445,12 +445,12 @@ cite{font-style:italic}
 <!-- GUIA -->
 <main id="view-guia" class="wrap" hidden="">
   <div class="view-head">
-    <h1 class="display-l">Guia de <mark>vieses</mark></h1>
+    <div class="display-l">Guia de <mark>vieses</mark></div>
     <p class="body-l">Cada verbete começa por uma pergunta do dia a dia e termina com um teste que dá para rodar no seu produto.</p>
   </div>
   <section class="books-sec" aria-labelledby="books-title">
     <div class="books-head">
-      <h2 class="h3" id="books-title">Livros na wiki</h2>
+      <div class="h3" id="books-title">Livros na wiki</div>
       <div class="books-nav">
         <button type="button" class="btn nav-btn" id="books-prev" aria-label="Livro anterior">←</button>
         <button type="button" class="btn nav-btn" id="books-next" aria-label="Próximo livro">→</button>
@@ -461,7 +461,7 @@ cite{font-style:italic}
       <div class="book-art cat-percepcao" id="book-art"><svg class="doodle" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><g transform="translate(4 4)" fill="none" stroke="var(--surface)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><path d="M54 8L28 54H48L40 92L74 40H54L64 8Z"></path></g><g filter="url(#wobble)" fill="none" stroke="var(--on-highlight)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M54 8L28 54H48L40 92L74 40H54L64 8Z"></path></g></svg></div>
       <div class="book-body">
         <p class="caption">Daniel Kahneman</p>
-        <h2 class="h3" id="book-title">Rápido e devagar</h2>
+        <div class="h3" id="book-title">Rápido e devagar</div>
         <p>A mente tem um sistema rápido e automático e outro lento e preguiçoso. Quase todo viés nasce do encontro dos dois, inclusive os que enganam o seu time na hora de medir.</p>
         <div class="bcard-foot"><a class="btn primary" href="/vieses/dois-sistemas/">Os dois sistemas</a><button type="button" class="btn" id="book-go">Ver os conceitos</button></div>
       </div>
@@ -470,7 +470,7 @@ cite{font-style:italic}
       <div class="book-art cat-memoria" id="book-art-2"><svg class="doodle" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><g transform="translate(4 4)" fill="none" stroke="var(--surface)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><circle cx="50" cy="50" r="9"></circle><circle cx="50" cy="16" r="7"></circle><circle cx="80" cy="33" r="7"></circle><circle cx="80" cy="67" r="7"></circle><circle cx="50" cy="84" r="7"></circle><circle cx="20" cy="67" r="7"></circle><circle cx="20" cy="33" r="7"></circle></g><g filter="url(#wobble)" fill="none" stroke="var(--on-highlight)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="50" cy="50" r="9"></circle><circle cx="50" cy="16" r="7"></circle><circle cx="80" cy="33" r="7"></circle><circle cx="80" cy="67" r="7"></circle><circle cx="50" cy="84" r="7"></circle><circle cx="20" cy="67" r="7"></circle><circle cx="20" cy="33" r="7"></circle></g></svg></div>
       <div class="book-body">
         <p class="caption">John Whalen</p>
-        <h2 class="h3" id="book-title-2">Design for How People Think</h2>
+        <div class="h3" id="book-title-2">Design for How People Think</div>
         <p>Para Whalen, a experiência acontece na cabeça de quem usa. Ele divide essa cabeça em seis processos e mostra como pesquisar cada um. Daqui vieram o modelo das seis mentes e um roteiro de entrevista.</p>
         <div class="bcard-foot"><a class="btn primary" href="/vieses/seis-mentes/">As seis mentes</a><button type="button" class="btn" id="book-go-2">Ver os conceitos</button></div>
       </div>
@@ -479,7 +479,7 @@ cite{font-style:italic}
       <div class="book-art cat-decisao" id="book-art-3"><svg class="doodle" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><g transform="translate(4 4)" fill="none" stroke="var(--surface)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="28" width="62" height="42" rx="6"></rect><path d="M8 42H70"></path><path d="M78 36Q86 49 78 62"></path><path d="M87 29Q99 49 87 69"></path></g><g filter="url(#wobble)" fill="none" stroke="var(--on-highlight)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="28" width="62" height="42" rx="6"></rect><path d="M8 42H70"></path><path d="M78 36Q86 49 78 62"></path><path d="M87 29Q99 49 87 69"></path></g></svg></div>
       <div class="book-body">
         <p class="caption">Rian Dutra</p>
-        <h2 class="h3" id="book-title-3">Enviesados</h2>
+        <div class="h3" id="book-title-3">Enviesados</div>
         <p>Vieses explicados com exemplos de produtos que a gente usa todo dia: do preço riscado à ofensiva do app de idiomas. Inclui custo afundado, status quo e o efeito cashless.</p>
         <div class="bcard-foot"><a class="btn primary" href="/vieses/custo-afundado/">Custo afundado</a><button type="button" class="btn" id="book-go-3">Ver os conceitos</button></div>
       </div>
@@ -488,7 +488,7 @@ cite{font-style:italic}
       <div class="book-art cat-social" id="book-art-4"><svg class="doodle" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><g transform="translate(4 4)" fill="none" stroke="var(--surface)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><path d="M50 12Q74 12 76 38Q76 52 62 62V72H38V62Q24 52 24 38Q26 12 50 12Z"></path><path d="M40 80H60"></path><path d="M42 88H58"></path><path d="M8 30L16 34"></path><path d="M92 30L84 34"></path></g><g filter="url(#wobble)" fill="none" stroke="var(--on-highlight)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M50 12Q74 12 76 38Q76 52 62 62V72H38V62Q24 52 24 38Q26 12 50 12Z"></path><path d="M40 80H60"></path><path d="M42 88H58"></path><path d="M8 30L16 34"></path><path d="M92 30L84 34"></path></g></svg></div>
       <div class="book-body">
         <p class="caption">Robert Sapolsky</p>
-        <h2 class="h3" id="book-title-4">Comporte-se</h2>
+        <div class="h3" id="book-title-4">Comporte-se</div>
         <p>A biologia por trás do que a gente faz: dopamina, estresse, grupos e status. Daqui vêm a força do talvez e a explicação de por que esperar sem saber estressa tanto.</p>
         <div class="bcard-foot"><a class="btn primary" href="/vieses/recompensa-incerta/">A força do talvez</a><button type="button" class="btn" id="book-go-4">Ver os conceitos</button></div>
       </div>
@@ -513,7 +513,7 @@ cite{font-style:italic}
 <!-- INSIGHTS -->
 <main id="view-insights" class="wrap" hidden="">
   <div class="view-head">
-    <h1 class="display-l"><mark>Insights</mark> por viés</h1>
+    <div class="display-l"><mark>Insights</mark> por viés</div>
     <p class="body-l">Histórias curtas de estudos e telas, organizadas pelo viés que explicam. Cada uma termina com um teste para o seu produto.</p>
   </div>
   <section class="card mito" aria-labelledby="mito-title">
@@ -544,14 +544,14 @@ cite{font-style:italic}
 <main id="view-404" class="wrap" hidden="">
   <div class="notfound">
     <button type="button" class="face-btn" id="nf-face" aria-label="Fazer o B piscar"></button>
-    <h1 class="display-l">Essa página saiu do caderno</h1>
+    <div class="display-l">Essa página saiu do caderno</div>
     <p class="body-l">O link pode estar errado ou o verbete mudou de nome. Volte para o guia ou explore um comportamento.</p>
     <div class="bcard-foot"><a class="btn primary" href="/guia/">Ver o guia</a><a class="btn" href="/">Explorar um comportamento</a></div>
   </div>
 </main>
 
 <!-- POST -->
-<main id="view-post" class="wrap"><a class="btn ghost back" href="/insights/">← Insights</a><article class="article"><header class="article-head"><div class="fit"><span class="chip cat cat-decisao">Decisão</span><span class="caption">Efeito dotação · Rápido e devagar, cap. 27 · 5 nov 2026 · 3 min</span></div><h1 class="display-l">A caneca que ninguém quis <mark>vender</mark></h1><p class="lede">Bastou ganhar a caneca para ela valer o dobro.</p></header><div class="article-body"><p class="body-l">Num experimento, metade dos participantes recebeu uma caneca da universidade. A outra metade podia comprar uma.</p><aside class="card bw-callout" aria-label="O dado que surpreende"><button type="button" class="face-btn" id="post-face" aria-label="Fazer o B piscar" data-mood="surpreso" data-size="64" data-track="" data-label=""><svg class="simbolo" viewBox="0 0 100 100" width="64" height="64" aria-hidden="true" focusable="false" data-mood="surpreso"><defs><mask id="bwsym2"><rect x="-10" y="-10" width="140" height="130" fill="#fff"></rect><circle cx="54" cy="30" r="12" fill="#000"></circle><circle cx="56" cy="70" r="13" fill="#000"></circle></mask></defs><g mask="url(#bwsym2)" style="fill:var(--ink)"><rect x="12" y="6" width="22" height="90" rx="4"></rect><circle cx="52" cy="30" r="24"></circle><circle cx="54" cy="70" r="26"></circle><rect x="30" y="6" width="22" height="48"></rect><rect x="30" y="44" width="24" height="52"></rect></g><g style="fill:var(--surface)"><circle cx="54" cy="30" r="12"></circle><circle cx="56" cy="70" r="13"></circle></g><g style="fill:var(--ink)"><circle class="pa" cx="54" cy="30" r="4"></circle><circle class="pb" cx="56" cy="70" r="4.5"></circle></g></svg></button><div class="callout-text"><p class="label">O dado que surpreende</p><p class="body-l">Quem ganhou pedia, em média, cerca do dobro para vender do que quem não ganhou aceitava pagar. As trocas foram menos da metade do que a teoria econômica previa.</p></div></aside><p class="body-l">Abrir mão de algo que já é nosso dói como perda. Comprar a mesma coisa é só um ganho, e ganhos pesam menos.</p><p class="body-l">Isso explica por que testes grátis, personalização e conteúdo salvo funcionam: quando a pessoa já montou algo, aquilo passa a ser dela.</p></div><section class="card callout"><h2 class="h2">Teste no seu produto</h2><p class="body-l">Deixe a pessoa criar ou configurar algo dela antes de pedir o pagamento. Meça conversão e cancelamento no fim do teste.</p><div class="ethic"><p class="label">Cuidado</p><p>Meça também o efeito colateral: cancelamento, reembolso e reclamação. Se eles sobem, o ganho não é real.</p></div><p class="caption">Fonte: Kahneman, Knetsch &amp; Thaler, 1990; Kahneman, Rápido e devagar, cap. 27</p></section><div class="bcard-foot"><a class="btn primary" href="/vieses/dotacao/">Ler o verbete: Efeito dotação</a></div></article></main>
+<main id="view-post" class="wrap"><a class="btn ghost back" href="/insights/">← Insights</a><article class="article"><header class="article-head"><div class="fit"><span class="chip cat cat-decisao">Decisão</span><span class="caption">Efeito dotação · Rápido e devagar, cap. 27 · 5 nov 2026 · 3 min</span></div><h1 class="display-l">A caneca que ninguém quis <mark>vender</mark></h1><p class="lede">Bastou ganhar a caneca para ela valer o dobro.</p></header><div class="article-body"><p class="body-l">Num experimento, metade dos participantes recebeu uma caneca da universidade. A outra metade podia comprar uma.</p><aside class="card bw-callout" aria-label="O dado que surpreende"><button type="button" class="face-btn" id="post-face" aria-label="Fazer o B piscar" data-mood="surpreso" data-size="64" data-track="" data-label=""><svg class="simbolo" viewBox="0 0 100 100" width="64" height="64" aria-hidden="true" focusable="false" data-mood="surpreso"><defs><mask id="bwsym1"><rect x="-10" y="-10" width="140" height="130" fill="#fff"></rect><circle cx="54" cy="30" r="12" fill="#000"></circle><circle cx="56" cy="70" r="13" fill="#000"></circle></mask></defs><g mask="url(#bwsym1)" style="fill:var(--ink)"><rect x="12" y="6" width="22" height="90" rx="4"></rect><circle cx="52" cy="30" r="24"></circle><circle cx="54" cy="70" r="26"></circle><rect x="30" y="6" width="22" height="48"></rect><rect x="30" y="44" width="24" height="52"></rect></g><g style="fill:var(--surface)"><circle cx="54" cy="30" r="12"></circle><circle cx="56" cy="70" r="13"></circle></g><g style="fill:var(--ink)"><circle class="pa" cx="54" cy="30" r="4"></circle><circle class="pb" cx="56" cy="70" r="4.5"></circle></g></svg></button><div class="callout-text"><p class="label">O dado que surpreende</p><p class="body-l">Quem ganhou pedia, em média, cerca do dobro para vender do que quem não ganhou aceitava pagar. As trocas foram menos da metade do que a teoria econômica previa.</p></div></aside><p class="body-l">Abrir mão de algo que já é nosso dói como perda. Comprar a mesma coisa é só um ganho, e ganhos pesam menos.</p><p class="body-l">Isso explica por que testes grátis, personalização e conteúdo salvo funcionam: quando a pessoa já montou algo, aquilo passa a ser dela.</p></div><section class="card callout"><h2 class="h2">Teste no seu produto</h2><p class="body-l">Deixe a pessoa criar ou configurar algo dela antes de pedir o pagamento. Meça conversão e cancelamento no fim do teste.</p><div class="ethic"><p class="label">Cuidado</p><p>Meça também o efeito colateral: cancelamento, reembolso e reclamação. Se eles sobem, o ganho não é real.</p></div><p class="caption">Fonte: Kahneman, Knetsch &amp; Thaler, 1990; Kahneman, Rápido e devagar, cap. 27</p></section><div class="bcard-foot"><a class="btn primary" href="/vieses/dotacao/">Ler o verbete: Efeito dotação</a></div></article></main>
 
 <script>window.BW_SITE=1</script>
 <script>
@@ -2181,7 +2181,8 @@ if(SITE){
 } else {
   window.addEventListener('hashchange', route);
 }
-renderResults(); route();
+if(!SITE || routeFromPath()==='explorar') renderResults();
+route();
 </script>
 
 

@@ -400,14 +400,14 @@ cite{font-style:italic}
 <!-- EXPLORAR -->
 <main id="view-explorar" class="wrap" hidden="">
   <div class="view-head">
-    <h1 class="display-l">Em qual <mark>comportamento</mark> você está trabalhando?</h1>
+    <div class="display-l">Em qual <mark>comportamento</mark> você está trabalhando?</div>
     <p class="body-l">Pode ser fazer mais gente agir, menos gente agir ou trocar um jeito de fazer por outro. A gente mostra quais vieses ajudam, como aplicar na sua tela e como testar sem enganar ninguém.</p>
   </div>
 
   <div class="explorer">
     <form class="form card" id="explore-form" novalidate="">
       <div class="form-title">
-        <h2 class="h3">Seu comportamento</h2>
+        <div class="h3">Seu comportamento</div>
         <span class="hand" aria-hidden="true">comece aqui ↓</span>
       </div>
 
@@ -430,13 +430,13 @@ cite{font-style:italic}
 
     <section class="results" aria-labelledby="results-title">
       <div class="results-head">
-        <h2 class="h2" id="results-title">Vieses que podem ajudar</h2>
+        <div class="h2" id="results-title">Vieses que podem ajudar</div>
         <div class="status" aria-live="polite">
-          <button type="button" class="face-btn" id="ex-face" aria-label="Fazer o B piscar" data-mood="curioso" data-size="64" data-track="1" data-label="Resultado pronto"><svg class="simbolo" viewBox="0 0 100 100" width="64" height="64" role="img" aria-label="Resultado pronto" focusable="false" data-track="1" data-mood="curioso"><defs><mask id="bwsym1"><rect x="-10" y="-10" width="140" height="130" fill="#fff"></rect><circle cx="54" cy="30" r="12" fill="#000"></circle><circle cx="56" cy="70" r="13" fill="#000"></circle></mask></defs><g mask="url(#bwsym1)" style="fill:var(--ink)"><rect x="12" y="6" width="22" height="90" rx="4"></rect><circle cx="52" cy="30" r="24"></circle><circle cx="54" cy="70" r="26"></circle><rect x="30" y="6" width="22" height="48"></rect><rect x="30" y="44" width="24" height="52"></rect></g><g style="fill:var(--surface)"><circle cx="54" cy="30" r="12"></circle><circle cx="56" cy="70" r="13"></circle></g><g style="fill:var(--ink)"><circle class="pa" cx="59.5" cy="26.5" r="6.5"></circle><circle class="pb" cx="62" cy="66" r="7"></circle></g></svg></button>
-          <div class="status-text"><p class="status-title" id="ex-title">6 vieses que ajudam a aumentar um comportamento</p><p class="caption" id="results-sub">Ordenados pelo que trava hoje.</p></div>
+          <button type="button" class="face-btn" id="ex-face" aria-label="Fazer o B piscar"></button>
+          <div class="status-text"><p class="status-title" id="ex-title"></p><p class="caption" id="results-sub"></p></div>
         </div>
       </div>
-      <div class="blist reveal" id="blist"></div>
+      <div class="blist" id="blist"></div>
     </section>
   </div>
 </main>
@@ -512,7 +512,7 @@ cite{font-style:italic}
 <!-- INSIGHTS -->
 <main id="view-insights" class="wrap" hidden="">
   <div class="view-head">
-    <h1 class="display-l"><mark>Insights</mark> por viés</h1>
+    <div class="display-l"><mark>Insights</mark> por viés</div>
     <p class="body-l">Histórias curtas de estudos e telas, organizadas pelo viés que explicam. Cada uma termina com um teste para o seu produto.</p>
   </div>
   <section class="card mito" aria-labelledby="mito-title">
@@ -543,7 +543,7 @@ cite{font-style:italic}
 <main id="view-404" class="wrap" hidden="">
   <div class="notfound">
     <button type="button" class="face-btn" id="nf-face" aria-label="Fazer o B piscar"></button>
-    <h1 class="display-l">Essa página saiu do caderno</h1>
+    <div class="display-l">Essa página saiu do caderno</div>
     <p class="body-l">O link pode estar errado ou o verbete mudou de nome. Volte para o guia ou explore um comportamento.</p>
     <div class="bcard-foot"><a class="btn primary" href="/guia/">Ver o guia</a><a class="btn" href="/">Explorar um comportamento</a></div>
   </div>
@@ -2180,7 +2180,8 @@ if(SITE){
 } else {
   window.addEventListener('hashchange', route);
 }
-renderResults(); route();
+if(!SITE || routeFromPath()==='explorar') renderResults();
+route();
 </script>
 
 
