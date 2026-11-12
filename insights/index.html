@@ -346,7 +346,7 @@ cite{font-style:italic}
 .m-tab td:last-child{background:var(--mc);color:var(--on-highlight);font-weight:700}
 @media (max-width: 640px){.bcard-grid,.na-tela-grid{grid-template-columns:minmax(0,1fr)}}
 .pfilters{display:grid;gap:var(--space-3);margin-bottom:var(--space-5);padding:var(--space-4) var(--space-5);background:var(--paper-deep);border-radius:var(--radius-md)}
-.pf-row{display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:var(--space-3);align-items:center}
+.pf-row{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:var(--space-3);align-items:center}
 .pf-row .filter-chips{grid-column:2 / -1}
 .pf-label{font-size:14px;font-weight:700;color:var(--ink-soft)}
 .chip-n{font-weight:600;opacity:.6;margin-left:2px;font-variant-numeric:tabular-nums}
@@ -369,6 +369,7 @@ cite{font-style:italic}
   .annot{right:12px}
 }
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
+[hidden]{display:none!important}
 </style>
 </head>
 <body>
@@ -474,14 +475,10 @@ cite{font-style:italic}
     <p class="body-l">Histórias curtas de estudos e telas, organizadas pelo viés que explicam. Cada uma termina com um teste para o seu produto.</p>
   </div>
   <div class="pfilters" id="post-filters">
-    <div class="pf-row" hidden="">
-      <span class="pf-label" id="pf-livro-label">Livro</span>
-      <div class="filter-chips" id="post-fontes" role="group" aria-labelledby="pf-livro-label"><button type="button" class="chip fchip" data-fonte="todos" aria-pressed="true">Todos <span class="chip-n">31</span></button><button type="button" class="chip fchip" data-fonte="livro" aria-pressed="false">Rápido e devagar <span class="chip-n">7</span></button><button type="button" class="chip fchip" data-fonte="whalen" aria-pressed="false">Design for How People Think <span class="chip-n">7</span></button><button type="button" class="chip fchip" data-fonte="enviesados" aria-pressed="false">Enviesados <span class="chip-n">3</span></button><button type="button" class="chip fchip" data-fonte="sapolsky" aria-pressed="false">Comporte-se <span class="chip-n">7</span></button></div>
-    </div>
     <div class="pf-row">
       <label class="pf-label" for="post-vies">Viés</label>
       <div class="select-wrap"><select id="post-vies" class="input select"><option value="todos" selected="">Todos os vieses (31)</option><optgroup label="Memória"><option value="antecipacao">Antecipação da recompensa (1)</option><option value="modelos-mentais">Modelos mentais (1)</option><option value="pico-fim">Regra do pico e fim (1)</option></optgroup><optgroup label="Social"><option value="pares">Influência dos pares (1)</option><option value="multiplas-hierarquias">Múltiplas hierarquias (1)</option><option value="nos-e-eles">Nós e eles (1)</option><option value="medos-profundos">Objetivos e medos profundos (1)</option><option value="olhos-observam">Olhos que observam (1)</option><option value="prova-social">Prova social (1)</option></optgroup><optgroup label="Percepção"><option value="cegueira-anuncio">Cegueira para anúncios (1)</option><option value="linguagem">Linguagem de quem usa (1)</option><option value="denominador">Negligência com o denominador (1)</option><option value="orientacao">Orientação espacial (1)</option><option value="previsibilidade">Previsibilidade e controle (1)</option><option value="progresso-dotado">Progresso dotado (1)</option><option value="regressao">Regressão à média (1)</option><option value="dois-sistemas">Sistema 1 e Sistema 2 (1)</option></optgroup><optgroup label="Decisão"><option value="recompensa-incerta">A força do talvez (1)</option><option value="ancoragem">Ancoragem (2)</option><option value="avaliacao-conjunta">Avaliação conjunta e isolada (1)</option><option value="aversao-perda">Aversão à perda (1)</option><option value="satisficing">Bom o suficiente (1)</option><option value="custo-afundado">Custo afundado (1)</option><option value="efeito-cashless">Efeito cashless (1)</option><option value="chamariz">Efeito chamariz (1)</option><option value="dotacao">Efeito dotação (1)</option><option value="efeito-padrao">Efeito padrão (1)</option><option value="planejamento">Falácia do planejamento (1)</option><option value="subobjetivos">Mapa de subobjetivos (1)</option><option value="sobrecarga">Sobrecarga de escolha (1)</option></optgroup></select></div>
-      <button type="button" class="btn ghost" id="pf-clear" hidden="">Limpar filtros</button>
+      <button type="button" class="btn ghost" id="pf-clear" hidden="">Limpar filtro</button>
     </div>
     <p class="caption" id="pf-count" aria-live="polite">31 insights</p>
   </div>
@@ -1963,10 +1960,6 @@ let postFonte = 'todos';
 const FONTES = [['todos','Todos'],['livro','Rápido e devagar'],['whalen','Design for How People Think'],['enviesados','Enviesados'],['sapolsky','Comporte-se']];
 const daFonte = (p,f) => f==='todos' || (f==='livro'&&!!p.livro) || (f==='whalen'&&!!p.whalen) || (f==='enviesados'&&!!p.dutra) || (f==='sapolsky'&&!!p.sapolsky);
 function renderPostFilters(){
-  document.getElementById('post-fontes').innerHTML = FONTES.map(([k,n])=>{
-    const c = POSTS.filter(p=>daFonte(p,k)).length;
-    return '<button type="button" class="chip fchip" data-fonte="'+k+'" aria-pressed="'+(postFonte===k)+'">'+n+' <span class="chip-n">'+c+'</span></button>';
-  }).join('');
   const naFonte = POSTS.filter(p=>daFonte(p,postFonte));
   const ids = [...new Set(POSTS.map(p=>p.vies))];
   const grupos = Object.entries(CATS).map(([k,c])=>{
@@ -1980,10 +1973,6 @@ function renderPostFilters(){
   document.getElementById('post-vies').innerHTML = '<option value="todos"'+(postFilter==='todos'?' selected':'')+'>Todos os vieses ('+naFonte.length+')</option>'+grupos;
   document.getElementById('pf-clear').hidden = postFonte==='todos' && postFilter==='todos';
 }
-document.getElementById('post-fontes').addEventListener('click', e=>{
-  const b = e.target.closest('[data-fonte]'); if(!b) return;
-  postFonte = b.dataset.fonte; renderInsights();
-});
 document.getElementById('post-vies').addEventListener('change', e=>{ postFilter = e.target.value; renderInsights(); });
 document.getElementById('pf-clear').addEventListener('click', ()=>{ postFonte='todos'; postFilter='todos'; renderInsights(); document.getElementById('post-vies').focus(); });
 function renderInsights(){
