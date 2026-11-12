@@ -473,15 +473,6 @@ cite{font-style:italic}
     <h1 class="display-l"><mark>Insights</mark> por viés</h1>
     <p class="body-l">Histórias curtas de estudos e telas, organizadas pelo viés que explicam. Cada uma termina com um teste para o seu produto.</p>
   </div>
-  <section class="card mito" aria-labelledby="mito-title">
-    <button type="button" class="face-btn" id="mito-face" aria-label="Fazer o B piscar" data-mood="desconfiado" data-size="96" data-track="" data-label="B desconfiado"><svg class="simbolo" viewBox="0 0 100 100" width="96" height="96" role="img" aria-label="B desconfiado" focusable="false" data-mood="desconfiado"><defs><mask id="bwsym1"><rect x="-10" y="-10" width="140" height="130" fill="#fff"></rect><circle cx="54" cy="30" r="12" fill="#000"></circle><circle cx="56" cy="70" r="13" fill="#000"></circle></mask></defs><g mask="url(#bwsym1)" style="fill:var(--ink)"><rect x="12" y="6" width="22" height="90" rx="4"></rect><circle cx="52" cy="30" r="24"></circle><circle cx="54" cy="70" r="26"></circle><rect x="30" y="6" width="22" height="48"></rect><rect x="30" y="44" width="24" height="52"></rect></g><g style="fill:var(--surface)"><circle cx="54" cy="30" r="12"></circle><circle cx="56" cy="70" r="13"></circle></g><g style="fill:var(--ink)"><circle class="pa" cx="59.5" cy="34" r="6.5"></circle><circle class="pb" cx="62" cy="74.5" r="7"></circle></g><g style="fill:var(--ink)"><rect x="41" y="17" width="26" height="11"></rect><rect x="42" y="56" width="28" height="12"></rect></g></svg></button>
-    <div class="mito-body">
-      <p class="label" id="mito-title">Mito ou verdade?</p>
-      <p class="h3" id="mito-frase">Dar mais opções sempre aumenta as vendas.</p>
-      <div class="mito-actions" id="mito-actions"><button type="button" class="btn" data-resp="mito">Mito</button><button type="button" class="btn" data-resp="verdade">Verdade</button><span class="caption">1 de 7</span></div>
-      <div id="mito-result" aria-live="polite"></div>
-    </div>
-  </section>
   <div class="pfilters" id="post-filters">
     <div class="pf-row" hidden="">
       <span class="pf-label" id="pf-livro-label">Livro</span>
@@ -2011,54 +2002,6 @@ document.getElementById('posts').addEventListener('click', e=>{
   const b = e.target.closest('[data-pf]'); if(!b) return; postFilter='todos'; postFonte='todos'; renderInsights();
 });
 
-/* Mito ou verdade? O B desconfia da frase e se surpreende com a resposta. */
-const MITOS = [
-  {frase:"Dar mais opções sempre aumenta as vendas.", verdade:false,
-   explica:"No estudo das geleias, a banca com 6 sabores vendeu mais do que a de 24.", fonte:"Iyengar & Lepper, 2000"},
-  {frase:"Um número sorteado numa roleta pode mudar quanto você estima algo.", verdade:true,
-   explica:"Quem viu 65 na roleta deu estimativas bem mais altas do que quem viu 10, mesmo sem relação nenhuma com a pergunta.", fonte:"Tversky & Kahneman, 1974"},
-  {frase:"Um cartão de 10 selos com 2 já carimbados motiva tanto quanto um de 8 selos vazio.", verdade:false,
-   explica:"Faltavam 8 lavagens nos dois, mas o cartão já carimbado foi completado bem mais vezes.", fonte:"Nunes & Drèze, 2006"},
-  {frase:"Se um bastão e uma bola custam 1,10 dólar e o bastão custa 1 dólar a mais, a bola custa 10 centavos.", verdade:false,
-   explica:"Com 10 centavos, o total daria 1,20. A bola custa 5 centavos. A primeira resposta vem do Sistema 1, que não confere.", fonte:"Kahneman, Rápido e devagar, cap. 3"},
-  {frase:"Se um bom resultado é seguido de um pior logo depois de um elogio, o elogio atrapalhou.", verdade:false,
-   explica:"Um resultado excepcional tende a ser seguido de um mais normal, com ou sem elogio. É regressão à média.", fonte:"Kahneman, Rápido e devagar, cap. 17"},
-  {frase:"Quando você olha para uma tela, enxerga tudo nela com a mesma nitidez.", verdade:false,
-   explica:"Só uma área pequena, do tamanho de dois polegares com o braço esticado, tem nitidez e cor de verdade. O resto o cérebro completa.", fonte:"Whalen, Design for How People Think, cap. 2"},
-  {frase:"Uma informação útil é lida em qualquer lugar da tela, desde que esteja lá.", verdade:false,
-   explica:"Ajuda posta numa coluna à direita, onde costumam ficar anúncios, foi ignorada num teste com rastreamento do olhar.", fonte:"Whalen, Design for How People Think, cap. 2"}
-];
-let mitoIdx = 0;
-const mitoFace = document.getElementById('mito-face');
-function renderMito(){
-  const m = MITOS[mitoIdx];
-  setFace(mitoFace, 'desconfiado', {size:96, label:'B desconfiado'});
-  document.getElementById('mito-frase').textContent = m.frase;
-  document.getElementById('mito-result').innerHTML = '';
-  document.getElementById('mito-actions').innerHTML =
-    '<button type="button" class="btn" data-resp="mito">Mito</button><button type="button" class="btn" data-resp="verdade">Verdade</button>'
-    + '<span class="caption">'+(mitoIdx+1)+' de '+MITOS.length+'</span>';
-}
-document.getElementById('mito-actions').addEventListener('click', e=>{
-  const b = e.target.closest('[data-resp]'); if(!b || b.disabled) return;
-  const m = MITOS[mitoIdx], acertou = (b.dataset.resp==='verdade') === m.verdade;
-  document.querySelectorAll('[data-resp]').forEach(x=>{
-    x.disabled = true; x.setAttribute('aria-pressed', x===b);
-    const certa = (x.dataset.resp==='verdade') === m.verdade;
-    if(x===b){ x.classList.add(acertou?'is-ok':'is-erro'); x.insertAdjacentHTML('afterbegin','<span class="mk" aria-hidden="true">'+(acertou?'✓ ':'✗ ')+'</span>'); }
-    else if(certa){ x.classList.add('is-certa'); x.insertAdjacentHTML('afterbegin','<span class="mk" aria-hidden="true">✓ </span>'); }
-  });
-  setFace(mitoFace, 'surpreso', {size:96, label:'B surpreso'});
-  document.getElementById('mito-result').innerHTML =
-    '<div class="verdict '+(acertou?'ok':'erro')+'"><p><strong>'+(acertou?'✓ Você acertou.':'✗ Não dessa vez.')+' '+(m.verdade?'É verdade.':'É mito.')+'</strong> '+m.explica+'</p>'
-    + '<p class="caption">Fonte: '+m.fonte+'</p>'
-    + '<button type="button" class="btn primary" id="mito-next">'+(mitoIdx<MITOS.length-1?'Próxima frase':'Começar de novo')+'</button></div>';
-  document.getElementById('mito-next').addEventListener('click', ()=>{
-    mitoIdx = (mitoIdx+1) % MITOS.length; renderMito();
-    document.querySelector('[data-resp="mito"]').focus();
-  });
-});
-
 function renderPost(id){
   const p = POSTS.find(x=>x.id===id); const el = document.getElementById('view-post');
   if(!p) return false;
@@ -2089,7 +2032,7 @@ function route(){
   if(h==='explorar'){ }
   else if(h==='guia'){ view='guia'; tab='guia'; renderGuia(); }
   else if(h.startsWith('vies-')){ tab='guia'; view = renderVerbete(h.slice(5)) ? 'verbete' : '404'; }
-  else if(h==='insights'){ view='insights'; tab='insights'; renderInsights(); renderMito(); }
+  else if(h==='insights'){ view='insights'; tab='insights'; renderInsights(); }
   else if(h.startsWith('post-')){ tab='insights'; view = renderPost(h.slice(5)) ? 'post' : '404'; }
   else { view='404'; tab=''; }
   if(view==='404') setFace(document.getElementById('nf-face'), 'dissonancia', {size:132, label:'B confuso'});
