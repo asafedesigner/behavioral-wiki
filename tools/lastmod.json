@@ -1,0 +1,452 @@
+{
+ "/": {
+  "hash": "e5099d459e48701e9bad08b68336a23450cbcf351cc576b803f0f36abb2977b4",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/404.html": {
+  "hash": "5b41e6580f167a921300d814ba1528d8fe57bb3cc8cb5a193436f61ae352895c",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/guia/": {
+  "hash": "84b49f6c94fb62ccf0113f4a5d1ece39f4517a197fe370ba123ea2e8a4fe60ac",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/": {
+  "hash": "f05b80000e678faec0b0fc962cd449db50858da8d80e69e514d05988f92dc02d",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/agua-gelada/": {
+  "hash": "d5fa679fd08eeff3294dfaeb7dfbd6ca4e156c02f6dceb603ff8af8b45a9a2d7",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/amigos-no-carro/": {
+  "hash": "8e4f5a26d1e3dc4e60a07e3d257008a5c2c8e8bb980381da45e7e22b7cb736f7",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/assinatura-revista/": {
+  "hash": "9839d91a665df5cc4f5cec1ac858de5343cc57ead7f6ddecc42956dc23d5d6f7",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/atrair-melhorar-despertar/": {
+  "hash": "ce7d4c69ba9c32528b221a68f1a241cc0d0f3161dd863ecdd87090c5d4e6784f",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/bola-5-centavos/": {
+  "hash": "72846f7ef4ffe174c7faaa7c3f828e8cdaaaf11803976aa654d0372158432782",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/botao-voltar/": {
+  "hash": "2fdd09cfae83f04c0525bd32201aa419f7ad46b2f876abdf8773faccbf62be43",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/caneca/": {
+  "hash": "66ae73dc20d282afb8f58ee2c0b4b0ee275e214f7e40d86d0366b2c395f6473d",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/capitao-domingo/": {
+  "hash": "824c10f5dc330dd3c4f1ca7b51732ddb43b8884979cdfd1eec274b861aa97948",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/cartao-carimbado/": {
+  "hash": "9669974c23f55eccd9dd08b4d5f2ab08a21074b13a0bf0932a0877f4fdb194a8",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/cinquenta-por-cento/": {
+  "hash": "77e250b670588c4fbd9ce6c254e6f7bf8b5fe103fda7a22f1c347d1a5b37bc87",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/coluna-direita/": {
+  "hash": "52bc625a3a7a4083ce959697c0337abd7ee3c3e906ca847cd1b4701847949f5c",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/denominador-1286/": {
+  "hash": "1ad94e446790ed09f33fc21b68150086a15d9e436022fc31491106b756409f88",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/dicionarios/": {
+  "hash": "fb9dc6d13ffa24bcd65ff48e562ec202a2cc13c32b275473583fbfa736ebd099",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/elogio-bronca/": {
+  "hash": "9df15709548b527f464a86ed16fec573c35b0f635f8e961894304f5e37637134",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/espera-choque/": {
+  "hash": "2b979cdfc2a7e9a1feba66e2b746abf63f30f47e5db2eff3b745a359dacccc5b",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/geleias/": {
+  "hash": "cdc3a2e09555059bf90da1b13f9e88d7c5b4d2839e6bd5d4d4aad4a0ceda27e9",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/letra-g/": {
+  "hash": "89150f22b50fe7ca9843952d6eb30249ddef7dfc70afb753bc1295023b3ceaaf",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/limite-12-latas/": {
+  "hash": "577110932fd53391eafdd3eb1d60e35036759ae0b217a14e30f2318001ece557",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/livro-dois-anos/": {
+  "hash": "a75ce3e0bfbc785e6030d72eff482c688741fa3fc293a8e856e6ba700ccbe935",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/luz-uva/": {
+  "hash": "17401f789b1906dc4ca77f1d5720e034e8cd314d8933acf81343b0b221f82659",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/ofensiva/": {
+  "hash": "08f06bcb86276b4ad6bdb23e5fd0f2cb641ec25aa15c8312e6591a8da830fbaf",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/oito-letras/": {
+  "hash": "b3b8b2008c910f446dfa272296107277e2fed22074e8a153b8c09ac40f7662a9",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/olhos-cafe/": {
+  "hash": "64f1e6336682714e9083264f0f11b6cbc4e35344eb5988ef00da5de96ebcf87b",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/padrao-doacao/": {
+  "hash": "136b5497e09cea9eba4f38ee685bd785dbb84fc7f0b0ece3f11b7604f9f3a396",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/pasta-offline/": {
+  "hash": "35effb1aaf4cf70596f86b32fee9f43fc1bff42a3713ad9d6830d589c24ac346",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/pontinhos/": {
+  "hash": "540820f0c0d8538edaf568cf1e9d6601fbe78a6b6ebaa2f007373274004ec5f5",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/roleta/": {
+  "hash": "a4ca5a29381ef92074c374e92a14f791c37c2fe8a56d57e38db81e0158d7896a",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/sacola-carrinho/": {
+  "hash": "8ab70fb4c6ba447dfa1fcf883abd27ecbfd41263275df4d112663c08cc9d37c7",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/tabuleiro/": {
+  "hash": "2594f02058379812df161ec93c5388e524cb488409dcdc80bd858a3ad3976d8f",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/toalha/": {
+  "hash": "2d2cda5b1d35c018b481585d605c5c7e485023fc8fd567b43f5003a663662b64",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/insights/um-clique/": {
+  "hash": "632f3fe369fdb44aaff9bad208da6448287c4f3197a8e615116eccb2e3f913d3",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/afeto/": {
+  "hash": "7c1cde4a12672946eb55896658a2fd740312341d2a6779f1c1d265c7b03bafaa",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/ancoragem/": {
+  "hash": "9919a6caa00e9a0215d6739c1e5e2a03253190d15fcc332e5f3fa22d374c708b",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/antecipacao/": {
+  "hash": "326302768eeddac83f3b13831dd42245d6eb7bbcfa8eccda19e107a27be3bc72",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/automatizacao/": {
+  "hash": "883ae0d88df91cd461a8b3496c2a7b9435130bc42b31c64532bbad95b762fbe9",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/avaliacao-conjunta/": {
+  "hash": "8e7e3a71c9c614c378bd05a8f381c8888f5cdc429d375329f9046b29b575b381",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/aversao-perda/": {
+  "hash": "8ff859e4ae64bf25e14cf287875bfbb71e302a1e671e1ff30482a2d62d527a06",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/cegueira-anuncio/": {
+  "hash": "b80dabb70b2848e35294523d46f451f69bb2b564795a8200145f227df95843f4",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/certeza/": {
+  "hash": "bf3fae9fe9f817b5b51660c6f58458755df658f4f8175a922c4513f406a00e2a",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/chamariz/": {
+  "hash": "06a431df7378364855f4602c97554e8b32204e226bdc13aff28472cb1b031ebe",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/compromisso/": {
+  "hash": "b36ff013faf11983155a203a35714dae2a178f35c8f4351ab5faf604c9a81bc0",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/confirmacao/": {
+  "hash": "f92d6ecddea778bb3e8d77b5886002fef4f30254e180c4b3dd4706cfe6496043",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/contabilidade-mental/": {
+  "hash": "6c76a17d6e113edd635cc07deb719304732400c41821c0514d780167e49768f0",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/custo-afundado/": {
+  "hash": "f8d03486dd2c10962eb7950641c244dfdd9eb03f43210070a365ac67397a99f2",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/denominador/": {
+  "hash": "f42f2903a552c1743386d24fcc039ba665f3d635c475ee80890f147e50f16bc8",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/desconto-hiperbolico/": {
+  "hash": "1695a97cce1d4fc53eb767e1dbbaa9172438a6f3c6e473923f6a3e2cf71e67d3",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/destaque-visual/": {
+  "hash": "9409d7c05189003d925b401bbb2e18688fcf05f0041da3df7820d92319bcd0e5",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/disponibilidade/": {
+  "hash": "5a9233ab041f58983981e470c31858fa3d3e9b1321258dfe3591be719c11ebdc",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/dois-sistemas/": {
+  "hash": "118ed4d3319f520bf3d4db67045930c5ef3fdc9b7e6aefdae4b36b3eafbd0bfc",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/dotacao/": {
+  "hash": "3720136caf2b343edf3bc2d4d2a2483ae478c1ff633bb8f8cadfc20b2dc7fc33",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/efeito-cashless/": {
+  "hash": "36c1a9748d4bc15626b0de4535f67b36564b2e49030ddc769e8c8f8afce6a098",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/efeito-padrao/": {
+  "hash": "c0f464312f5eee4f858df3f4752f09b57ec50fa780442c5e7963f3284d974ad8",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/enquadramento/": {
+  "hash": "31d5925b95fbad06fbe243c1881ba7bbfa2a1a3b0d0e71e867d64fb482d870f8",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/fluencia/": {
+  "hash": "b25f801fb90692952bbab88ff829ee8c51a3bf59fd23e723a40f6a2f411879b0",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/habituacao/": {
+  "hash": "1d3659cf3781eb38aebf7dd797585a6a615a74477e626c1d914c9c5a63d1cf6d",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/halo/": {
+  "hash": "a6f9c5f52ecceddee31ec267b3e428906843504ecf74f19ce6f0b69af33ecaef",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/ilusao-foco/": {
+  "hash": "1add8ff50accaa424d0e51572ca3edf5218c9cc9596d03dd0a8df7735877b898",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/linguagem/": {
+  "hash": "e06e7f326d6d46e06e6be45d9379336744e80dc89f615c8d89d3833d19190b28",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/medos-profundos/": {
+  "hash": "00c5bb322eaa20d92b32bf3fae6efe4ff49dca464231483bb53df0587774ed1c",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/menor-esforco/": {
+  "hash": "09af4b9a02768ea3b5246a9b6f06577f46e47c8be96a9ee3a9335a191b7f0a73",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/mera-exposicao/": {
+  "hash": "5f9159fbcbacc5df250531218a8fde7fce7e883d065bf152ab06627390a6c461",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/modelos-mentais/": {
+  "hash": "263190379e7f5864f879b8c6a8d38083fda7655ae4c8857f0401bd5430af093c",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/multiplas-hierarquias/": {
+  "hash": "9f31c64caf6c57c6f40efda4ecbd84abe05b98ada9459e80cc643ae0a528dfbc",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/nos-e-eles/": {
+  "hash": "d35f598a2b36e190bc5ddc9fa3bc75165214cb34a14cf0ce43b7a3e09af783ad",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/olhos-observam/": {
+  "hash": "770238d5f55c7803ebecd179454c45bd10eae2574346e7abddf1a5c7625a2517",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/orientacao/": {
+  "hash": "c0936f33e3540ea4bb556cf40d9a1f88943444b67f42af631be7bc89e876bde5",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/pares/": {
+  "hash": "5ddc060e9037dfbd502424f544b916fb66b824f4602f3b7538f0c6e1c238d850",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/pequenos-numeros/": {
+  "hash": "e833195509b16f7b0cd53f2e548dab119a8d556087d1268021282fac09565433",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/pico-fim/": {
+  "hash": "95edae43b896be5e8dc96e083ec7812b03b12bb8fb45a472a3f4487ac3fb81bd",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/planejamento/": {
+  "hash": "0d915c1ccd9ab84b312f5e61534766e887c243b1868343cb915d052628f1a31c",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/previsibilidade/": {
+  "hash": "7369d35b33b75c6f62fede55a0b8b23bf86a7aadd504123ed35f0a8251380d13",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/progresso-dotado/": {
+  "hash": "a6c30bc79fb62fb34597d49c99a5a7306a143d810e2ff4f4a749a16ebc3caa62",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/prova-social/": {
+  "hash": "ac749c0b49664d069445d118e3503a5ed9bfc127a50e02739d0485ae1f4370aa",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/reciprocidade/": {
+  "hash": "c23686f54e5baa2b29ac37b9c869be34f35da3721a9913e17a2ff526fa8842d1",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/recompensa-incerta/": {
+  "hash": "7fe8a0ad5f25ce31a5bef73b9e695324558af21fdc968893424fd56868ba8a2e",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/regressao/": {
+  "hash": "1e6dc52c24d25850fb0173a61d4259a1363b2c9886564746670bc30479cf25ed",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/retrospectiva/": {
+  "hash": "4fb9a55655429f97325c953ddb86482aabdf60edf1c483e50520f432c262f865",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/satisficing/": {
+  "hash": "17ae534cc8cb4591d5f9c2ad8c114b86e7cefb301a6002da5306f9f2e6cf34b5",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/seis-mentes/": {
+  "hash": "236195f4ef2b81a93247fe944677cb1e910d277b6e82d81bed0f86eb25f1829f",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/sobrecarga/": {
+  "hash": "60ca785783a40eef31b1020ccae5614175951e907fdb2a3db1d147efdc06b6ad",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/status-quo/": {
+  "hash": "45fd7d3af248191c56112477a544ceb262b7ce1c3d337542e5f946a741d6ca6b",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/subobjetivos/": {
+  "hash": "96da3cf9b87825ad8a76217082b7586818698c91490a7733d80076b3c78bbab1",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/substituicao/": {
+  "hash": "cf0b20c7e1e56110f928beaf2e4a3d29be422c26f4ec8ee79af9f8379f682346",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/um-rosto/": {
+  "hash": "bba13375ef113a202dfc536fc6cc778e7fd940f1453bf33ab0c229ce8532cfb7",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/wysiati/": {
+  "hash": "ca3d32349c121746032fc5552da3e971fa270b1518c739dfb7d66c390e4c21f9",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ },
+ "/vieses/zeigarnik/": {
+  "hash": "6d4243152b47be0bbf025b7534cd87ffd91d8973df0a77cb6c4bc5f70554e945",
+  "modified": "2026-11-12T18:41:32-03:00",
+  "published": "2026-11-11T11:46:31-03:00"
+ }
+}
